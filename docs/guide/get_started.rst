@@ -1,42 +1,36 @@
 ===============
-Getting Started
+开始使用
 ===============
 
-This chapter gives an introduction on how to interact with this book.
-This assumes you are reading an HTML book. The options and formatting will be different
-for other output formats such as epub.
+本章介绍如何与本书进行交互，这假设您正在阅读本手册的HTML网页版，对于其他输出格式（例如 epub），
+位置可能会有所不同。
 
-A book is organized into **chapters**. Each chapter is a separate page. Chapters can be 
-nested into a hierarchy of sub-chapters. Typically, each chapter will be organized into
-a series of **headings** to subdivide a chapter.
+本手册由 **章节** 组成，每一章都是一个单独的页面，章节下面还可以嵌套子章节。
+通常，每一章都会有一系列 **标题** 来细分本章节的内容。
 
-Navigation
+导航
 ==========
 
-There are several methods for navigating through the chapters of a book.
+有多种方法可以快读定位并浏览本手册中的章节。
 
-The **sidebar** on the left provides a list of all chapters, and the right provides 
-a list of all sub-chapters. Clicking on any of the chapter titles will load that page.
+左侧的 **侧边栏** 提供所有章节的列表，右侧提供所有子章节的列表，单击任何章节标题将加载该页面。
 
-The sidebar may not automatically appear if the window is too narrow, particularly 
-on mobile displays. In that situation, the menu icon (three horizontal bars) at the 
-top-left of the page can be pressed to open and close the sidebar.
+如果窗口太窄，侧边栏可能不会自动显示，特别是在移动显示器上，在这种情况下，可以按下页面左上角的
+菜单图标（三个水平条）来打开和关闭侧边栏。
 
-The **arrow buttons** at the bottom of the page can be used to navigate to the previous
-or the next chapter.
+页面底部的 **箭头** 按钮可用于导航到上一章或下一章。
 
-The **back to top** when the page scrolls upon can be used to navigate to the 
-top of the page.
+页面滚动时的 **返回顶部** 可用于导航到页面顶部。
 
-Top menu bar
+顶部菜单栏
 ============
 
-The menu bar at the top of the page provides some icons for interacting with the book.
+页面顶部的菜单栏提供了一些用于与书籍交互的图标。
 
-e.g. change dark/light mode.
+例如更改暗/亮模式。
 
 
-Search
+搜索
 ======
 
-There is a search box above the left navigation bar.
+左侧导航栏上方有一个搜索框。

@@ -1,74 +1,74 @@
 .. _puller:
 
-======
-Puller
-======
+========
+送料滚轮
+========
 
-**How it works**:
+**自动模式如何工作？**:
 
-- During lifting, raising of puller when lifting the sewing foot.
-- During bartack, raising of puller when sewing the start/end bartack.
-- During backwards, raising of puller when reverse button pressed.
-- The puller is to be switched on via a button, if the puller is switched off, it is always up, if the button is pressed, the puller goes down.
+- 当压脚抬起时，拖布轮随之自动抬起；
+- 当缝制前后加固时，拖布轮自动抬起；
+- 当倒缝时，拖布轮自动抬起；
+- 可以将输入按键功能配置为切换拖布轮抬起/落下，当按键抬起拖布轮时，拖布轮将始终
+  抬起直到再次通过按键落下。
 
-# Parameter List
-================
+参数列表
+========
 
 A 64
 ----
 
-.. dropdown:: Delay stitch
+.. dropdown:: 延迟针数
    :animate: fade-in-slide-down
 
    -Max  255
    -Min  0
    -Unit  stitch
-   -Description  Number of stitches until the puller is lowered after seam begin,
-                 depens on stitch length and application.
+   -Description  新的线迹开始后拖布轮延迟放下的针数。
 
 A 89
 ----
 
-.. dropdown:: Puller
+.. dropdown:: 送料滚轮
    :animate: fade-in-slide-down
 
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Upper puller:
-     | 0 = Off;
-     | 1 = On.
+     | 送料滚轮功能开关：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 90
 ----
 
-.. dropdown:: Upper Puller Status
+.. dropdown:: 拖布轮状态
    :animate: fade-in-slide-down
 
    -Max  1
    -Min  0
    -Unit  --
-   -Description  Upper puller status,up or down(read only).
+   -Description  拖布轮状态（只读）。
 
 O 97
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
 
    -Max  999
    -Min  1
-   -Unit  ms
-   -Description  Puller lifter:activation duration of in :term:`time period t1` (100% duty cycle).
+   -Unit  毫秒
+   -Description  拖布轮：全力100%占空比出力的持续 :term:`时间t1` 。
 
 O 98
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
 
    -Max  100
    -Min  1
    -Unit  --
-   -Description  Puller lifter:duty cycle[%] in :term:`time period t2`.
+   -Description  拖布轮：维持出力 :term:`时间t2` 内的占空比。

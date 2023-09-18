@@ -1,49 +1,49 @@
 .. _thread_wiper:
 
-============
-Thread wiper
-============
+====
+扫线
+====
 
-The thread wiper function runs after the cutting procedure.
+设置 `A 08`_ 为1，可以选择启用扫线功能。
 
-When thread cutter is completed and the time set by **T03** is delayed, the wiper 
-will switch on, it will switch off after the time set by **T04**.
+当剪线流程结束后，延迟**T03**所设置的时间，扫线电磁铁（阀）接通，之后经过 `T 04`_ 设置的时间
+后，扫线关闭。
 
-Parameter List
-==============
+参数列表
+========
 
 A 08
 ----
 
-.. dropdown:: Wiper
+.. dropdown:: 扫线
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Wiper upper thread:
-     | 0: Off;
-     | 1: On.
+     | 扫线功能开关：
+     | 0 = 关闭；
+     | 1 = 打开。
      
 T 03
 ----
 
-.. dropdown:: Wiper Delay time
+.. dropdown:: 扫线等待时间
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
-   -Unit  ms
-   -Description  Lag time, after which, wiper is activaed after trim
+   -Unit  毫秒
+   -Description  剪线后延迟一定时间后扫线动作。
 
 T 04
 ----
 
-.. dropdown:: Wiper Activation Duration
+.. dropdown:: 扫线动作时间
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
-   -Unit  ms
-   -Description  Time form activation to deactivation of the magnet of wiper.
+   -Unit  毫秒
+   -Description  扫线电磁铁通电持续时间。

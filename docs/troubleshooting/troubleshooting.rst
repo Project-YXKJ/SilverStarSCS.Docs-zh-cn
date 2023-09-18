@@ -137,7 +137,7 @@ Error message list
    -Description  The bus current is too high
    -Solution
      | Check the motor encoder connection;
-     | Check if the right :term:`MACHINE ID` is seted;
+     | Check if the right :term:`机头识别码` is seted;
      | Replace the controller;
 
 .. dropdown:: 107 

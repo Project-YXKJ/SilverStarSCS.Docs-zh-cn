@@ -1,165 +1,166 @@
 .. _tension:
 
-==============
-Thread tension
-==============
+========
+面线张力
+========
 
-**During thread cutting:**
+**剪线时**
 
-The thread tension power on when position is reached with D13 and power off when
-position is reached with D14 during thread trimming.
+剪线时，面线张力的放松是随角度动作的，在达到 `D 13`_ 设置的角度时，面线放松，之后在达到
+`D 14`_ 设置的角度时，面线再次收紧。
 
-**During foot lifting:**
+**抬压脚时**
 
-Adjust parameter of the thread tension during active foot lift: the mode for thread
-tension is determined by parameter A27, the default value is 2.
+在压脚抬起时，依据此时有没有进行剪线，分为缝制中和剪线后两个场景，缝线张力的自动模式可以有多
+种选择。默认的为缝制中抬压脚时不松线，剪线之后抬压脚挺线器会打开。
 
-**During 2nd Sewing foot stroke:**
+模式选择可以参考 `A 27`_ 。
 
-Adjust parameter of the sewing foot stroke during active the second thread tension:
-the mode is determined by parameter A28, the default value 1.
+**切换到大交互量时**
 
-**Electromagnetor solenoid valve:**
+系统可以设置，在切换大交互量时，额外面线张力可以自动生效，以收紧缝线得到更好的缝制效果，之后
+如果交互量再次切换为正常状态，额外的面线张力也可以自动恢复。
 
-If tension is controlled by electromagnet not solenoid valve, you need to be careful
-when setting tha value of **O75**. Over premissible power on time, the electromagnet
-may burn out, thus a electromagnet with a small value of **O75** is protected form damage.
+此功能由 `A 28`_ 控制。
+
+**驱动形式**
+
+如果面线张力机构是由电磁铁驱动而不是电磁阀，则需要格外留意 `O 75`_ 的值。
+
+因为电磁铁持续供电进而热量堆积可能会烧毁电磁铁，所以 `O 75`_ 必须设置一个合理值来避免这种情况。
 
 
-Parameter List
-==============
+参数列表
+========
 
 A 26
 ----
 
-.. dropdown:: Status of Additional Thread Tension
+.. dropdown:: 第二夹线器状态
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
-   -Description  Status of the additional tension solenoid(read only)
+   -Description  第二夹线器状态（只读）。
 
 A 27
 ----
 
-.. dropdown:: Auto mode for tension at foot lifting
+.. dropdown:: 压脚抬起时面线张力的工作模式
    :animate: fade-in-slide-down
    
    -Max  3
    -Min  0
    -Unit  --
    -Description
-     | Mode for lifting the tension during active sewing foot lift:
-     | 0 = tension is not lifted;
-     | 1 = tension is lifted as the foot is lifted during sewing;
-     | 2 = tension is lifted after trim;
-     | 3 = tension is lifted as the foot is lifted during sewing and after trim.
+     | 0 = 缝制中不松线，剪线后不松线；
+     | 1 = 缝制中松线，剪线后不松线；
+     | 2 = 缝制中不松线，剪线后松线；
+     | 3 = 缝制中松线，剪线后松线。
      
 A 28
 ----
 
-.. dropdown:: Auto Additional Thread Tension
+.. dropdown:: 自动收紧面线张力
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | If the second stroke active,the additional thread tenson is automatically activated:
-     | 0 = Off;
-     | 1 = On.    
+     | 当切换到大交互量时自动收紧额外的缝线张力：
+     | 0 = 关闭；
+     | 1 = 打开。    
 
 D 13
 ----
 
-.. dropdown:: Start Tension Position
+.. dropdown:: 松线开始角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of tenison is activated during trimming
+   -Description  剪线时面线张力电磁铁动作角度。
 
 D 14
 ----
 
-.. dropdown:: Stop Tension Position
+.. dropdown:: 松线结束角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of tension is deactivated during trimming
+   -Description  剪线时面线张力释放角度。
 
 O 49
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
    
    -Max  999
    -Min  1
-   -Unit  ms
-   -Description  Tension:activation duration of in :term:`time period t1` 
-                 (100% duty cycle)
+   -Unit  毫秒
+   -Description  面线张力：全力100%占空比出力的持续 :term:`时间t1` 。
 
 O 50
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Tension:duty cycle[%] in :term:`time period t2`.
+   -Description  面线张力：维持出力 :term:`时间t2` 内的占空比。
 
 O 75
 ----
 
-.. dropdown:: Tension Max. Lifting Time
+.. dropdown:: 挺线最大维持时间
    :animate: fade-in-slide-down
    
    -Max  9999
    -Min  0
-   -Unit  ms
+   -Unit  毫秒
    -Description 
-     | 0 = Always Lifting;
-     | Not 0 = This parameter sets the power-off time.
+     | 0 = 挺线可以一直维持；
+     | 不为 0 = 经过此时间后挺线自动释放。
      
 O 86
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
    
    -Max  500
    -Min  1
-   -Unit  ms
-   -Description  Additional Tension:activation duration of in :term:`time period t1`
-                 (100% duty cycle)
+   -Unit  毫秒
+   -Description  第二面线张力：全力100%占空比出力的持续 :term:`时间t1`。
 
 O 87
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Additional Tension:duty cycle[%] in :term:`time period t2`.
+   -Description  第二面线张力：维持出力 :term:`时间t2` 内的占空比。
 
 O 88
 ----
 
-.. dropdown:: Addition tension solenoid work mode
+.. dropdown:: 额外面线张力电磁阀工作模式
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = solenoid on,tension off;
-     | 1 = solenoid on,tension on.
+     | 0 = 通电，通气，挺线打开；
+     | 1 = 通电，不通气，挺线关闭。

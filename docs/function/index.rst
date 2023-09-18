@@ -1,14 +1,14 @@
-===============
-Sewing Function
-===============
+========
+缝制功能
+========
 
-Basic
+基本
 
 .. grid:: 1 2 3 4
   :margin: 4 4 0 0
   :gutter: 1
 
-  .. grid-item-card:: Bartack 
+  .. grid-item-card:: 前后加固 
     :link: bartack
     :link-type: doc
 
@@ -16,185 +16,187 @@ Basic
     :link: seam
     :link-type: doc 
 
-  .. grid-item-card:: Bobbin Monitor 
+  .. grid-item-card:: 底线计数器 
     :link: bobbin_monitor
     :link-type: doc
 
-  .. grid-item-card:: Piece Counter
+  .. grid-item-card:: 产量计数
     :link: daily_piece_counter
     :link-type: doc
 
-  .. grid-item-card:: Soft Start
+  .. grid-item-card:: 软启动
     :link: soft_start
     :link-type: doc
 
-  .. grid-item-card:: Turn Back
+  .. grid-item-card:: 反转
     :link: turn_back
     :link-type: doc
 
-  .. grid-item-card:: Service Counter
+  .. grid-item-card:: 保养计数器
     :link: service_counter
     :link-type: doc 
 
-Motion
+功能性
 
 .. grid:: 1 2 3 4
   :margin: 4 4 0 0
   :gutter: 1
 
-  .. grid-item-card:: Reverse 
+  .. grid-item-card:: 倒缝 
     :link: reverse
     :link-type: doc
 
-  .. grid-item-card:: Trim 
+  .. grid-item-card:: 剪线 
     :link: thread_cutter
     :link-type: doc
 
-  .. grid-item-card:: Foot
+  .. grid-item-card:: 压脚
     :link: sewing_foot_lift
     :link-type: doc
 
-  .. grid-item-card:: Stroke 
+  .. grid-item-card:: 压脚交互量 
     :link: stroke
     :link-type: doc
   
-  .. grid-item-card:: Clamp
+  .. grid-item-card:: 电子抓线
     :link: clamp
     :link-type: doc
 
-  .. grid-item-card:: Tension
+  .. grid-item-card:: 面线张力
     :link: tension
     :link-type: doc 
 
-  .. grid-item-card:: HandWheel
-    :link: hand_wheel
+  .. grid-item-card:: 电子手轮
+    :link: elec_hand_wheel
     :link-type: doc 
 
-  .. grid-item-card:: Seam Center Guide
+  .. grid-item-card:: 缝线中心导向
     :link: seam_center_guide
     :link-type: doc
 
-  .. grid-item-card:: Stitch Length
+  .. grid-item-card:: 第二针距
     :link: second_stitch_length
     :link-type: doc
 
-  .. grid-item-card:: Puller
+  .. grid-item-card:: 送料滚轮
     :link: puller
     :link-type: doc
 
-  .. grid-item-card:: Needle Cooling
+  .. grid-item-card:: 机针冷却
     :link: needle_cooling
     :link-type: doc
 
-  .. grid-item-card:: Wiper
+  .. grid-item-card:: 扫线
     :link: wiper
     :link-type: doc
 
-Mics
+其他
 
 .. grid:: 1 2 3 4
   :margin: 4 4 0 0
   :gutter: 1
 
-  .. grid-item-card:: Assemble 
+  .. grid-item-card:: 安装 
     :link: assemble
     :link-type: doc
 
-  .. grid-item-card:: Control/Others 
+  .. grid-item-card:: 控制器/其他 
     :link: control_other
     :link-type: doc
   
-  .. grid-item-card:: Intput
+  .. grid-item-card:: 输入配置
     :link: input_configuration
     :link-type: doc
 
-  .. grid-item-card:: Output
+  .. grid-item-card:: 输出配置
     :link: output_configuration
     :link-type: doc 
 
-  .. grid-item-card:: Multitest
+  .. grid-item-card:: 综合测试
     :link: multitest
     :link-type: doc 
 
-  .. grid-item-card:: Motor
+  .. grid-item-card:: 电机
     :link: multitest
     :link-type: doc 
 
-  .. grid-item-card:: Safety Sensor
+  .. grid-item-card:: 安全传感器
     :link: safety-sensor
     :link-type: doc 
 
 
 
-Glossary
+词汇表
 ========
-**This is a glossary with definition terms for thing like** :term:`Machine ZERO`:
+**下表解释了本手册一些常用术语的具体含义, 比如** :term:`机械零点`：
  
 .. glossary::
-  MACHINE ZERO
-    The highest point of the needle bar, the angle of the magnet action/release,
-    where the motor stops, etc. positions mentioned in this book are based on this.
-    
-    .. warning:: 
-       It's very important to make sure you set it correctly.
-
-  MACHINE ID
-    Code used to indicate the machine model.
+  机械零点
+    机械零点定义为机针的最高点。电磁铁（阀）动作/释放的角度，以及电机停止的位置等等, 本手册提到
+    角度都是以机械零点为参考的。
 
     .. warning:: 
-       It's very important to make sure you set it correctly.
+       这非常重要，请确保正确设置了它。
+
+  机头识别码
+    机头识别码，一串数字代码，和具体的机头型号一一对应。
+
+    .. warning::
+       这非常重要，请确保正确设置了它。
     
   POSITION 2
-    Pedal forward harder
+    位置2，调速器正踩第一段，也叫高速位置。
 
   POSITION 1
-    Pedal forward little 
+    调速器正踩第二段，也叫低速位置。
   
   POSITION 0
-    No pedal 
+    调速器默认位置。
   
   POSITION -1
-    Pedal backward little 
+    调速器反踩第一段，也叫压脚位置。
     
   POSITION -2
-    Pedal backward harder 
+    调速器反踩第二段，也叫剪线位置。
   
-  time period t1
-    The duration of 100% duty cycle of the output port 
+  时间t1
+    输出端口控制策略中100%出力的时间。
   
-  time period t2
-    The duration of the non-100% duty cycle of the output port
+  时间t2
+    输出端口控制策略中PWM阶段(非100%出力)的占空比。
     
 
-**This is a glossary with definition terms for unit like** :term:`ms`:
+**下表解释了本手册一些常用单位的具体含义，比如** :term:`ms`：
 
 .. glossary::
   spm
-    Stitches per minute
+    针每分钟，用以表示主轴转速
 
   ms
-    Microsecond
+    毫秒
 
-  s  
-    Second 
+  s
+    秒
 
-  h  
-    Hour 
+  m
+    分钟    
+
+  h
+    小时  
 
   %
-    Percentage 
+    百分比
 
   1°
-    One full rotation is 360 degrees
+    度，主轴完整一圈为360度
 
   V
-    The volt is the unit of voltage
+    伏特，电压单位
 
   A
-    The ampere is the unit of electric current. This book may use **0.1A**, 
-    which is one-tenth of 1 amp
+    安倍，电流单位. 本手册会出现 **0.1A**，表示1安培的十分之一 
 
-Table of Contents
+目录
 =================
 
 .. toctree::
@@ -206,7 +208,7 @@ Table of Contents
   wiper
   control_other
   daily_piece_counter
-  hand_wheel
+  elec_hand_wheel
   input_configuration
   output_configuration
   stroke

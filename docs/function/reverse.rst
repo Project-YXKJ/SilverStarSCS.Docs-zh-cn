@@ -1,102 +1,100 @@
 .. _reverse:
 
-========
-Revserse
-========
+====
+倒缝
+====
 
-
-Parameter List
-==============
+参数列表
+========
 
 T 01
 ----
 
-.. dropdown:: Reverse Action In Place Time
+.. dropdown:: 倒缝电磁铁吸合到位所需时间
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
-   -Unit  ms
-   -Description  The time for the reverse solenoid finish the action,unit ms
+   -Unit  毫秒
+   -Description  倒缝电磁铁从开始动作到吸合到位需要的时间。
 
 T 02
 ----
 
-.. dropdown:: Reverse Release In Place Time
+.. dropdown:: 倒缝电磁铁释放到位所需时间
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
-   -Unit  ms
-   -Description  The time for reverse solenoid finish the releasing,unit ms
+   -Unit  毫秒
+   -Description  倒缝电磁铁从开始动作到释放到位需要的时间。
 
 D 05
 ----
 
-.. dropdown:: Start Reverse Position
+.. dropdown:: 倒缝开始角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of reverse is activated.
+   -Description  倒缝电磁铁动作角度。
   
 D 06
 ----
 
-.. dropdown:: Stop Reverse Position
+.. dropdown:: 倒缝结束角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of reverse is deactivated.
+   -Description  倒缝电磁铁释放角度。
 
 T 08
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
-   -Unit  ms
-   -Description  Reverse:activation duration of in :term:`time period t1`
-                 (100% duty cycle),unit ms
+   -Unit  毫秒
+   -Description  倒缝:全力100%占空比出力的持续 :term:`时间t1` 。
 
 O 09
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Reverse:duty cycle[%] in :term:`time period t2`.
+   -Description  倒缝:维持出力 :term:`时间t2` 内的占空比。
 
 O 10
 ----
 
-.. dropdown:: Auto Power-off Reverse
+.. dropdown:: 倒缝自动释放使能
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description 
-     | Whether the magnet of reverse automatic power-off after the set time:
-     | 0 = Off;
-     | 1 = On
+     | 经过一定时间后抬倒缝电磁铁是否自动释放：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 
 O 11
 ----
 
-.. dropdown:: Reverse Max. Holding Time
+.. dropdown:: 倒缝最大维持时间
    :animate: fade-in-slide-down
    
    -Max  30
    -Min  5
    -Unit  s
-   -Description  If Auto Power-off Reverse is turned on,this parameter sets the power-off time.
+   -Description  如果自动释放打开，倒缝释放时间由此参数设置。

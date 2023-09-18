@@ -1,102 +1,98 @@
 .. _second_stitch_length:
 
-====================
-Second stitch length
-====================
+========
+第二针距
+========
 
+**长针距自动限速**
 
-**Speed limit when second stitch length activated:**
+如果参数 `O 33`_ 设置为1，当切换到长针距时缝纫速度将被限制在参数 `S 17`_ 所设置的值。
 
-If parameter **O33** set to 1, the speed is reduced down to parameter **S17** when 
-2nd stitch length activated.
-
-
-Parameter List
-==============
+参数列表
+========
 
 S 17
 ----
 
-.. dropdown:: Max. Speed Long Stitch Length
+.. dropdown:: 大针距限速值
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Limiting speed if long stitch length is activated
+   -Description  当使用大针距时的限速值。
 
 A 25
 ----
 
-.. dropdown:: Status of Second Stitch Length
+.. dropdown:: 大小针距状态
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
-   -Description  Status of the second stitch length solenoid(read only)
+   -Description  大小针距状态（只读）。
 
 A 46
 ----
 
-.. dropdown:: Stitch Length
+.. dropdown:: 大小针距
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Short/Long stitch length:
-     | 0 = Off;
-     | 1 = On.
+     | 大小针距功能：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 50
 ----
 
-.. dropdown:: Stitch length during bartack
+.. dropdown:: 加固缝针距
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Choose whether to switch short stitch length automatically:
-     | 0 = Off;
-     | 1 = On.
+     | 选择是否在前后加固时自动切换到小针距：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 O 33
 ----
 
-.. dropdown:: Speed limitation stitch length
+.. dropdown:: 针距限速
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | The speed is limited during using long stitch length:
-     | 0 = Off;
-     | 1 = On.
+     | 当切换为大针距时进行限速：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 O 78
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
    
    -Max  999
    -Min  1
-   -Unit  ms
-   -Description  Second stitch length:activation duration of in :term:`time period t1`
-                 (100% duty cycle).
+   -Unit  毫秒
+   -Description  第二针距：全力100%占空比出力的持续 :term:`时间t1` 。
 
 O 79
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Second stitch length:duty cycle[%] in :term:`time period t2`.
+   -Description  第二针距：维持出力 :term:`时间t2` 内的占空比。

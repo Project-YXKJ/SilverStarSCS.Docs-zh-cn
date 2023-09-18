@@ -1,148 +1,141 @@
 .. _safety-sensor:
 
-=============
-Safety Sensor
-=============
+==========
+安全传感器
+==========
 
-Tilt safaty switch
-==================
+机头倾倒开关
+============
 
-Parameter List
---------------
-
+参数列表
+--------
 
 T 09
 ^^^^
 
-.. dropdown:: Debouncing of Tilt safaty Switch <...>
+.. dropdown:: 倾倒开关信号消抖时间 <...>
    :animate: fade-in-slide-down
    
    -Max  1000
    -Min  1
-   -Unit  ms
-   -Description  The time is less and the sensitivity is higher,perfect debounce
-     time can prevent false alarm
+   -Unit  毫秒
+   -Description  防止机头振动时倾倒开关误动作，倾倒开关信号必须持续有效一定时间才会被确认。
 
 O 31
 ^^^^
 
-.. dropdown:: Warning: Tilt safety switch <...>
+.. dropdown:: 报警：倾倒开关 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Whether to throw a warning when the machine is tilted:
-     | 0 = Off;
-     | 1 = On.
+     | 机头被翻起时是否报警：
+     | 0 = 关闭；
+     | 1 = 打开。
      
 O 32
 ^^^^
 
-.. dropdown:: Sensor Polarity(Tilt Safety) <...>
+.. dropdown:: 倾倒开关信号极性 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = Normal close;
-     | 1 = Normal open.
+     | 0 = 常关断；
+     | 1 = 常接通。
 
+护眼挡板
+========
 
-
-Eye Guard
-=========
-
-Parameter List
---------------
+参数列表
+--------
 
 O 28
 ^^^^
 
-.. dropdown:: Warning: Eye Guard <...>
+.. dropdown:: 报警：护眼板 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Optional features,whether to throw a warning when the eye guard isn't in the
-       right place:
-     | 0 = Off;
-     | 1 = On.
+     | 可选功能，护眼板被推开时是否报警：
+     | 0 = 关闭；
+     | 1 = 打开。
 
-Hook cover missing
-==================
+旋梭盖板
+========
 
-Parameter List
---------------
+参数列表
+--------
 
 O 29
 ^^^^
 
-.. dropdown:: Warning: Hook Cover <...> 
+.. dropdown:: 报警：旋梭盖板 <...> 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Optional features,whether to throw a warning when the hook cover is removed:
-     | 0 = Off;
-     | 1 = On.
+     | 可选功能，旋梭盖板被推开时是否报警：
+     | 0 = 关闭；
+     | 1 = 打开。
      
 
-Oil Level
-=========
+润滑油量
+========
 
-Parameter List
---------------
+参数列表
+--------
 
 O 34
 ^^^^
 
-.. dropdown:: Warning:Oil Level <...> 
+.. dropdown:: 报警：油位检测 <...> 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Optional features,whether to throw a warning when the lubricating oil level
-       is too low:
-     | 0 = Off;
-     | 1 = On.
+     | 可选功能，检测润滑油位过低时是否报警：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 
-Upper Thread Breaking
-=====================
+面线断线检测
+============
 
-Parameter List
---------------
+参数列表
+--------
 
 T 13
 ^^^^
 
-.. dropdown:: Debouncing of Upper Thread Break <...> 
+.. dropdown:: 面线检测信号消抖时间 <...> 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
-   -Description  The time is less and the sensitivity is higher, perfect debounce
-     time can prevent false alarm.
+   -Description  面线检测报警确认时间，时间越短越灵敏。
 
 O 92
 ^^^^
 
-.. dropdown:: Sensor Polarity(Upper Thread Breaking) <...> 
+.. dropdown:: 信号极性(面线断线) <...> 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = Normal open;
-     | 1 = Normal closed.
+     | 0 = 常关断；
+     | 1 = 常接通。

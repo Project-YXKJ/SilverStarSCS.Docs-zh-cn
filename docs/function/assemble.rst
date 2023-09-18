@@ -1,172 +1,171 @@
 .. _assemble:
 
-========
-Assemble
-========
+====
+安装
+====
 
-Parameter List
-==============
+参数列表
+========
 
 A 07
 ----
 
-.. dropdown:: Lock the Shortkeys <...>
+.. dropdown:: 机头热键锁定 <...>
    :animate: fade-in-slide-down
     
    -Max  1  
    -Min  0
    -Unit  --
    -Description
-     | To avoid the very thick material from triggering the shortkeys:
-     | 0 = Off;
-     | 1 = On.
+     | 缝料过厚时，用于防止缝料误触热键:
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 19
 ----
 
-.. dropdown:: Function POSITION -1 <...> 
+.. dropdown:: 调速器半后踏功能<...> 
    :animate: fade-in-slide-down
    
    -Max  2
    -Min  1
    -Unit  --
    -Description  
-     | When pedal at :term:`POSITION -1` 
-       which funcition is activared:
-     | 1 = Sewing foot lift;
-     | 2 = Thread trim.
+     | 决定调速器处于 :term:`POSITION -1` 位置时执行什么动作
+     | 1 = Sewing foot lift；
+     | 2 = Thread trim。
 
 O 03
 ----
 
-.. dropdown:: MACHINE ID <...> 
+.. dropdown:: 机头识别码 <...> 
    :animate: fade-in-slide-down
    
    -Max  2
    -Min  1
    -Unit  --
-   -Description  :term:`MACHINE ID`
+   -Description  :term:`机头识别码`
 
 O 08
 ----
 
-.. dropdown:: Pedal Type <...> 
+.. dropdown:: 调速器类型 <...> 
    :animate: fade-in-slide-down
    
    -Max  2
    -Min  1
    -Unit  --
    -Description
-     | Choice between an native and standing operation pedal:
-     | 0 = Native;
-     | 1 = Standing Operation Pedal.
+     | 使用原装调速器还是站立操作踏板：
+     | 0 = 原装；
+     | 1 = 站立操作踏板。
 
 O 30
 ----
 
-.. dropdown:: Machine ID Storage Location <...> 
+.. dropdown:: 机头识别器存储位置 <...> 
    :animate: fade-in-slide-down
    
    -Max  9999
    -Min  0
    -Unit  --
    -Description  
-     | Choose where :term:`MACHINE ID` 
-       is stored:
-     | 1 = Stored in the controller;
-     | 2 = Stored in the machine head
+     | 选择 :term:`机头识别码` 
+       存储位置:
+     | 1 = 存储于控制器中；
+     | 2 = 存储与机头识别器中。
 
 O 56
 ----
 
-.. dropdown:: Pedal Calibration:POSITION END(Forward) <...>
+.. dropdown:: 调速器校准:正向最大 <...>
    :animate: fade-in-slide-down
     
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value by step forward the pedal to the end position, value > O57
+    -Description  调速器正向踩到底时的电压采样值，值 > O57
 
 O 57
 ----
 
-.. dropdown:: Pedal Calibration:POSITION 2 and POSITION 1 <...>
+.. dropdown:: 调速器校准:POSITION 2 and POSITION 1 <...>
    :animate: fade-in-slide-down
 
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between POSITION 2 and POSITION 1, O56 < value < O58
+    -Description  调速器正踩第二段和正踩第一段的分界点的采样值，O56 < 值 < O58
 
 O 58
 ----
-.. dropdown:: Pedal Calibration:POSITION 1 and POSITION 0 <...>
+.. dropdown:: 调速器校准:POSITION 1 and POSITION 0 <...>
    :animate: fade-in-slide-down
 
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between POSITION 1 and POSITION 0, O57 < value < O59
+    -Description  调速器正向第一段和默认位置的分界点的采样值，O57 < 值 < O59
 
 O 59
 ----
-.. dropdown:: Pedal Calibration:POSTIION 0 and POSTIION -1 <...>
+.. dropdown:: 调速器校准:POSTIION 0 and POSTIION -1 <...>
    :animate: fade-in-slide-down
 
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between POSTIION 0 and POSTIION -1, O58 < value < O60
+    -Description  调速器默认位置和反踩第一段的分界点的采样值，O58 < 值 < O60
 
 O 60
 ----
-.. dropdown:: Pedal Calibration:POSTIION -1 and POSTIION -2 <...>
+.. dropdown:: 调速器校准:POSTIION -1 and POSTIION -2 <...>
    :animate: fade-in-slide-down
 
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between POSTIION -1 and POSTIION -2, O59 < value < O61
+    -Description  调速器反踩第一段和反踩第二段的分界点的采样值，O59 < 值 < O61
 
 O 61
 ----
-.. dropdown:: Pedal Calibration:POSITION END(Backward) <...>
+.. dropdown:: 调速器校准:反踩最深 <...>
    :animate: fade-in-slide-down
 
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value by step forward the pedal to the end position,value < O60. 
+    -Description  调速器反踩到最深处时采样值，值 < O60
 
 O 62
 ----
-.. dropdown:: Pedal Calibration:Schmitt Loop value <...>
+.. dropdown:: 调速器校准:施密特值 <...>
    :animate: fade-in-slide-down
 
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value of the schmitt loop.
+    -Description  调速器施密特区间的采样值
 
 O 63
 ----
-.. dropdown:: Speed Curve Pedal <...>
+.. dropdown:: 调速器调速曲线 <...>
    :animate: fade-in-slide-down
 
    -Max  4095  
    -Min  0
    -Unit  --
    -Description
-     | 0 = linear;
-     | 1 = 2 lines;
-     | 2 = Curve(start slowly,end fast);
-     | 3 = Curve(start fast,end slowly);
-     | 4 = S curve(start slowly,middle fast,end slowly);
-     | 5 = S curve(start fast,middle slowly,end fast).
+     | 0 = 直线；
+     | 1 = 两段直线；
+     | 2 = 曲线(先缓后快)；
+     | 3 = 曲线(先快后缓)；
+     | 4 = S曲线(先缓后快再缓)；
+     | 5 = S曲线(先快后缓再快)。
 
 O 80
 ----
-.. dropdown:: Keypad Type <...>
+.. dropdown:: 热键盒类型 <...>
    :animate: fade-in-slide-down
 
    -Max  3  
@@ -174,6 +173,6 @@ O 80
    -Unit  --
    -Description
      | Type of the keypad:
-     | 1 = 6 keys;
-     | 2 = 7 keys;
-     | 3 = 12 keys.
+     | 1 = 6键型；
+     | 2 = 7键型；
+     | 3 = 12键型。

@@ -1,238 +1,239 @@
 .. _motor: 
 
 =====
-Motor
+电机
 =====
 
-**Holding force of the motor:**
+**电机保持力**
 
-Enable this function by set **A54** to 1.
+打开此功能，需要将 `A 54`_ 设置为1。
 
-This function prevents unwanted wandering of the needle when machine has stopped. The effect can be checked by turning the hand wheel.
+当启用保持里功能时，电机在停车时会维持一定的力度来“锁定”在当前位置，此处锁定非固定,
+这项功能对于改善停车时不希望的针杆下落有一定帮助，要感受锁定力度可以通过手动盘动手轮来感受。
 
-The maximum time the holding force can keep takes effect is determined by parameter **A66**.
+保持力维持调节的最大时间由参数 `A 66`_ 决定:
 
-- If **A66** equal to 0, it take effect always when stopped.
-- If **A66** is not equal to 0, effective time is the value set by **A66**.
+- 如果 `A 66`_ 设置为0，那么保持力在停车时可以一直维持。
+- 如果 `A 66`_ 设置不为0，那么保持力在停车时只是维持一定时间，之后释放电机，
+  此时 `A 66`_ 参数值表示维持时间。
 
-Parameter List
-==============
+参数列表
+========
 
 S 01
 ----
 
-.. dropdown:: Max. Speed
+.. dropdown:: 最高限速
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum speed by press the pedal to the end position.
+   -Description  调速器踩至最深时的最大速度。
      
 S 02
 ----
-.. dropdown:: Min. Speed
+.. dropdown:: 最低缝速
    :animate: fade-in-slide-down
   
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Minimum sewing speed, it is also the needle position up-down speed
+   -Description  调速器处于位置1即低速段时的缝制速度，也是补针速度。
 
      
 A 18
 ----
-.. dropdown:: Auto Upper Position When Power-on
+.. dropdown:: 上电自动上针位
    :animate: fade-in-slide-down
   
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  
-     | Needle position is automatically moved to upper position after power-on:
-     | 0:Off;
-     | 1:On.
+     | 上电后电机自动运行至上针位：
+     | 0 = 关闭；
+     | 1 = 打开。
+
+.. danger:: 
+   请谨慎设置A18参数，可能会导致人身危险。
 
 A 54
 ----
 
-.. dropdown:: Holding Force
+.. dropdown:: 电机保持力
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | Setting the holding force of the motor after stop:
-     | 0 = Off;
-     | 1 = On.
+     | 停车时是否让电机维持一定的力度来锁定在当前位置：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 55
 ----
 
-.. dropdown:: Lock Shaft Slot Angle
+.. dropdown:: 锁定齿
    :animate: fade-in-slide-down
   
    -Max  720
    -Min  1
    -Unit  --
-   -Description  The shaft is locked a range within this angle.
+   -Description  锁定在此角度内。
 
 A 56
 ----
 
-.. dropdown:: Position Error Threshold of Lock Shaft Function takes effect
+.. dropdown:: 偏移角度大于此值开始调节
    :animate: fade-in-slide-down
   
    -Max  720
    -Min  1
    -Unit  --
-   -Description  When the position error is large than the parameters, the motor will 
-                 start to adjust the position.
+   -Description  位置误差大于此值开始调节。
 
 A 57
 ----
 
-.. dropdown:: Position Error Threshold of Lock Shaft Function does not take effect
+.. dropdown:: 偏移角度小于此值调节结束
    :animate: fade-in-slide-down
   
    -Max  720
    -Min  1
    -Unit  --
-   -Description  When the position error is small than the parameters,the motor will 
-                 standby. 
+   -Description  位置误差小于此值结束调节。
 
 A 66
 ----
 
-.. dropdown:: Holding Force Mode
+.. dropdown:: 电机保持力模式
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = The motor holds always;
-     | Not 0 = The holding force turns off after the time set by this parameter.
+     | 0 = 一直维持；
+     | 不为0 = 此参数表示维持的时间，设置的时间过后保持力消失。
 
 D 01
 ----
 
-.. dropdown:: Upper Needle Position
+.. dropdown:: 上针位角度
    :animate: fade-in-slide-down
   
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Needle in the upper position.
+   -Description  剪线后的针杆位置，机针在缝料之上。
 
 D 02
 ----
 
-.. dropdown:: Lower Needle Position
+.. dropdown:: 下针位角度
    :animate: fade-in-slide-down
   
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Needle in the lower position.
+   -Description  一般中途停车时针杆位置，机针在缝料之下。
 
 O 04
 ----
 
-.. dropdown:: Machine Sync Signal Source 
+.. dropdown:: 机头同步信号来源 
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | 0 = Extern;
-     | 1 = Motor.
+     | 0 = 外置针位检测器；
+     | 1 = 电机自带。
 
 O 36
 ----
 
-.. dropdown:: Input Speed Scaling
+.. dropdown:: 输入速度打折
    :animate: fade-in-slide-down
   
    -Max  5
    -Min  0
    -Unit  --
-   -Description  Speed scaling allows the machine to run at lower speed than the set.
+   -Description  对输入速度比例缩小使机器运行速度比设定低。
 
 O 37
 ----
 
-.. dropdown:: Input Speed Scaling
+.. dropdown:: 简易模式
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | In Simple mode, no seam program,no trim,no position, etc, except the motor can run:
-     | 0 = Off;
-     | 1 = On.
+     | 简易模式下，除了电机可以运行, 没有缝型、剪线、停针位等功能：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 O 67
 ----
 
-.. dropdown:: Directions of Motor Rotation
+.. dropdown:: 电机旋转方向
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = Counterclockwise;
-     | 1 = Clockwise, viewing the motor from handwheel  
+     | 0 = 逆时针；
+     | 1 = 顺时针，视角为手轮方向看电机。  
 
 I 01
 ----
 
-.. dropdown:: Acceleration
+.. dropdown:: 加速度
    :animate: fade-in-slide-down
   
    -Max  500
    -Min  150
-   -Unit  ms
-   -Description  The time for accelerating from 0rpm to 4500rpm
+   -Unit  毫秒
+   -Description  0~4500rpm加速时间。
 
 I 02
 ----
 
-.. dropdown:: Deacceleration
+.. dropdown:: 减速度
    :animate: fade-in-slide-down
   
    -Max  500
    -Min  150
-   -Unit  ms
-   -Description  The time for deaccelerating from 4500rpm to 0rpm
+   -Unit  毫秒
+   -Description  4500rpm~0减速时间。
 
 I 03
 ----
 
-.. dropdown:: Electrical Angle
+.. dropdown:: 电角度
    :animate: fade-in-slide-down
   
    -Max  4096
    -Min  0
    -Unit  --
-   -Description  The offset of electrical angle
+   -Description  电角度补偿值。
 
 I 04
 ----
 
-.. dropdown:: Transmission Ratio
+.. dropdown:: 传动比
    :animate: fade-in-slide-down
   
    -Max  4096
    -Min  1 
    -Unit  --
-   -Description  The number of pulses output by motor encoder corresponding to one
-                 rotation of the machine
-
+   -Description  主轴转动一周对应的电机编码信号数量。
 
 I 05
 ----
@@ -243,18 +244,18 @@ I 05
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kp in Closed-loop Speed Control-trimming 
+   -Description  剪线速度环Kp。
 
 I 06
 ----
 
-.. dropdown:: Divisor of Kp(CSC-t)
+.. dropdown:: Kp增益(CSC-t)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Kp in Closed-loop Speed Control-trimming
+   -Description  剪线速度环Kp增益系数。
 
 I 07
 ----
@@ -265,18 +266,18 @@ I 07
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Ki in Closed-loop Speed Control-trimming
+   -Description  剪线速度环Ki。
 
 I 08
 ----
 
-.. dropdown:: Divisor of Ki(CSC-t)
+.. dropdown:: Ki增益(CSC-t)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Ki in Closed-loop Speed Control-trimming
+   -Description  剪线速度环Ki增益。
 
 I 09
 ----
@@ -287,18 +288,18 @@ I 09
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kp in Closed-loop Speed Control
+   -Description  速度环Kp。
 
 I 10
 ----
 
-.. dropdown:: Divisor of Kp(CSC)
+.. dropdown:: Kp增益(CSC)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Kp in Closed-loop Speed Control
+   -Description  速度环Kp增益。
 
 I 11
 ----
@@ -309,42 +310,42 @@ I 11
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Ki in Closed-loop Speed Control
+   -Description  速度环Ki。
 
 I 12
 ----
 
-.. dropdown:: Divisor of Ki(CSC)
+.. dropdown:: Ki增益(CSC)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Ki in Closed-loop Speed Control
+   -Description  速度环Ki增益。
 
 
 I 13
 ----
 
-.. dropdown:: Upper Output limit(CSC)
+.. dropdown:: 输出上限(CSC)
    :animate: fade-in-slide-down
   
    -Max  20
    -Min  1
    -Unit  --
-   -Description  Upper Output limit in Closed-loop Speed Control
+   -Description  速度环输出上限。
 
 
 I 14
 ----
 
-.. dropdown:: Feedforward(CSC)
+.. dropdown:: 前馈(CSC)
    :animate: fade-in-slide-down
   
    -Max  500
    -Min  0
    -Unit  --
-   -Description  Feedforward in Closed-loop Speed Control
+   -Description  速度环前馈系数。
 
 I 15
 ----
@@ -355,18 +356,18 @@ I 15
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kp in Closed-loop Current Control-d axis
+   -Description  电流环d轴Kp。
 
 I 16
 ----
 
-.. dropdown:: Divisor of Kp(CCC-d)
+.. dropdown:: Kp增益(CCC-d)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Kp in Closed-loop Current Control-d axis
+   -Description  电流环d轴Kp增益。
 
 I 17
 ----
@@ -377,40 +378,40 @@ I 17
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Ki in Closed-loop Current Control-d axis
+   -Description  电流环d轴Ki。
 
 I 18
 ----
 
-.. dropdown:: Divisor of Ki(CCC-d)
+.. dropdown:: Ki增益(CCC-d)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Ki in Closed-loop Current Control-d axis
+   -Description  电流环d轴Ki增益。
 
 I 19
 ----
 
-.. dropdown:: Upper Output limit(CCC-d)
+.. dropdown:: 输出上限(CCC-d)
    :animate: fade-in-slide-down
   
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  Upper Output limit in Closed-loop Current Control-d axis
+   -Description  电流环Id输出上限。
 
 I 20
 ----
 
-.. dropdown:: Lower Output limit(CCC-d)
+.. dropdown:: 输出下限(CCC-d)
    :animate: fade-in-slide-down
   
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  Lower Output limit in Closed-loop Current Control-d axis
+   -Description  电流环Id输出下限。
 
 I 21
 ----
@@ -421,18 +422,18 @@ I 21
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kp in Closed-loop Current Control-q axis
+   -Description  电流环q轴Kp。
 
 I 22
 ----
 
-.. dropdown:: Divisor of Kp(CCC-q)
+.. dropdown:: Kp增益(CCC-q)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  0
    -Unit  --
-   -Description  Divisor of Kp in Closed-loop Current Control-q axis
+   -Description  电流环q轴Kp增益。
 
 I 23
 ----
@@ -443,121 +444,121 @@ I 23
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Ki in Closed-loop Current Control-q axis
+   -Description  电流环q轴Ki。
 
 I 24
 ----
 
-.. dropdown:: Divisor of Ki(CCC-q)
+.. dropdown:: Ki增益(CCC-q)
    :animate: fade-in-slide-down
   
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Divisor of Ki in Closed-loop Current Control-q axis
+   -Description  电流环q轴Ki增益。
 
 I 25
 ----
 
-.. dropdown:: Upper Output limit(CCC-q)
+.. dropdown:: 输出上限(CCC-q)
    :animate: fade-in-slide-down
   
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  Upper Output limit in Closed-loop Current Control-q axis
+   -Description  电流环Iq输出上限。
 
 I 26
 ----
 
-.. dropdown:: Lower Output limit(CCC-q)
+.. dropdown:: 输出下限(CCC-q)
    :animate: fade-in-slide-down
   
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  Lower Output limit in Closed-loop Current Control-q axis
+   -Description  电流环Iq输出下限。
 
 I 27
 ----
 
-.. dropdown:: Encoder Resolution
+.. dropdown:: 码盘分辨率
    :animate: fade-in-slide-down
   
    -Max  9999
    -Min  1
    -Unit  --
-   -Description  Lines Per Revolution of the motor encoder
+   -Description  电机编码器的每圈线数。
 
 I 28
 ----
 
-.. dropdown:: Stop Routine Max. Time
+.. dropdown:: 停车流程限时
    :animate: fade-in-slide-down
   
    -Max  9999
    -Min  0
-   -Unit  ms
-   -Description  The maxmum time of stop routine
+   -Unit  毫秒
+   -Description  停车流程中距离电机刹停的时间。
 
 I 30
 ----
 
-.. dropdown:: Stop mode
+.. dropdown:: 停车模式
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0 
    -Unit  --
    -Description
-     | Select the mode of reaching the target position:
-     | 0 = Speed mode;
-     | 1 = Position mode.  
+     | 选择到达目标位置的模式：
+     | 0 = 速度模式；
+     | 1 = 位置模式。 
 
 
 I 33
 ----
 
-.. dropdown:: MACHINE ZERO Offset
+.. dropdown:: 机械零点偏移量
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0 
    -Unit  --
-   -Description  The offset of between MACHINE ZERO and motor synchronization point.
+   -Description  机械零点距离电机同步点的偏移量。
 
 I 37
 ----
 
-.. dropdown:: Distance(Brake P-S process)
+.. dropdown:: 刹车P-S阶段距离
    :animate: fade-in-slide-down
   
    -Max  359
    -Min  0 
    -Unit  1°
-   -Description  The distance of brake Position-Speed process
+   -Description  刹车角度与速度规划阶段的距离。
 
 I 38
 ----
 
-.. dropdown:: Initial Speed(Brake P-S process)
+.. dropdown:: 刹车P-S阶段初速度
    :animate: fade-in-slide-down
   
    -Max  500
    -Min  100 
    -Unit  spm
-   -Description  The initial speed of brake Position-Speed process
+   -Description  刹车角度与速度规划阶段的入口速度。
 
 I 39
 ----
 
-.. dropdown:: Terminal speed(Brake P-S process)
+.. dropdown:: 刹车P-S阶段末速度
    :animate: fade-in-slide-down
   
    -Max  100
    -Min  20 
    -Unit  spm
-   -Description  The terminal speed of brake Position-Speed process
+   -Description  刹车角度与速度规划阶段的终点速度。
 
 
 I 40
@@ -569,18 +570,18 @@ I 40
    -Max  9999
    -Min  0 
    -Unit  --
-   -Description  Kp in Closed-loop Position Control-stop
+   -Description  停车位置环Kp。
 
 I 41
 ----
 
-.. dropdown:: Divisor of Kp(CPC-s)
+.. dropdown:: Kp增益(CPC-s)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  1
    -Unit  --
-   -Description  Divisor of Kp in Closed-loop Position Control-stop
+   -Description  停车位置环Kp增益。
 
 I 42
 ----
@@ -591,87 +592,87 @@ I 42
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kd in Closed-loop Position Control-stop
+   -Description  停车位置环Kd。
 
 I 43
 ----
 
-.. dropdown:: Divisor of Kd(CPC-s)
+.. dropdown:: Kd增益(CPC-s)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  1
    -Unit  --
-   -Description  Divisor of Kd in Closed-loop Position Control-stop
+   -Description  停车位置环Kd增益。
 
 I 46
 ----
 
-.. dropdown:: Max. Hold Force Current
+.. dropdown:: 最大锁定电流
    :animate: fade-in-slide-down
   
    -Max  40
    -Min  1
    -Unit  0.1A
-   -Description  Maximum current during the motor holding
+   -Description  锁定电流最大值。
 
 I 47
 ----
 
-.. dropdown:: Field Weaken
+.. dropdown:: 弱磁
    :animate: fade-in-slide-down
   
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | Field weaken for higher speed:
-     | 0 = Off;
-     | 1 = On.
+     | 弱磁扩速，以便电机可以达到更高的转速：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 I 48
 ----
 
-.. dropdown:: Field Weakening Effective Speed
+.. dropdown:: 弱磁生效速度
    :animate: fade-in-slide-down
   
    -Max  3500
    -Min  2000
    -Unit  rpm  
-   -Description  Above this speed, field weakening takes effect.
+   -Description  高于此速度，弱磁扩速生效。
 
 I 49
 ----
 
-.. dropdown:: Max. Id current
+.. dropdown:: 弱磁扩速电流
    :animate: fade-in-slide-down
   
    -Max  40
    -Min  1
    -Unit  0.1A
-   -Description  Maximum Id current during field weakening.
+   -Description  弱磁扩速ID电流上限。
 
 I 50
 ----
 
-.. dropdown:: Upper Output limit(CPC-h)
+.. dropdown:: 输出上限(CPC-h)
    :animate: fade-in-slide-down
   
    -Max  500
    -Min  0
    -Unit  --
-   -Description  Upper Output limit in Closed-loop Position Control-holding
+   -Description  锁定位置环输出上限。
 
 I 51
 ----
 
-.. dropdown:: Lower Output limit(CPC-h)
+.. dropdown:: 输出下限(CPC-h)
    :animate: fade-in-slide-down
   
    -Max  100
    -Min  0
    -Unit  --
-   -Description  Lower Output limit in Closed-loop Position Control-holding
+   -Description  锁定位置环输出下限。
 
 I 52
 ----
@@ -682,18 +683,18 @@ I 52
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kp in Closed-loop Position Control-holding
+   -Description  位置环Kp。
 
 I 53
 ----
 
-.. dropdown:: Divisor of Kp(CPC-h)
+.. dropdown:: Kp增益(CPC-h)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  1
    -Unit  --
-   -Description  Divisor of Kp in Closed-loop Position Control-holidng
+   -Description  锁定位置环Kp增益。
 
 I 54
 ----
@@ -704,15 +705,15 @@ I 54
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  Kd in Closed-loop Position Control-holding
+   -Description  锁定位置环Kd。
 
 I 55
 ----
 
-.. dropdown:: Divisor of Kd(CPC-h)
+.. dropdown:: Kd增益(CPC-h)
    :animate: fade-in-slide-down
   
    -Max  99
    -Min  1
    -Unit  --
-   -Description  Divisor of Kd in Closed-loop Position Control-holidng
+   -Description  锁定位置环Kd增益。

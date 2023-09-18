@@ -1,127 +1,133 @@
 .. _bartack:
 
-=======
-Bartack
-=======
+=========
+前后加固
+=========
 
-**Stitch in stitch**
+**线迹重合性调整**
 
-Parameter List
-==============
+todo
+
+**SD模式**
+
+todo
+
+参数列表
+========
 
 S 03
 ----
-.. dropdown:: Speed in Start Bartack <...>
+.. dropdown:: 前加固速度 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum speed in bartack at seam begin.
+   -Description  前加固能达到的最大速度
 
 S 04
 ----
-.. dropdown:: Speed in End Bartack <...>
+.. dropdown:: 后加固速度 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum speed in bartack at seam end.
+   -Description  后加固能达到的最大速度
 
 T 11
 ----
-.. dropdown:: SD Mode Stop Time <...> 
+.. dropdown:: SD模式拐点停顿时间 <...> 
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Motor standby duration at direction change of bartack if SD mode is On.
+   -Description  SD加固模式下,加固缝缝纫方向转换点电机停下来等待倒缝电磁铁动作到位的时间
 
 A 20
 ----
 
-.. dropdown:: SD mode for Start Bartack <...> 
+.. dropdown:: 前加固SD模式选择 <...> 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Stop at direction change of start tacking in order to the bartack magnet reach the specified position:
-     | 0 = Off;
-     | 1 = On.
+     | 设为1时,前加固在缝纫方向转换时电机会停下来等待倒缝动作：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 22
 ----
 
-.. dropdown:: SD mode for End Bartack <...>
+.. dropdown:: 后加固SD模式选择 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Stop at direction change of end tacking in order to the bartack magnet reach the specified position:
-     | 0 = Off;
-     | 1 = On.
+     | 设为1时，后加固在缝纫方向转换时电机会停下来等待倒缝动作：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 34
 ----
 
-.. dropdown:: Maintain Speed after Start Bartack <...>
+.. dropdown:: 前加固后恒定速度 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Reverse power on angle
-     | For better performance of start bartack:
-     | 0 = Off;
-     | 1 = On.
+     | 为了使线迹重合效果更好,前加固结束后维持当前加固速度,若干针后速度才由调速器接管：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 O 12
 ___
 
-.. dropdown:: Max. Speed of 1 stitch <...> 
+.. dropdown:: 1针的限速 <...> 
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum Speed of 1 stitch when bartack or W-sewing.
+   -Description  前后加固,折返缝只有1针时限速
 
 O 13 
 ----
 
-.. dropdown:: Max. Speed of 2 stitch <...>  
+.. dropdown:: 2针的限速 <...>  
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum Speed of 2 stitch when bartack or W-sewing.
+   -Description  前后加固，折返缝只有2针时限速。
 
 O 14
 ----
 
-.. dropdown:: Max. Speed of 3 stitch <...> 
+.. dropdown:: 3针的限速 <...> 
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum Speed of 3 stitch when bartack or W-sewing.
+   -Description  前后加固，折返缝只有3针时限速。
    
 
 O 41
 ----
 
-.. dropdown:: Stitches of Maintain Speed after Start Bartack <...> 
+.. dropdown:: 前加固匀速保持针数 <...> 
    :animate: fade-in-slide-down
    
    -Max  10
    -Min  0
-   -Unit  stitches
-   -Description  Number of A-stitches which speed holding after sewing start bartck.
+   -Unit  针
+   -Description  前加固后保持当前速度的针数，之后速度才由调速器接管。

@@ -1,90 +1,93 @@
 .. _seam_center_guide:
 
-=================
-Seam center guide
-=================
+============
+缝线中心导向
+============
 
-**When to lift automatically**
+**自动模式如何工作？**
 
-Automatic lifting seam center guide is associated with three situations: footlifter, bartack(start or end tack) or reverse, and stroke. Mode is seted by **A51**.
+缝线中心导向的自动模式与三个条件关联：
 
-- 0 = Toggle seam center guide raise up/down via a manual button;
+a) 压脚；
+b) 前后加固和倒缝；
+c) 交互量。
 
-- 1 = Raising of seam center guide when lifting the sewing foot;
-- 2 = Raising of seam center guide when sewing the bartack/reverse;
-- 3 = Raising of seam center guide when sewing the bartack/reverse and lifting the sewing foot;
-- 4 = Raising of seam center guide when high stroke;
-- 5 = Raising of seam center guide when lifting the sewing foot and high stroke;
-- 6 = Raising of seam center guide when sewing the bartack/reverse and high stroke；
-- 7 = Raising of seam center guide when lifting the sewing foot, sewing the bartack/reverse and high stroke.
+具体由参数 `A 51`_ 控制，含义如下：
 
+- 0 = 完全手动，缝线中心导向只能由按键控制抬起/落下；
+- 1 = 伴随着压脚抬起，缝线中心导向将自动抬起；
+- 2 = 缝制前后加固或者倒缝时，缝线中心导向将自动抬起； 
+- 3 = 伴随压脚抬起，缝制前后加固或者倒缝时，缝线中心导向将自动抬起。
+- 4 = 当切换至大交互量时，缝线中心导向将自动抬起；
+- 5 = 伴随压脚抬起，当切换至大交互量时，缝线中心导向将自动抬起；
+- 6 = 当切换至大交互量时，缝制前后加固或者倒缝时，缝线中心导向将自动抬起；
+- 7 = 伴随压脚抬起，当切换至大交互量时，缝制前后加固或者倒缝时，缝线中心导向将自动抬起。
 
-Parameter List
-==============
+参数列表
+========
 
 A 33
 ----
 
-.. dropdown:: Status of Seam Center Guide
+.. dropdown:: 缝线中线导向状态
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
-   -Description  Status of the seam center guide solenoid(read only)
+   -Description  缝线中心导向的状态（只读）
 
 A 47
 ----
 
-.. dropdown:: Seam Center Guide
+.. dropdown:: 缝线中心导向
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Seam center guide function:
-     | 0 = Off;
-     | 1 = On.
+     | 缝线中心导向功能开关：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 51
 ----
 
-.. dropdown:: Auto Mode for Seam Center Guide
+.. dropdown:: 缝线中心导向自动模式
    :animate: fade-in-slide-down
    
    -Max  7
    -Min  0
    -Unit  --
    -Description
-     | 0 = Manual;
-     | 1 = Automatically up when foot lifting;
-     | 2 = Automatically up when bartacking and reverse;
-     | 3 = Both 1&2;
-     | 4 = Automatically up when high stroke;
-     | 5 = Both 1&4;
-     | 6 = Both 2&4;
-     | 7 = Both 1&2&4.
+     | 0 = 完全手动；
+     | 1 = 抬压脚时自动抬起；
+     | 2 = 加固和倒缝时自动抬起；
+     | 3 = 1和2；
+     | 4 = 大交互量时自动抬起；
+     | 5 = 1和4；
+     | 6 = 2和4；
+     | 7 = 1和2和4。
 
 O 89
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
    
    -Max  999
    -Min  1
-   -Unit  ms
-   -Description  Seam Center Guide:activation duration of in :term:`time period t1`
-                 (100% duty cycle).
+   -Unit  毫秒
+   -Description  缝线中心导向：全力100%占空比出力的持续 :term:`时间t1` 。
 
 O 90
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Seam Center Guide:duty cycle[%] in :term:`time period t2`.
+   -Description  缝线中心导向：维持出力 :term:`时间t2` 内的占空比。

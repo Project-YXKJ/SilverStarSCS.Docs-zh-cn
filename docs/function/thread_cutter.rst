@@ -1,92 +1,90 @@
 .. _thread_cutter:
 
-=============
-Thread cutter
-=============
+====
+剪线
+====
 
-**Thread cutting procedure**
+**剪线执行流程**
 
-Thread cutting singnal is switched on when the angle value **D03** has been reached,
-the switched off when the angle value **D04**. If the position is not reached because
-of a mechanical error, the thread cutter signal is switched off after 500ms for protect
-the magnet from damage.
+在达到 `D 03` 设置的位置后，剪线电磁铁接通，之后达到 `D 04`_ 的位置后，关断。
 
+如果在剪线过程发生机械堵转，那么剪线电磁铁会在500毫秒之后自动关断，以防止烧毁电磁铁。
 
-Parameter List
-==============
+参数列表
+========
 
 S 07
 ----
 
-.. dropdown:: Trimming Speed
+.. dropdown:: 剪线速度
    :animate: fade-in-slide-down
    
    -Max  300
    -Min  150
    -Unit  spm
-   -Description  Speed of the machine during trimming
+   -Description  剪线动作的速度。
 
 A 06
 ----
 
-.. dropdown:: Thread Trim
+.. dropdown:: 剪线功能
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Thread trim:
-     | 0 = Off;
-     | 1 = On.
+     | 剪线功能开关：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 A 42
 ----
 
-.. dropdown:: Short Thread Cutter
+.. dropdown:: 短线头功能
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Feature for specific models:
-     | 0 = Off;
-     | 1 = On.     
+     | 可选功能, 只针对特定型号：
+     | 0 = 关闭；
+     | 1 = 打开。     
 
 A 67
 ----
 
-.. dropdown:: Short Thread Cutter Stitches
+.. dropdown:: 短线头针数
    :animate: fade-in-slide-down
    
    -Max  10
    -Min  0
-   -Unit  stitches
-   -Description  When short thread cutter active,number of short length stitches before trim.
+   -Unit  针
+   -Description  短线头功能打开时，剪线前的小针距针数。
 
 D 03
 ----
 
-.. dropdown:: Start trim position
+.. dropdown:: 剪线开始角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of thread cutter is activated.
+   -Description  剪线电磁铁动作角度。
 
 
 D 04
 ----
 
-.. dropdown:: Stop trim position
+.. dropdown:: 剪线结束角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of thread cutter is deactivated.
+   -Description  剪线电磁铁释放角度。
 
 D 17
 ----
@@ -97,96 +95,95 @@ D 17
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of movable knife(short thread cutter) is activated.
+   -Description  短线头机型剪线时动刀电磁铁动作角度。
 
 D 18
 ----
 
-.. dropdown:: Stop Movable Knife Position(STC)
+.. dropdown:: 动刀结束角度(STC)
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of movable knife(short thread cutter) is deactivated.
+   -Description  短线头机型剪线时动刀电磁铁释放角度。
 
 D 19
 ----
 
-.. dropdown:: Start Reverse Position(STC)
+.. dropdown:: 倒缝开始角度(STC)
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of the reverse(short thread cutter) is activated.
+   -Description  短线头机型剪线时倒缝电磁体动作角度。
 
 D 20
 ----
 
-.. dropdown:: Stop Reverse Position(STC)
+.. dropdown:: 倒缝结束角度(STC)
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of the reverse(short thread cutter) is deactivated.
+   -Description  短线头机型剪线时倒缝电磁体释放角度。
 
 D 21
 ----
 
-.. dropdown:: Start Zero Stitch Length Position(STC)
+.. dropdown:: 零针距开始角度(STC)
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of zero stitch length(short thread cutter) is activated.
+   -Description  短线头机型剪线时零针距电磁体动作角度。
 
 D 22
 ----
 
-.. dropdown:: Stop Zero Stitch Length Position(STC)
+.. dropdown:: 零针距结束角度(STC)
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of zero stitch length(short thread cutter) is deactivated.
+   -Description  短线头机型剪线时零针距电磁体释放角度。
    
 O 38
 ----
 
-.. dropdown:: Pedal Reset After Trim
+.. dropdown:: 剪线后检查调速器位置
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Whether the pedal need to return Position 0 before restart a new seam after trim:
-     | 0 = Off;
-     | 1 = On.
+     | 剪线后开始一段新线迹之前，调速器是否需要回到位置0：
+     | 0 = 关闭；
+     | 1 = 打开。
 
 O 95
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: 时间（t1）
    :animate: fade-in-slide-down
    
    -Max  999
    -Min  1
-   -Unit  ms
-   -Description  Short thread zero length:activation duration of in :term:`time period t1`
-                 (100% duty cycle).
+   -Unit  毫秒
+   -Description  短线头零针距：全力100%占空比出力的持续 :term:`时间t1` 。
 
 O 96
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: 维持出力（t2）
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Short thread zero length:duty cycle[%] in :term:`time period t2`.
+   -Description  短线头零针距：维持出力 :term:`时间t2` 内的占空比。

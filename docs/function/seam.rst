@@ -1,253 +1,248 @@
 .. _seam:
 
 ====
-Seam
+线迹
 ====
 
-**Program and seam**
+**线缝段和程序**
 
-A seam is the basic concept, usually a seam is divided into three parts: start bartack, middle sewing, end bartack and thread cutting. A seam starts from stepping on pedal position 1 for the first time, and ends when stepping on position -2.
+*线缝段* 是组成程序的基本概念，通常来讲一个线缝段被分为三个部分：前加固、中间段、以及
+后加固和剪线。
 
-A sewing program contains at least one seam. Let's call it Seam-01, Seam-02 ... Seam-n, program controls them sewing automatically, when Seam-n is finished, program end.
+一个线缝段由首次踩踏调速器 :term:`POSITION 1` 位置开始，踩踏 :term:`POSITION -2` 
+位置结束，也就是剪线作为结束标志。
+
+*缝制程序* 是至少包含一个线缝段的线迹组合，我们可以称之线缝段-01，线缝段-02 ... 线缝段-n，
+程序控制他们自动顺序执行，当最后一段线缝段-n执行后，程序结束，之后再次循环。
 
 
+**定针缝**
 
-**Fixed stitches program**
+定针缝是允许用户自由编程的缝纫程序，最多可以编制25段线缝段，每段最多99针。
 
-Fixed stitch sewing is a sewing program that allows users to freely program. Up to 25 seam segments can be programmed, each with a maximum of 99 stitches.
+缝纫程序的功能分为两个区域：作用于缝纫程序的全局功能以及作用于线缝段的局部功能。
 
-The functions of the sewing program are divided into two areas: the global functions related to the sewing program and the local functions related to the seam segment.
+*全局功能：*
 
-Global functions:
+- 软启动
 
-- Soft start
+*局部功能：*
 
-Local functions:
+- 线缝段针数
+- 前后加固
+- 夹线器
+- 剪线
+- 线缝段中途停止时机针位置
+- 线缝段中途停止后自动抬压脚
+- 线缝段结束后自动抬压脚
 
-- Number of stitches
-- Start/end bartack
-- Thread clamp
-- Thread trim
-- Needle position when sewing stops
-- Automatic elevation of sewing foot when sewing stops
-- Automatic elevation of sewing foot after thread trim(seam end)
+线缝段针数为0的线缝段被视为一个定针缝程序的结束标识，如果下一段针数为0则程序将重新返回第一段。
 
-The seam segment whose stitch number is equal to 0 is considered as the end of the program. If the stitch number of the next segment is 0, the program will return to the first segment; After any seam section ends, if you step on the pedal -2, the whole program will be ended. If the thread trimming has not been executed at this time, the thread trimming will be executed and return to the first section, otherwise program will be directly returned to the first section.
+任意线缝段结束后，踩踏调速器 :term:`POSITION -2` 都将结束整个程序，如果此时没有执行过剪线则执行剪线
+并返回第一段，已经执行过剪线则直接返回第一段。
 
-**Correction(Needle up/down)**
+**补针(针杆位置切换)**
 
 If **A03** is equal to 0:
 
-When press the key, the needle moves form the current position to the position set by parameter **D15** or **D16**, which one is the closest, the target position is that one. E.g, current position is 40 degrees, **D15** is 70, **D16** is 200, when you press the button, the motion trace is "40->70->200->70->200...".
+When press the key, the needle moves form the current position to the position 
+set by parameter **D15** or **D16**, which one is the closest, the target position
+is that one. E.g, current position is 40 degrees, **D15** is 70, **D16** is 200, 
+when you press the button, the motion trace is "40->70->200->70->200...".
 
 If **A03** is equal to 1:
 
-when you press the button, two cases: if you set stop at upper position, the needle moves form the current position to the position set by parameter **D01**. if you set stop at lower position, the needle moves form the current position to the position set by parameter **D02**:
+when you press the button, two cases: if you set stop at upper position, 
+the needle moves form the current position to the position set by parameter **D01**. 
+if you set stop at lower position, the needle moves form the current position to the 
+position set by parameter **D02**:
 
-Parameter List
-==============
+
+参数列表
+========
 
 S 05
 ----
 
-.. dropdown:: Speed in W-Sewing
+.. dropdown:: 折返缝速度
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum speed in W-Sewing
+   -Description  折返缝模式下的最高速度。
 
 S 06
 ----
 
-.. dropdown:: Speed in Program Sewing
+.. dropdown:: 定针缝速度
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Maximum speed in programmed stitches sewing
+   -Description  定针缝中间段自动缝制速度。
 
 A 01
 ----
 
-.. dropdown:: Needle Position
+.. dropdown:: 停针位
    :animate: fade-in-slide-down
 
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Postion of the needle when sewing stop:     
-     | 0 = in the material;
-     | 1 = upper needle position.
+     | 当缝制途中停车时机针的位置：   
+     | 0 = 下针位，机针在缝料之下；
+     | 1 = 上针位，机针在缝料之上。
 
 A 02
 ----
 
-.. dropdown:: Auto Sewing for Program Sewing
+.. dropdown:: 定针缝自动缝制使能
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = The middle speed of the sewing is controlled by the pedal;
-     | 1 = The sewing is performed automatically.  
+     | 只对定针缝有效：
+     | 0 = 定针缝中间段速度受调速器控制；
+     | 1 = 中间段自动缝制。
 
 A 03
 ----
 
-.. dropdown:: Correction mode
+.. dropdown:: 补针停车模式
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = Half stitch;
-     | 1 = One stitch
+     | 0 = 补半针；
+     | 1 = 补整针。
 
 A 16
 ----
 
-.. dropdown:: Mode After Start Bartack in Programmed Sewing 
+.. dropdown:: 定针缝前加固结束自动缝制使能
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | After start tacking is finished in programmed sewing:
-     | 0 = machine stops and must restart with the pedal;
-     | 1 = sewing continues after end.
+     | 定针缝程序中，前加固结束后是否自动开始中间段的缝制：
+     | 0 = 前加固结束后停车，直到调速器再次前踩时才继续缝纫；
+     | 1 = 自动缝制中间段。
 
 A 17
 ----
 
-.. dropdown:: Auto End bartack and Trim when Programmed Sewing is finished
+.. dropdown:: 定针缝中间段结束后自动后加固
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | Whether end tacking and trim is automatically activated at seam end im programmed seam:
-     | 0 = continue by pedal;
-     | 1 = automatic.
+     | 定针缝程序中，当中间段缝制完成后是否自动执行后加固及剪线：
+     | 0 = 停车，再次踩踏调速器才执行终止回缝及剪线动作；
+     | 1 = 自动执行。
 
 A 30
 ----
 
-.. dropdown:: Correction Mode
+.. dropdown:: 补针模式
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = single correction;
-     | 1 = continuous correction.
+     | 0 = 单次补针；
+     | 1 = 连续补针。
 
 A 31
 ----
 
-.. dropdown:: Manual Revserse SW.
+.. dropdown:: 手动倒缝模式
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | 0 = Normal;
-     | 1 = Reverse at stop.
+     | 0 = 正常模式；
+     | 1 = 停车拉倒缝。
 
 D 11
 ----
 
-.. dropdown:: The minimum angle of Off reverse key function
+.. dropdown:: 按键倒缝生效区间下限
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  If the needle position is greater than this angle, the manual reverse
-                 sewing button will not work.
+   -Description  如果针杆位置大于此角度，手动倒缝按键不起作用。
 
-D 11
+D 12
 ----
 
-.. dropdown:: The maximum angle of Off reverse key function
+.. dropdown:: 按键倒缝生效区间上限
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  If the needle position is greater than this angle, the manual reverse
-                 sewing button will not work.
+   -Description  如果针杆位置大于此角度，手动倒缝按键不起作用。
 
 D 15
 ----
 
-.. dropdown:: Correction:Upper Position
+.. dropdown:: 补针上角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Upper needle position in correction mode.
+   -Description  补针模式下的上针位角度。
 
 D 16
 ----
 
-.. dropdown:: Correction:Lower Position
+.. dropdown:: 补针下角度
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Lower needle position in correction mode.
+   -Description  补针模式下的下针位角度。
 
-D 18
+O 18
 ----
 
-.. dropdown:: Sewing mode
+.. dropdown:: 缝型标志
    :animate: fade-in-slide-down
    
    -Max  3
    -Min  1
    -Unit  --
-   -Description  Sewing mode(read only).
+   -Description  缝型标志（只读）。
 
 O 69
 ----
 
-.. dropdown:: Correction Timming
+.. dropdown:: 补针时机
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | Choose when you can correction:
-     | 0 = Unavailable after trim;
-     | 1 = Available during machine stop.
-
-
-
-
-
-O 37
-----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description  
-     | No-position mode, stop at random position:
-     | 0 = Off;
-     | 1 = On.
+     | 决定何时可以进行补针操作：
+     | 0 = 剪线后禁止补针；
+     | 1 = 停车后就可以补针。

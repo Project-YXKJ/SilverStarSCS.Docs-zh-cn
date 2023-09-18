@@ -1,239 +1,247 @@
 .. _input_configuration:
 
-===================
-Input configuration
-===================
+========
+输入配置
+========
 
-Input Mode Code List:
+可配置的输入功能列表
+====================
 
-- 0 = No function
-- 1 = Manual bartack
-- 2 = Forward correction;
-- 3 = Backward correction  
-- 4 = Forward correction at stop, reverse at running
-- 5 = Backward correction at stop, reverse at running
-- 6 = Quick toggle stroke
-- 7 = Enable/unable bartack at seam start/end
-- 8 = Second stitch length
-- 9 = Additional thread tension
-- 10 = Pause
-- 11 = Thread a needle
-- 12 = Toggle seam center guide raise up/down
-- 13 = Tilt switch
-- 14 = Up thread broken sensor
-- 15 = Eye protection sensor
-- 16 = Hook cover missing sensor
-- 17 = Toggle sewing foot lifter raise up/down
-- 18 = lifting sewing foot via the knee switch
-- 19 = Oil Starvation;
-- 20 = Toggle puller raise up/down;
-- 100 = Sewing foot stroke knob potentiometer
-- 101 = Sewing foot height sensor
+- 0 = 无功能；
+- 1 = 手动倒缝；
+- 2 = 正向补针；
+- 3 = 反向补针；  
+- 4 = 停车时正向补针，运转时手动倒缝；
+- 5 = 停车时反向补针，运转时手动倒缝；
+- 6 = 切换大小交互量；
+- 7 = 快捷取消/打开前后加固；
+- 8 = 切换针距；
+- 9 = 切换面线张力；
+- 10 = 进入/退出暂停模式 [#]_ ；
+- 11 = 进入/退出穿线模式 [#]_ ；
+- 12 = 切换缝线中心导向压脚抬起/落下；
+- 13 = 机头倾倒状态传感器；
+- 14 = 面线状态传感器；
+- 15 = 护眼板状态传感器；
+- 16 = 旋梭盖板状态传感器；
+- 17 = 切换压脚抬起/落下；
+- 18 = 按键控制压脚；
+- 19 = 润滑油量提醒传感器；
+  
+  .. _20:
+
+- 20 = 切换送料滚轮抬起/落下；
+- 100 = 交互量限速挡位传感器；
+- 101 = 压脚高度传感器。
+
+.. [#] 暂停模式下，前踩调速器机器不运转。
+
+.. [#] 穿线模式下，前踩调速器机器不运转，并且面线张力打开，以方便穿线。
 
 .. important::
-  Functions with codes greater than 100 needs an analog port.
+   超过100的功能仅支持模拟输入端口。
 
-**How to setup the function of input ports**:
+**怎样设置一个输入端口的功能？**
 
-follow the steps:
+按照以下步骤：
 
-- Confirm which input port is connected to the switch, keypad, sensor etc, like input-07 or input-06. In this step, you need to know the specific model of the system you are using, then refer to its wiring diagram.
-- Refer to the table at the beginning of this chapter, get the parameter value you need.
-- Restart the system
+1. 确认你需要修改那一路端口，比如时输入端口1还是输入端口2，这部分需要参考具体产品的接线图，
+   之后参考本章节 `参数列表`_ 部分，查找控制此端口功能的参数序号。
+2. 参考本章节开头 `可配置的输入功能列表`_ 部分，得到你需要的功能代码。
+3. 将步骤1得到的参数修改为步骤2得到的功能代码，之后重启控制器。
+   
+举例说明：
 
-Let's take an example:
+想把热键盒第六个按键的功能修改为拖布滚轮，查询参数列表得到 `A 41`_ 控制热键盒第六个按键
+的功能，而在可配置的输入功能列表，拖布论滚的功能代码为 20_ ，那么将A41修改为20即可。
 
-For example, you want use the sixth key of the keypad to control the puller, you need to set the function of **Keypad-Key06** to puller, that is, **A41** is set to 20 (20 is code of function switch the state of puller).
-
-
-Parameter List
+参数列表
 ==============
 
 A 04
 ----
 
-.. dropdown:: Mode Input-01 
+.. dropdown:: 输入01功能 
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-01
+   -Description  定义输入01的功能。
 
 A 05
 ----
 
-.. dropdown:: Mode Input-02
+.. dropdown:: 输入02功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-02
+   -Description  定义输入02的功能。
 
 A 36
 ----
 
-.. dropdown:: Mode Keypad-Key1 
+.. dropdown:: 热键盒按键1功能 
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key1
+   -Description  定义热键盒按键1的功能。
 
 A 37
 ----
 
-.. dropdown:: Mode Keypad-Key2 
+.. dropdown:: 热键盒按键2功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key2
+   -Description  定义热键盒按键2的功能。
 
 A 38
 ----
 
-.. dropdown:: Mode Keypad-Key3 
+.. dropdown:: 热键盒按键3功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key3
+   -Description  定义热键盒按键3的功能。
 
 A 39
 ----
 
-.. dropdown:: Mode Keypad-Key4
+.. dropdown:: 热键盒按键4功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key4
+   -Description  定义热键盒按键4的功能。
 
 A 40
 ----
 
-.. dropdown:: Mode Keypad-Key5
+.. dropdown:: 热键盒按键5功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key5
+   -Description  定义热键盒按键5的功能。
 
 A 41
 ----
 
-.. dropdown:: Mode Keypad-Key6
+.. dropdown:: 热键盒按键6功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key6
+   -Description  定义热键盒按键6的功能。
 
 A 68
 ----
 
-.. dropdown:: Mode Keypad-Key7
+.. dropdown:: 热键盒按键7功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Keypad-Key7
+   -Description  定义热键盒按键7的功能。
 
 A 81
 ----
 
-.. dropdown:: Mode Input-03
+.. dropdown:: 输入03功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-03
+   -Description  定义输入03的功能。
 
 A 82
 ----
 
-.. dropdown:: Mode Input-04 
+.. dropdown:: 输入04功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-04
+   -Description  定义输入04的功能。
 
 A 83
 ----
 
-.. dropdown:: Mode Input-05 
+.. dropdown:: 输入05功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-05
-
+   -Description  定义输入05的功能。
 
 A 84
 ----
 
-.. dropdown:: Mode Input-06 
+.. dropdown:: 输入06功能 
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-06
+   -Description  定义输入06的功能。
 
 A 85
 ----
 
-.. dropdown:: Mode Input-07
+.. dropdown:: 输入07功能 
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-07
+   -Description  定义输入07的功能。
 
 A 86
 ----
 
-.. dropdown:: Mode Input-08 
+.. dropdown:: 输入08功能 
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-08  
+   -Description  定义输入08的功能。
 
 
 A 87
 ----
 
-.. dropdown:: Mode Input-09
+.. dropdown:: 输入09功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-09
+   -Description  定义输入09的功能。
 
 A 88
 ----
 
-.. dropdown:: Mode Input-10
+.. dropdown:: 输入10功能
    :animate: fade-in-slide-down
    
    -Max  199
    -Min  0
    -Unit  --
-   -Description  Function definition of Input-10
+   -Description  定义输入10的功能。

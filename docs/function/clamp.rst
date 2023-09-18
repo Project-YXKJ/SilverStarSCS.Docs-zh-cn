@@ -1,110 +1,110 @@
 .. _thread_clamp:
 
-============
-Thread clamp
-============
+========
+电子抓线
+========
 
-**Thread clamp at seam start**:
+**线迹开始时**:
 
-Switch on at position set by **D07**, switch off at position set by **D08**.
+电子抓线可以在起缝制第一针的一定角度内动作，接通角度由 `D 07`_ 控制，关断角度由 `D 08`_ 控制。
 
-Action only during the first stitch, reset after thread trim.
+只会在一段新的线迹开始时动作一次，剪线后重置。
 
-**Thread clamp at turning back**:
+**剪线反转时**:
 
-Switch on during turning back, the Max. permissible time is set by **T15** to protect from damage.
+电子抓线在剪线反转过程中接通，最大时间由 `T 15`_ 进行控制，为防止烧毁请合理设置此时间。
 
-**Thread clamp at sewing foot lifting**:
+**压脚抬起时**:
 
-Switch on during foot lifting, the Max. permissible time is set by **T15** to protect from damage.
+电子抓线随压脚抬起而接通，最大时间由 `T 15`_ 进行控制，为防止烧毁请合理设置此时间。
 
-Parameter List
-==============
+参数列表
+========
 
-T 15
+T 15 
 ----
 
-.. dropdown:: Action Time of Clamp <...>
+.. dropdown:: 接通时间 <...>
    :animate: fade-in-slide-down
    
    -Max  2000
    -Min  1
-   -Unit  ms
-   -Description  Action time of clamp when lifting the foot or lifting the needlebar after trim.
+   -Unit  毫秒
+   -Description  当设置剪线反转提针或抬压脚动作夹线时，夹线器接通的时间。
 
 A 10
 ----
 
-.. dropdown:: Thread clamp <...>
+.. dropdown:: 电子抓线 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Thread clamp:
-     | 0: Off;
-     | 1: On.
+     | 电子抓线功能：
+     | 0 = 关闭；
+     | 1 = On。
 
 A 29
 ----
 
-.. dropdown:: Auto Mode for Clamp <...> 
+.. dropdown:: 电子抓线自动模式 <...> 
    :animate: fade-in-slide-down
    
    -Max  3
    -Min  0
    -Unit  --
    -Description
-     | 0 = actions when start sewing;
-     | 1 = actions when start sewing and lifting the needle after trim;
-     | 2 = actions when start sewing and lifting the foot;
-     | 3 = both 1&2.
+     | 0 = 仅在缝制启动时夹线；
+     | 1 = 在缝纫启动和反转提针时夹线；
+     | 2 = 在缝纫启动和抬压脚时夹线；
+     | 3 = 1和2场景下都夹线。
 
 
 D 07
 ----
 
-.. dropdown:: Start Clamp Position <...> 
+.. dropdown:: 电子抓线开始角度 <...> 
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of clamp is activated.
+   -Description  电子抓线电磁铁动作角度。
 
 D 08
 ----
 
-.. dropdown:: Stop Clamp Position <...>
+.. dropdown:: 电子抓线结束角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position when the magnet of clamp is deactivated.
+   -Description  电子抓线电磁铁释放角度。
 
 O 42
 ----
 
-.. dropdown:: PrePressure duiring Clamp <...>
+.. dropdown:: 夹线接通时压脚微抬 <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | Reduce the sewing foot pressure during the clamping cycle:
-     | 0: Off;
-     | 1: On.  
+     | 起针缓缝夹线动作时,减小压脚压力：
+     | 0 = 关闭；
+     | 1 = 打开。 
 
 O 48
 ----
 
-.. dropdown:: Duty cycle(t2) <...>
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  0
    -Unit  %
-   -Description  Clamp:duty cycle[%] in :term:`time period t2`.
+   -Description  夹线：维持出力 :term:`时间t2` 内的占空比。

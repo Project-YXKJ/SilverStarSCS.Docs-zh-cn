@@ -9,10 +9,10 @@
   ==============================
 
 
-Contributions 
-==============
-Here is a list of the contributors who have worked on this. 
-Big shout-out to them!
+贡献者
+======
+
+感谢对此工作做出贡献的人们：
 
 * Zhang XiaoLei `snowzxl <https://github.com/snowzxl>`_
 * Xia Tian `xiatian-xjtu <https://github.com/xiatian-xjtu>`_
