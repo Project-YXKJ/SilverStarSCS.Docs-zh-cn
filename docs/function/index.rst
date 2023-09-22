@@ -12,7 +12,7 @@
     :link: bartack
     :link-type: doc
 
-  .. grid-item-card:: Seam
+  .. grid-item-card:: 线迹
     :link: seam
     :link-type: doc 
 
@@ -197,7 +197,7 @@
     安倍，电流单位. 本手册会出现 **0.1A**，表示1安培的十分之一 
 
 目录
-=================
+====
 
 .. toctree::
   :maxdepth: 4

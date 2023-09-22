@@ -118,28 +118,6 @@ A 66
      | 0 = 一直维持；
      | 不为0 = 此参数表示维持的时间，设置的时间过后保持力消失。
 
-D 01
-----
-
-.. dropdown:: 上针位角度
-   :animate: fade-in-slide-down
-  
-   -Max  359
-   -Min  0
-   -Unit  1°
-   -Description  剪线后的针杆位置，机针在缝料之上。
-
-D 02
-----
-
-.. dropdown:: 下针位角度
-   :animate: fade-in-slide-down
-  
-   -Max  359
-   -Min  0
-   -Unit  1°
-   -Description  一般中途停车时针杆位置，机针在缝料之下。
-
 O 04
 ----
 

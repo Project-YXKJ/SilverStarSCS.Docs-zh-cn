@@ -35,13 +35,16 @@ CONTACT
   :maxdepth: 3
 
   function/index
-  troubleshooting/index.rst
+  troubleshooting/index
 
 
 .. toctree:: 
   :caption: PRODUCT
+  :maxdepth: 3
 
-  product/90a0
+  product/controller
+  product/hmi
+  product/motor
 
 .. toctree::
   :caption: CONTACT

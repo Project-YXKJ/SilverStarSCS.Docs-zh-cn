@@ -43,20 +43,23 @@
 
 **补针(针杆位置切换)**
 
-If **A03** is equal to 0:
+如果 `A 03`_ 设置为0：
 
-When press the key, the needle moves form the current position to the position 
-set by parameter **D15** or **D16**, which one is the closest, the target position
-is that one. E.g, current position is 40 degrees, **D15** is 70, **D16** is 200, 
-when you press the button, the motion trace is "40->70->200->70->200...".
+当按动补针按键，系统会计算当前位置与 `D 15`_ 和 `D 16`_ 的距离并进行比较，那个距离近，
+那么针杆就移动至哪个位置。
 
-If **A03** is equal to 1:
+比如：当前针杆位置为40度， `D 15`_ 的值为70， `D 16`_ 的值为200度，显然40度距离70度更
+近一点，那么按动补针按键运动轨迹为 ``位置40 => 70 => 200 => 70 => 200 ...`` 。
 
-when you press the button, two cases: if you set stop at upper position, 
-the needle moves form the current position to the position set by parameter **D01**. 
-if you set stop at lower position, the needle moves form the current position to the 
-position set by parameter **D02**:
 
+如果 `A 03`_ 设置为1：
+
+当按动补针按键，此时分两种情况：如果设置为停上针位，则针杆从当前位置移动至 `D 01`_ 位置；
+如果设置为停下针位，则针杆从当前位置移动至 `D 02`_ 位置。
+
+比如：当前针杆位置为40度, `D 01`_ 的值为70， `D 02`_ 的值为200度，如果 `A 01`_ 为0，则
+每次按动补针按键运动轨迹为 ``位置40 => 200 => 200 => 200 ...`` ；如果 `A 01`_ 为1，
+每次按动补针按键运动轨迹为 ``位置40 => 70 => 70 => 70 ...`` 。
 
 参数列表
 ========
@@ -177,6 +180,28 @@ A 31
    -Description
      | 0 = 正常模式；
      | 1 = 停车拉倒缝。
+
+D 01
+----
+
+.. dropdown:: 上针位角度
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  剪线后的针杆位置，机针在缝料之上。
+
+D 02
+----
+
+.. dropdown:: 下针位角度
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  一般中途停车时针杆位置，机针在缝料之下。
 
 D 11
 ----
