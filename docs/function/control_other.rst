@@ -35,7 +35,7 @@ A 49
 A 52
 ----
 
-.. dropdown:: 操作板锁定
+.. dropdown:: 操作板锁定 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -132,7 +132,7 @@ O 52
 O 66
 ----
 
-.. dropdown:: 重置所有信息
+.. dropdown:: 重置所有信息 <...>
    :animate: fade-in-slide-down
    
    -Max  1

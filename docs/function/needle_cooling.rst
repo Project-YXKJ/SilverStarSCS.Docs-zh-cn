@@ -21,7 +21,7 @@
 S 18
 ----
 
-.. dropdown:: 机针冷却开启速度
+.. dropdown:: 机针冷却开启速度 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -32,7 +32,7 @@ S 18
 T 16
 ----
 
-.. dropdown:: 机针冷却延续时间
+.. dropdown:: 机针冷却延续时间 <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -43,7 +43,7 @@ T 16
 A 48
 ----
 
-.. dropdown:: 机针冷却 
+.. dropdown:: 机针冷却 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -57,7 +57,7 @@ A 48
 O 93
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -68,7 +68,7 @@ O 93
 O 94
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100

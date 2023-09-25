@@ -13,7 +13,7 @@
 S 08
 ----
 
-.. dropdown:: 软启动速度
+.. dropdown:: 软启动速度 <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -24,7 +24,7 @@ S 08
 A 21
 ----
 
-.. dropdown:: 软启动
+.. dropdown:: 软启动 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -38,7 +38,7 @@ A 21
 O 01
 ----
 
-.. dropdown:: 软启动针数
+.. dropdown:: 软启动针数 <...>
    :animate: fade-in-slide-down
    
    -Max  10

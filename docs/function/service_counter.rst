@@ -28,7 +28,7 @@
 A 60
 ----
 
-.. dropdown:: 保养计数器
+.. dropdown:: 保养计数器 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -42,7 +42,7 @@ A 60
 A 61
 ----
 
-.. dropdown:: 保养计数器复位值
+.. dropdown:: 保养计数器复位值 <...>
    :animate: fade-in-slide-down
    
    -Max  9999
@@ -53,7 +53,7 @@ A 61
 A 62
 ----
 
-.. dropdown:: 保养计数器因子
+.. dropdown:: 保养计数器因子 <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -64,7 +64,7 @@ A 62
 A 63
 ----
 
-.. dropdown:: 保养计数器值
+.. dropdown:: 保养计数器值 <...>
    :animate: fade-in-slide-down
    
    -Max  9999

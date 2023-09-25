@@ -33,7 +33,7 @@
 S 09
 ----
 
-.. dropdown:: 压脚交互量第一档限速
+.. dropdown:: 压脚交互量第一档限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -44,7 +44,7 @@ S 09
 S 10
 ----
 
-.. dropdown:: 小交互量时的限速
+.. dropdown:: 小交互量时的限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -55,7 +55,7 @@ S 10
 S 11
 ----
 
-.. dropdown:: 交互量第二档限速
+.. dropdown:: 交互量第二档限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -66,7 +66,7 @@ S 11
 S 12
 ----
 
-.. dropdown:: 交互量第三档限速
+.. dropdown:: 交互量第三档限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -77,7 +77,7 @@ S 12
 S 13
 ----
 
-.. dropdown:: 交互量第四档限速
+.. dropdown:: 交互量第四档限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -88,7 +88,7 @@ S 13
 S 14
 ----
 
-.. dropdown:: 大交互量时的限速
+.. dropdown:: 大交互量时的限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -99,7 +99,7 @@ S 14
 S 15
 ----
 
-.. dropdown:: 交互量最大时限速
+.. dropdown:: 交互量最大时限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -110,7 +110,7 @@ S 15
 A 24
 ----
 
-.. dropdown:: 交互量状态
+.. dropdown:: 交互量状态 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -121,7 +121,7 @@ A 24
 A 32
 ----
 
-.. dropdown:: 交互量自动恢复
+.. dropdown:: 交互量自动恢复 <...>
    :animate: fade-in-slide-down
    
    -Max  99
@@ -134,7 +134,7 @@ A 32
 A 35
 ----
 
-.. dropdown:: 自动限速
+.. dropdown:: 自动限速 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -148,7 +148,7 @@ A 35
 A 45
 ----
 
-.. dropdown:: 交互量
+.. dropdown:: 交互量 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -162,7 +162,7 @@ A 45
 O 21
 ----
 
-.. dropdown:: 交互量限速生效分界点
+.. dropdown:: 交互量限速生效分界点 <...>
    :animate: fade-in-slide-down
    
    -Max  4095
@@ -173,7 +173,7 @@ O 21
 O 22
 ----
 
-.. dropdown:: 最大交互量分界点
+.. dropdown:: 最大交互量分界点 <...>
    :animate: fade-in-slide-down
    
    -Max  4095
@@ -184,7 +184,7 @@ O 22
 0 76
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -195,7 +195,7 @@ O 22
 0 77
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -206,7 +206,7 @@ O 22
 0 85
 ----
 
-.. dropdown:: 交互量轮盘传感器类型
+.. dropdown:: 交互量轮盘传感器类型 <...>
    :animate: fade-in-slide-down
    
    -Max  2

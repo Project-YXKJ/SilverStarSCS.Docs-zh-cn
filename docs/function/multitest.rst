@@ -12,7 +12,7 @@
 O 23
 ----
 
-.. dropdown:: 运行时间(EC) 
+.. dropdown:: 运行时间(EC) <...>
    :animate: fade-in-slide-down
    
    -Max  60
@@ -23,7 +23,7 @@ O 23
 O 24
 ----
 
-.. dropdown:: 停止时间(EC)
+.. dropdown:: 停止时间(EC) <...>
    :animate: fade-in-slide-down
    
    -Max  60
@@ -34,7 +34,7 @@ O 24
 O 25
 ----
 
-.. dropdown:: 总时间(EC)
+.. dropdown:: 总时间(EC) <...>
    :animate: fade-in-slide-down
    
    -Max  720
@@ -45,7 +45,7 @@ O 25
 O 26
 ----
 
-.. dropdown:: 耐久试验
+.. dropdown:: 耐久试验 <...>
    :animate: fade-in-slide-down
    
    -Max  1

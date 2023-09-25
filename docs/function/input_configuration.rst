@@ -61,7 +61,7 @@
 A 04
 ----
 
-.. dropdown:: 输入01功能 
+.. dropdown:: 输入01功能 <...> 
    :animate: fade-in-slide-down
    
    -Max  199
@@ -72,7 +72,7 @@ A 04
 A 05
 ----
 
-.. dropdown:: 输入02功能
+.. dropdown:: 输入02功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -83,7 +83,7 @@ A 05
 A 36
 ----
 
-.. dropdown:: 热键盒按键1功能 
+.. dropdown:: 热键盒按键1功能 <...> 
    :animate: fade-in-slide-down
    
    -Max  199
@@ -94,7 +94,7 @@ A 36
 A 37
 ----
 
-.. dropdown:: 热键盒按键2功能
+.. dropdown:: 热键盒按键2功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -105,7 +105,7 @@ A 37
 A 38
 ----
 
-.. dropdown:: 热键盒按键3功能
+.. dropdown:: 热键盒按键3功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -116,7 +116,7 @@ A 38
 A 39
 ----
 
-.. dropdown:: 热键盒按键4功能
+.. dropdown:: 热键盒按键4功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -127,7 +127,7 @@ A 39
 A 40
 ----
 
-.. dropdown:: 热键盒按键5功能
+.. dropdown:: 热键盒按键5功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -138,7 +138,7 @@ A 40
 A 41
 ----
 
-.. dropdown:: 热键盒按键6功能
+.. dropdown:: 热键盒按键6功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -149,7 +149,7 @@ A 41
 A 68
 ----
 
-.. dropdown:: 热键盒按键7功能
+.. dropdown:: 热键盒按键7功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -160,7 +160,7 @@ A 68
 A 81
 ----
 
-.. dropdown:: 输入03功能
+.. dropdown:: 输入03功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -171,7 +171,7 @@ A 81
 A 82
 ----
 
-.. dropdown:: 输入04功能
+.. dropdown:: 输入04功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -182,7 +182,7 @@ A 82
 A 83
 ----
 
-.. dropdown:: 输入05功能
+.. dropdown:: 输入05功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -193,7 +193,7 @@ A 83
 A 84
 ----
 
-.. dropdown:: 输入06功能 
+.. dropdown:: 输入06功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -204,7 +204,7 @@ A 84
 A 85
 ----
 
-.. dropdown:: 输入07功能 
+.. dropdown:: 输入07功能 <...> 
    :animate: fade-in-slide-down
    
    -Max  199
@@ -215,7 +215,7 @@ A 85
 A 86
 ----
 
-.. dropdown:: 输入08功能 
+.. dropdown:: 输入08功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -223,11 +223,10 @@ A 86
    -Unit  --
    -Description  定义输入08的功能。
 
-
 A 87
 ----
 
-.. dropdown:: 输入09功能
+.. dropdown:: 输入09功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -238,7 +237,7 @@ A 87
 A 88
 ----
 
-.. dropdown:: 输入10功能
+.. dropdown:: 输入10功能 <...>
    :animate: fade-in-slide-down
    
    -Max  199

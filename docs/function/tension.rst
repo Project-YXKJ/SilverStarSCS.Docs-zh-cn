@@ -36,7 +36,7 @@
 A 26
 ----
 
-.. dropdown:: 第二夹线器状态
+.. dropdown:: 第二夹线器状态 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -47,7 +47,7 @@ A 26
 A 27
 ----
 
-.. dropdown:: 压脚抬起时面线张力的工作模式
+.. dropdown:: 压脚抬起时面线张力的工作模式 <...>
    :animate: fade-in-slide-down
    
    -Max  3
@@ -62,7 +62,7 @@ A 27
 A 28
 ----
 
-.. dropdown:: 自动收紧面线张力
+.. dropdown:: 自动收紧面线张力 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -76,7 +76,7 @@ A 28
 D 13
 ----
 
-.. dropdown:: 松线开始角度
+.. dropdown:: 松线开始角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -87,7 +87,7 @@ D 13
 D 14
 ----
 
-.. dropdown:: 松线结束角度
+.. dropdown:: 松线结束角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -98,7 +98,7 @@ D 14
 O 49
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -109,7 +109,7 @@ O 49
 O 50
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -120,7 +120,7 @@ O 50
 O 75
 ----
 
-.. dropdown:: 挺线最大维持时间
+.. dropdown:: 挺线最大维持时间 <...>
    :animate: fade-in-slide-down
    
    -Max  9999
@@ -133,7 +133,7 @@ O 75
 O 86
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -144,7 +144,7 @@ O 86
 O 87
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -155,7 +155,7 @@ O 87
 O 88
 ----
 
-.. dropdown:: 额外面线张力电磁阀工作模式
+.. dropdown:: 额外面线张力电磁阀工作模式 <...>
    :animate: fade-in-slide-down
    
    -Max  1

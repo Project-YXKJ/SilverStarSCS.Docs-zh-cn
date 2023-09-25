@@ -37,7 +37,7 @@
 T 05
 ----
 
-.. dropdown:: 抬压脚位置判断时间
+.. dropdown:: 抬压脚位置判断时间 <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -48,7 +48,7 @@ T 05
 T 06
 ----
 
-.. dropdown:: 压脚下落时间
+.. dropdown:: 压脚下落时间 <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -59,7 +59,7 @@ T 06
 T 07
 ----
 
-.. dropdown:: 时间（t1） 
+.. dropdown:: 时间（t1）  <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -70,7 +70,7 @@ T 07
 T 10
 ----
 
-.. dropdown:: 自动压脚延迟时间
+.. dropdown:: 自动压脚延迟时间 <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -81,7 +81,7 @@ T 10
 A 09
 ----
 
-.. dropdown:: 压脚功能
+.. dropdown:: 压脚功能 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -95,7 +95,7 @@ A 09
 A 14
 ----
 
-.. dropdown:: 中间停车后自动抬压脚
+.. dropdown:: 中间停车后自动抬压脚 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -109,7 +109,7 @@ A 14
 A 15
 ----
 
-.. dropdown:: 剪线后自动抬压脚
+.. dropdown:: 剪线后自动抬压脚 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -123,7 +123,7 @@ A 15
 O 05
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -134,7 +134,7 @@ O 05
 O 06
 ----
 
-.. dropdown:: 压脚自动释放
+.. dropdown:: 压脚自动释放 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -148,7 +148,7 @@ O 06
 O 07
 ----
 
-.. dropdown:: 压脚最大抬起时间
+.. dropdown:: 压脚最大抬起时间 <...>
    :animate: fade-in-slide-down
    
    -Max  30
@@ -159,7 +159,7 @@ O 07
 O 39
 ----
 
-.. dropdown:: 压脚缓放
+.. dropdown:: 压脚缓放 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -173,7 +173,7 @@ O 39
 O 40
 ----
 
-.. dropdown:: 抬压脚缓放力度
+.. dropdown:: 抬压脚缓放力度 <...>
    :animate: fade-in-slide-down
    
    -Max  9
@@ -184,7 +184,7 @@ O 40
 O 53
 ----
 
-.. dropdown:: 夹线时压脚微抬力度(无前加固)
+.. dropdown:: 夹线时压脚微抬力度(无前加固) <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -195,7 +195,7 @@ O 53
 O 54
 ----
 
-.. dropdown:: 夹线时压脚微抬力度(缓缝)
+.. dropdown:: 夹线时压脚微抬力度(缓缝) <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -203,11 +203,10 @@ O 54
    -Unit  --
    -Description  起针缓缝打开时，起缝夹线时压脚微抬占空比。
 
-
 O 55
 ----
 
-.. dropdown:: 夹线时压脚微抬力度
+.. dropdown:: 夹线时压脚微抬力度 <...>
    :animate: fade-in-slide-down
    
    -Max  10

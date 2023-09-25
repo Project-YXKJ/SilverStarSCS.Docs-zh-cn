@@ -14,7 +14,7 @@
 S 17
 ----
 
-.. dropdown:: 大针距限速值
+.. dropdown:: 大针距限速值 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -25,7 +25,7 @@ S 17
 A 25
 ----
 
-.. dropdown:: 大小针距状态
+.. dropdown:: 大小针距状态 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -36,7 +36,7 @@ A 25
 A 46
 ----
 
-.. dropdown:: 大小针距
+.. dropdown:: 大小针距 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -50,7 +50,7 @@ A 46
 A 50
 ----
 
-.. dropdown:: 加固缝针距
+.. dropdown:: 加固缝针距 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -64,7 +64,7 @@ A 50
 O 33
 ----
 
-.. dropdown:: 针距限速
+.. dropdown:: 针距限速 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -78,7 +78,7 @@ O 33
 O 78
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -89,7 +89,7 @@ O 78
 O 79
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100

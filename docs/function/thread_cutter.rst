@@ -16,7 +16,7 @@
 S 07
 ----
 
-.. dropdown:: 剪线速度
+.. dropdown:: 剪线速度 <...>
    :animate: fade-in-slide-down
    
    -Max  300
@@ -27,7 +27,7 @@ S 07
 A 06
 ----
 
-.. dropdown:: 剪线功能
+.. dropdown:: 剪线功能 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -41,7 +41,7 @@ A 06
 A 42
 ----
 
-.. dropdown:: 短线头功能
+.. dropdown:: 短线头功能 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -55,7 +55,7 @@ A 42
 A 67
 ----
 
-.. dropdown:: 短线头针数
+.. dropdown:: 短线头针数 <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -66,7 +66,7 @@ A 67
 D 03
 ----
 
-.. dropdown:: 剪线开始角度
+.. dropdown:: 剪线开始角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -78,7 +78,7 @@ D 03
 D 04
 ----
 
-.. dropdown:: 剪线结束角度
+.. dropdown:: 剪线结束角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -89,7 +89,7 @@ D 04
 D 17
 ----
 
-.. dropdown:: Start Movable Knife Position(STC)
+.. dropdown:: Start Movable Knife Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -100,7 +100,7 @@ D 17
 D 18
 ----
 
-.. dropdown:: 动刀结束角度(STC)
+.. dropdown:: 动刀结束角度(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -111,7 +111,7 @@ D 18
 D 19
 ----
 
-.. dropdown:: 倒缝开始角度(STC)
+.. dropdown:: 倒缝开始角度(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -122,7 +122,7 @@ D 19
 D 20
 ----
 
-.. dropdown:: 倒缝结束角度(STC)
+.. dropdown:: 倒缝结束角度(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -133,7 +133,7 @@ D 20
 D 21
 ----
 
-.. dropdown:: 零针距开始角度(STC)
+.. dropdown:: 零针距开始角度(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -144,7 +144,7 @@ D 21
 D 22
 ----
 
-.. dropdown:: 零针距结束角度(STC)
+.. dropdown:: 零针距结束角度(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -155,7 +155,7 @@ D 22
 O 38
 ----
 
-.. dropdown:: 剪线后检查调速器位置
+.. dropdown:: 剪线后检查调速器位置 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -169,7 +169,7 @@ O 38
 O 95
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -180,7 +180,7 @@ O 95
 O 96
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100

@@ -67,7 +67,7 @@
 S 05
 ----
 
-.. dropdown:: 折返缝速度
+.. dropdown:: 折返缝速度 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -78,7 +78,7 @@ S 05
 S 06
 ----
 
-.. dropdown:: 定针缝速度
+.. dropdown:: 定针缝速度 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -89,7 +89,7 @@ S 06
 A 01
 ----
 
-.. dropdown:: 停针位
+.. dropdown:: 停针位 <...>
    :animate: fade-in-slide-down
 
    -Max  1
@@ -103,7 +103,7 @@ A 01
 A 02
 ----
 
-.. dropdown:: 定针缝自动缝制使能
+.. dropdown:: 定针缝自动缝制使能 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -117,7 +117,7 @@ A 02
 A 03
 ----
 
-.. dropdown:: 补针停车模式
+.. dropdown:: 补针停车模式 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -130,7 +130,7 @@ A 03
 A 16
 ----
 
-.. dropdown:: 定针缝前加固结束自动缝制使能
+.. dropdown:: 定针缝前加固结束自动缝制使能 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -144,7 +144,7 @@ A 16
 A 17
 ----
 
-.. dropdown:: 定针缝中间段结束后自动后加固
+.. dropdown:: 定针缝中间段结束后自动后加固 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -158,7 +158,7 @@ A 17
 A 30
 ----
 
-.. dropdown:: 补针模式
+.. dropdown:: 补针模式 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -171,7 +171,7 @@ A 30
 A 31
 ----
 
-.. dropdown:: 手动倒缝模式
+.. dropdown:: 手动倒缝模式 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -184,7 +184,7 @@ A 31
 D 01
 ----
 
-.. dropdown:: 上针位角度
+.. dropdown:: 上针位角度 <...>
    :animate: fade-in-slide-down
   
    -Max  359
@@ -195,7 +195,7 @@ D 01
 D 02
 ----
 
-.. dropdown:: 下针位角度
+.. dropdown:: 下针位角度 <...>
    :animate: fade-in-slide-down
   
    -Max  359
@@ -206,7 +206,7 @@ D 02
 D 11
 ----
 
-.. dropdown:: 按键倒缝生效区间下限
+.. dropdown:: 按键倒缝生效区间下限 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -217,7 +217,7 @@ D 11
 D 12
 ----
 
-.. dropdown:: 按键倒缝生效区间上限
+.. dropdown:: 按键倒缝生效区间上限 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -228,7 +228,7 @@ D 12
 D 15
 ----
 
-.. dropdown:: 补针上角度
+.. dropdown:: 补针上角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -239,7 +239,7 @@ D 15
 D 16
 ----
 
-.. dropdown:: 补针下角度
+.. dropdown:: 补针下角度 <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -250,7 +250,7 @@ D 16
 O 18
 ----
 
-.. dropdown:: 缝型标志
+.. dropdown:: 缝型标志 <...>
    :animate: fade-in-slide-down
    
    -Max  3
@@ -261,7 +261,7 @@ O 18
 O 69
 ----
 
-.. dropdown:: 补针时机
+.. dropdown:: 补针时机 <...>
    :animate: fade-in-slide-down
    
    -Max  1

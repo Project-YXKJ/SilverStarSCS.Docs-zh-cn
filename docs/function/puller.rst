@@ -18,7 +18,7 @@
 A 64
 ----
 
-.. dropdown:: 延迟针数
+.. dropdown:: 延迟针数 <...>
    :animate: fade-in-slide-down
 
    -Max  255
@@ -29,7 +29,7 @@ A 64
 A 89
 ----
 
-.. dropdown:: 送料滚轮
+.. dropdown:: 送料滚轮 <...>
    :animate: fade-in-slide-down
 
    -Max  1
@@ -43,7 +43,7 @@ A 89
 A 90
 ----
 
-.. dropdown:: 拖布轮状态
+.. dropdown:: 拖布轮状态 <...>
    :animate: fade-in-slide-down
 
    -Max  1
@@ -54,7 +54,7 @@ A 90
 O 97
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
 
    -Max  999
@@ -65,7 +65,7 @@ O 97
 O 98
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
 
    -Max  100

@@ -40,7 +40,7 @@ A 43
 O 83
 ----
 
-.. dropdown:: 电子手轮步长
+.. dropdown:: 电子手轮步长 <...>
    :animate: fade-in-slide-down
    
    -Max  720
@@ -51,7 +51,7 @@ O 83
 O 84
 ----
 
-.. dropdown:: 电子手轮速度
+.. dropdown:: 电子手轮速度 <...>
    :animate: fade-in-slide-down
    
    -Max  200

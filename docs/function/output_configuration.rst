@@ -47,7 +47,7 @@
 A 71
 ----
 
-.. dropdown:: 输出01功能
+.. dropdown:: 输出01功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -58,7 +58,7 @@ A 71
 A 72
 ----
 
-.. dropdown:: 输出02功能
+.. dropdown:: 输出02功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -69,7 +69,7 @@ A 72
 A 73
 ----
 
-.. dropdown:: 输出03功能
+.. dropdown:: 输出03功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -80,7 +80,7 @@ A 73
 A 74
 ----
 
-.. dropdown:: 输出04功能
+.. dropdown:: 输出04功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -91,7 +91,7 @@ A 74
 A 75
 ----
 
-.. dropdown:: 输出05功能
+.. dropdown:: 输出05功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -103,7 +103,7 @@ A 75
 A 76
 ----
 
-.. dropdown:: 输出06功能
+.. dropdown:: 输出06功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -114,7 +114,7 @@ A 76
 A 77
 ----
 
-.. dropdown:: 输出07功能 
+.. dropdown:: 输出07功能  <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -125,7 +125,7 @@ A 77
 A 78
 ----
 
-.. dropdown:: 输出08功能
+.. dropdown:: 输出08功能 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -136,7 +136,7 @@ A 78
 A 79
 ----
 
-.. dropdown:: 输出09功能 
+.. dropdown:: 输出09功能  <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -147,7 +147,7 @@ A 79
 A 80
 ----
 
-.. dropdown:: 输出10功能 
+.. dropdown:: 输出10功能  <...>
    :animate: fade-in-slide-down
    
    -Max  maximum

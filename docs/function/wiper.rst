@@ -15,7 +15,7 @@
 A 08
 ----
 
-.. dropdown:: 扫线
+.. dropdown:: 扫线 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -29,7 +29,7 @@ A 08
 T 03
 ----
 
-.. dropdown:: 扫线等待时间
+.. dropdown:: 扫线等待时间 <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -40,7 +40,7 @@ T 03
 T 04
 ----
 
-.. dropdown:: 扫线动作时间
+.. dropdown:: 扫线动作时间 <...>
    :animate: fade-in-slide-down
    
    -Max  200

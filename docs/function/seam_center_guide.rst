@@ -29,7 +29,7 @@ c) 交互量。
 A 33
 ----
 
-.. dropdown:: 缝线中线导向状态
+.. dropdown:: 缝线中线导向状态 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -40,7 +40,7 @@ A 33
 A 47
 ----
 
-.. dropdown:: 缝线中心导向
+.. dropdown:: 缝线中心导向 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -54,7 +54,7 @@ A 47
 A 51
 ----
 
-.. dropdown:: 缝线中心导向自动模式
+.. dropdown:: 缝线中心导向自动模式 <...>
    :animate: fade-in-slide-down
    
    -Max  7
@@ -73,7 +73,7 @@ A 51
 O 89
 ----
 
-.. dropdown:: 时间（t1）
+.. dropdown:: 时间（t1） <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -84,7 +84,7 @@ O 89
 O 90
 ----
 
-.. dropdown:: 维持出力（t2）
+.. dropdown:: 维持出力（t2） <...>
    :animate: fade-in-slide-down
    
    -Max  100

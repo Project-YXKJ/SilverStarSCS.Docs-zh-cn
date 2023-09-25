@@ -15,7 +15,7 @@
 S 16
 ----
 
-.. dropdown:: 反拉速度
+.. dropdown:: 反拉速度 <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -26,7 +26,7 @@ S 16
 T 12
 ----
 
-.. dropdown:: 反拉延迟时间
+.. dropdown:: 反拉延迟时间 <...>
    :animate: fade-in-slide-down
    
    -Max  1000
@@ -37,7 +37,7 @@ T 12
 A 13
 ----
 
-.. dropdown:: 剪线回拉
+.. dropdown:: 剪线回拉 <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -51,7 +51,7 @@ A 13
 O 35
 ----
 
-.. dropdown:: 剪线反转位置
+.. dropdown:: 剪线反转位置 <...>
    :animate: fade-in-slide-down
    
    -Max  359

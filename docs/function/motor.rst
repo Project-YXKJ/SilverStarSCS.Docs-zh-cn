@@ -23,7 +23,7 @@
 S 01
 ----
 
-.. dropdown:: 最高限速
+.. dropdown:: 最高限速 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -33,7 +33,7 @@ S 01
      
 S 02
 ----
-.. dropdown:: 最低缝速
+.. dropdown:: 最低缝速 <...>
    :animate: fade-in-slide-down
   
    -Max  4500
@@ -44,7 +44,7 @@ S 02
      
 A 18
 ----
-.. dropdown:: 上电自动上针位
+.. dropdown:: 上电自动上针位 <...>
    :animate: fade-in-slide-down
   
    -Max  4500
@@ -61,7 +61,7 @@ A 18
 A 54
 ----
 
-.. dropdown:: 电机保持力
+.. dropdown:: 电机保持力 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -75,7 +75,7 @@ A 54
 A 55
 ----
 
-.. dropdown:: 锁定齿
+.. dropdown:: 锁定齿 <...>
    :animate: fade-in-slide-down
   
    -Max  720
@@ -86,7 +86,7 @@ A 55
 A 56
 ----
 
-.. dropdown:: 偏移角度大于此值开始调节
+.. dropdown:: 偏移角度大于此值开始调节 <...>
    :animate: fade-in-slide-down
   
    -Max  720
@@ -97,7 +97,7 @@ A 56
 A 57
 ----
 
-.. dropdown:: 偏移角度小于此值调节结束
+.. dropdown:: 偏移角度小于此值调节结束 <...>
    :animate: fade-in-slide-down
   
    -Max  720
@@ -108,7 +108,7 @@ A 57
 A 66
 ----
 
-.. dropdown:: 电机保持力模式
+.. dropdown:: 电机保持力模式 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -121,7 +121,7 @@ A 66
 O 04
 ----
 
-.. dropdown:: 机头同步信号来源 
+.. dropdown:: 机头同步信号来源  <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -134,7 +134,7 @@ O 04
 O 36
 ----
 
-.. dropdown:: 输入速度打折
+.. dropdown:: 输入速度打折 <...>
    :animate: fade-in-slide-down
   
    -Max  5
@@ -145,7 +145,7 @@ O 36
 O 37
 ----
 
-.. dropdown:: 简易模式
+.. dropdown:: 简易模式 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -159,7 +159,7 @@ O 37
 O 67
 ----
 
-.. dropdown:: 电机旋转方向
+.. dropdown:: 电机旋转方向 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -172,7 +172,7 @@ O 67
 I 01
 ----
 
-.. dropdown:: 加速度
+.. dropdown:: 加速度 <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -183,7 +183,7 @@ I 01
 I 02
 ----
 
-.. dropdown:: 减速度
+.. dropdown:: 减速度 <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -194,7 +194,7 @@ I 02
 I 03
 ----
 
-.. dropdown:: 电角度
+.. dropdown:: 电角度 <...>
    :animate: fade-in-slide-down
   
    -Max  4096
@@ -205,7 +205,7 @@ I 03
 I 04
 ----
 
-.. dropdown:: 传动比
+.. dropdown:: 传动比 <...>
    :animate: fade-in-slide-down
   
    -Max  4096
@@ -216,7 +216,7 @@ I 04
 I 05
 ----
 
-.. dropdown:: Kp(CSC-t)
+.. dropdown:: Kp(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -227,7 +227,7 @@ I 05
 I 06
 ----
 
-.. dropdown:: Kp增益(CSC-t)
+.. dropdown:: Kp增益(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -238,7 +238,7 @@ I 06
 I 07
 ----
 
-.. dropdown:: Ki(CSC-t) 
+.. dropdown:: Ki(CSC-t)  <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -249,7 +249,7 @@ I 07
 I 08
 ----
 
-.. dropdown:: Ki增益(CSC-t)
+.. dropdown:: Ki增益(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -260,7 +260,7 @@ I 08
 I 09
 ----
 
-.. dropdown:: Kp(CSC)
+.. dropdown:: Kp(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -271,7 +271,7 @@ I 09
 I 10
 ----
 
-.. dropdown:: Kp增益(CSC)
+.. dropdown:: Kp增益(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -282,7 +282,7 @@ I 10
 I 11
 ----
 
-.. dropdown:: Ki(CSC)
+.. dropdown:: Ki(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -293,7 +293,7 @@ I 11
 I 12
 ----
 
-.. dropdown:: Ki增益(CSC)
+.. dropdown:: Ki增益(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -305,7 +305,7 @@ I 12
 I 13
 ----
 
-.. dropdown:: 输出上限(CSC)
+.. dropdown:: 输出上限(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  20
@@ -317,7 +317,7 @@ I 13
 I 14
 ----
 
-.. dropdown:: 前馈(CSC)
+.. dropdown:: 前馈(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -328,7 +328,7 @@ I 14
 I 15
 ----
 
-.. dropdown:: Kp(CCC-d)
+.. dropdown:: Kp(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -339,7 +339,7 @@ I 15
 I 16
 ----
 
-.. dropdown:: Kp增益(CCC-d)
+.. dropdown:: Kp增益(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -350,7 +350,7 @@ I 16
 I 17
 ----
 
-.. dropdown:: Ki(CCC-d)
+.. dropdown:: Ki(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -361,7 +361,7 @@ I 17
 I 18
 ----
 
-.. dropdown:: Ki增益(CCC-d)
+.. dropdown:: Ki增益(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -372,7 +372,7 @@ I 18
 I 19
 ----
 
-.. dropdown:: 输出上限(CCC-d)
+.. dropdown:: 输出上限(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -383,7 +383,7 @@ I 19
 I 20
 ----
 
-.. dropdown:: 输出下限(CCC-d)
+.. dropdown:: 输出下限(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -394,7 +394,7 @@ I 20
 I 21
 ----
 
-.. dropdown:: Kp(CCC-q)
+.. dropdown:: Kp(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -405,7 +405,7 @@ I 21
 I 22
 ----
 
-.. dropdown:: Kp增益(CCC-q)
+.. dropdown:: Kp增益(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -416,7 +416,7 @@ I 22
 I 23
 ----
 
-.. dropdown:: Ki(CCC-q)
+.. dropdown:: Ki(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -427,7 +427,7 @@ I 23
 I 24
 ----
 
-.. dropdown:: Ki增益(CCC-q)
+.. dropdown:: Ki增益(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -438,7 +438,7 @@ I 24
 I 25
 ----
 
-.. dropdown:: 输出上限(CCC-q)
+.. dropdown:: 输出上限(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -449,7 +449,7 @@ I 25
 I 26
 ----
 
-.. dropdown:: 输出下限(CCC-q)
+.. dropdown:: 输出下限(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -460,7 +460,7 @@ I 26
 I 27
 ----
 
-.. dropdown:: 码盘分辨率
+.. dropdown:: 码盘分辨率 <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -471,7 +471,7 @@ I 27
 I 28
 ----
 
-.. dropdown:: 停车流程限时
+.. dropdown:: 停车流程限时 <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -482,7 +482,7 @@ I 28
 I 30
 ----
 
-.. dropdown:: 停车模式
+.. dropdown:: 停车模式 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -497,7 +497,7 @@ I 30
 I 33
 ----
 
-.. dropdown:: 机械零点偏移量
+.. dropdown:: 机械零点偏移量 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -508,7 +508,7 @@ I 33
 I 37
 ----
 
-.. dropdown:: 刹车P-S阶段距离
+.. dropdown:: 刹车P-S阶段距离 <...>
    :animate: fade-in-slide-down
   
    -Max  359
@@ -519,7 +519,7 @@ I 37
 I 38
 ----
 
-.. dropdown:: 刹车P-S阶段初速度
+.. dropdown:: 刹车P-S阶段初速度 <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -530,7 +530,7 @@ I 38
 I 39
 ----
 
-.. dropdown:: 刹车P-S阶段末速度
+.. dropdown:: 刹车P-S阶段末速度 <...>
    :animate: fade-in-slide-down
   
    -Max  100
@@ -542,7 +542,7 @@ I 39
 I 40
 ----
 
-.. dropdown:: Kp(CPC-s)
+.. dropdown:: Kp(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -553,7 +553,7 @@ I 40
 I 41
 ----
 
-.. dropdown:: Kp增益(CPC-s)
+.. dropdown:: Kp增益(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -564,7 +564,7 @@ I 41
 I 42
 ----
 
-.. dropdown:: Kd(CPC-s)
+.. dropdown:: Kd(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -575,7 +575,7 @@ I 42
 I 43
 ----
 
-.. dropdown:: Kd增益(CPC-s)
+.. dropdown:: Kd增益(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -586,7 +586,7 @@ I 43
 I 46
 ----
 
-.. dropdown:: 最大锁定电流
+.. dropdown:: 最大锁定电流 <...>
    :animate: fade-in-slide-down
   
    -Max  40
@@ -597,7 +597,7 @@ I 46
 I 47
 ----
 
-.. dropdown:: 弱磁
+.. dropdown:: 弱磁 <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -611,7 +611,7 @@ I 47
 I 48
 ----
 
-.. dropdown:: 弱磁生效速度
+.. dropdown:: 弱磁生效速度 <...>
    :animate: fade-in-slide-down
   
    -Max  3500
@@ -622,7 +622,7 @@ I 48
 I 49
 ----
 
-.. dropdown:: 弱磁扩速电流
+.. dropdown:: 弱磁扩速电流 <...>
    :animate: fade-in-slide-down
   
    -Max  40
@@ -633,7 +633,7 @@ I 49
 I 50
 ----
 
-.. dropdown:: 输出上限(CPC-h)
+.. dropdown:: 输出上限(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -644,7 +644,7 @@ I 50
 I 51
 ----
 
-.. dropdown:: 输出下限(CPC-h)
+.. dropdown:: 输出下限(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  100
@@ -655,7 +655,7 @@ I 51
 I 52
 ----
 
-.. dropdown:: Kp(CPC-h)
+.. dropdown:: Kp(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -666,7 +666,7 @@ I 52
 I 53
 ----
 
-.. dropdown:: Kp增益(CPC-h)
+.. dropdown:: Kp增益(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -677,7 +677,7 @@ I 53
 I 54
 ----
 
-.. dropdown:: Kd(CPC-h)
+.. dropdown:: Kd(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -688,7 +688,7 @@ I 54
 I 55
 ----
 
-.. dropdown:: Kd增益(CPC-h)
+.. dropdown:: Kd增益(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  99
