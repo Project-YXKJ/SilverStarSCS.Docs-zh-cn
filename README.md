@@ -1,7 +1,5 @@
 # SilverStar-CSSM-Reference-Book
 
-
-
 Documentation for SilverStar-CSSM
 
 Built with [Sphinx](https://www.sphinx-doc.org/), and host on [Read the Docs](https://readthedocs.org/)
@@ -18,7 +16,7 @@ Built with [Sphinx](https://www.sphinx-doc.org/), and host on [Read the Docs](ht
 [Installing packages using pip and virtual environments](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
 
 ```bash
-$ cd SilverStar-CSSM-Reference-Book
+$ cd SilverStar-CSSM-Reference-Book-CHS
 $ py -m venv env
 ```
 
