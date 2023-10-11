@@ -41,6 +41,8 @@ html_theme_options = {
         # 衔接以及左侧目录的颜色
         "color-brand-primary": "#c0d725",
         "color-brand-content": "#c0d725",
+        "font-stack": "LXGW Bright, sans-serif",
+        "font-stack--monospace": "LXGW Bright, monospace",
     },
     "source_repository": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book-CHS/",
     "source_branch": "main",
