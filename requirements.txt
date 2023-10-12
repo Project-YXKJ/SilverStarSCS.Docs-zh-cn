@@ -12,3 +12,5 @@ sphinx-notfound-page>=1.0.0
 sphinx_copybutton>=0.3.3
 sphinx-design
 myst-parser
+sphinxcontrib-svg2pdfconverter
+CairoSVG

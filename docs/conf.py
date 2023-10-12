@@ -6,6 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import os.path
+
+yxkj_docs_dir = os.path.abspath(os.path.dirname(__file__))
+
 project = "SilverStar's CSSM Reference Book"
 copyright = "2023, vayoger"
 author = "vayoger"
@@ -13,12 +18,20 @@ author = "vayoger"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx_copybutton", "myst_parser", "sphinx_design"]
+extensions = [
+    "sphinx_copybutton",
+    "myst_parser",
+    "sphinx_design",
+    "sphinxcontrib.cairosvgconverter",
+]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 language = "zh_CN"
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = "sphinx"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -53,13 +66,48 @@ html_theme_options = {
     "footer_icons": [
         {
             "name": "GitHub",
-            # "url": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book-CHS",
-            # "html": """
-            #     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
-            #         <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-            #     </svg>
-            # """,
-            # "class": "",
+            "url": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book-CHS",
+            "html": """
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            """,
+            "class": "",
         },
     ],
 }
+
+# -- Options for latex output ----------------------------
+latex_template_dir = os.path.join(yxkj_docs_dir, "latex_templates")
+
+preamble = ""
+with open(os.path.join(latex_template_dir, "preamble.tex")) as f:
+    preamble = f.read()
+
+titlepage = ""
+with open(os.path.join(latex_template_dir, "titlepage.tex")) as f:
+    titlepage = f.read()
+
+latex_elements = {
+    "papersize": "a4paper",
+    "figure_align": "htbp",
+    "pointsize": "10pt",
+    # CJK中日韩,mian默认,sans无衬线,mono等宽
+    "fontpkg": r"""
+    \usepackage{xeCJK}
+    \setCJKmainfont{LXGW Bright}
+    \setCJKmonofont{LXGW Bright}    
+    \setmainfont{LXGW Bright}
+    \setmonofont{Mononoki NFM}
+    """,
+    "preamble": preamble,
+    "maketitle": titlepage,
+    "fncychap": r"\usepackage[Sonny]{fncychap}",
+    "printindex": r"\footnotesize\raggedright\printindex",
+}
+
+# The name of an image file (relative to this directory) to place at the bottom of
+# the title page.
+latex_logo = os.path.join(yxkj_docs_dir, "_static", "logo-square.pdf")
+latex_engine = "xelatex"
+latex_use_xindy = False
