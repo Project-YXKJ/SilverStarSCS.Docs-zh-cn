@@ -93,10 +93,6 @@ latex_elements = {
     "papersize": "a4paper",
     "figure_align": "htbp",
     "pointsize": "10pt",
-    # CJK中日韩,mian默认,sans无衬线,mono等宽
-    "fontpkg": r"""
-    \usepackage[UTF8]{ctex}
-    """,
     "preamble": preamble,
     "maketitle": titlepage,
     "fncychap": r"\usepackage[Sonny]{fncychap}",
