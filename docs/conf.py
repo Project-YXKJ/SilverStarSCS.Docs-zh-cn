@@ -94,11 +94,7 @@ latex_elements = {
     "pointsize": "10pt",
     # CJK中日韩,mian默认,sans无衬线,mono等宽
     "fontpkg": r"""
-    \usepackage{xeCJK}
-    \setCJKmainfont{LXGW Bright}
-    \setCJKmonofont{LXGW Bright}    
-    \setmainfont{LXGW Bright}
-    \setmonofont{Mononoki NFM}
+    \usepackage[UTF8]{ctex}
     """,
     "preamble": preamble,
     "maketitle": titlepage,
