@@ -39,6 +39,21 @@ $ make clean // 不是必须
 $ make html
 ```
 
+### Build the documentation in **PDF** format
+
+```bash
+$ cd docs
+$ make latexpdf
+```
+
+
+
+## Q&A
+
+### CairoSVG安装？
+
+LaTeX不支持SVG，[sphinxcontrib-svg2pdfconverter](https://pypi.org/project/sphinxcontrib-svg2pdfconverter/) 可以帮你转换SVG到PDF，但是此插件并不具体提供转换功能，需要自行安装[CairoSVG](https://cairosvg.org/)，当然你可以选择其他转换器。CairoSVG又依赖一些其他工具，可以参考[这里](https://cairosvg.org/documentation/#installation)。
+
 ## Reference
 
 [多语言](https://docs.readthedocs.io/en/stable/localization.html#projects-with-multiple-translations-sphinx-only)

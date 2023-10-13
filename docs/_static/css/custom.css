@@ -2,3 +2,17 @@
 .wy-table-responsive table th {
   white-space: normal;
 } */
+
+@font-face {
+  font-family: "LXGWBright";
+  src: url("./font/LXGWBright-Regular_0.ttf");
+}
+
+@font-face {
+  font-family: "Mononoki";
+  src: url("./font/mononoki-Regular.ttf");
+}
+
+body {
+  font-family: "LXGWBright", sans-serif;
+}

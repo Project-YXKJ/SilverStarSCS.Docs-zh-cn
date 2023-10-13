@@ -38,13 +38,14 @@ pygments_style = "sphinx"
 html_theme = "furo"
 html_title = "SilverStar's CSSM Reference Book"
 html_favicon = "_static/logo-square.svg"
+# These folders are copied to the documentation's HTML output
 html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-# html_css_files = [
-#     "css/custom.css",
-# ]
+html_css_files = [
+    "css/custom.css",
+]
 
 html_theme_options = {
     # logo
@@ -54,8 +55,8 @@ html_theme_options = {
         # 衔接以及左侧目录的颜色
         "color-brand-primary": "#c0d725",
         "color-brand-content": "#c0d725",
-        "font-stack": "LXGW Bright, sans-serif",
-        "font-stack--monospace": "Mononoki NFM, monospace",
+        "font-stack": "LXGWBright, sans-serif",
+        "font-stack--monospace": "Mononoki, monospace",
     },
     "source_repository": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book-CHS/",
     "source_branch": "main",
