@@ -4,15 +4,9 @@
 } */
 
 @font-face {
-  font-family: "LXGWBright";
-  src: url("./font/LXGWBright-Regular_0.ttf");
-}
-
-@font-face {
-  font-family: "Mononoki";
-  src: url("./font/mononoki-Regular.ttf");
-}
-
-body {
-  font-family: "LXGWBright", sans-serif;
+  font-family: "HarmonyOS_Sans_SC_Regular";
+  src: url("./font/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),
+    url("./font/HarmonyOS_Sans_SC_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
