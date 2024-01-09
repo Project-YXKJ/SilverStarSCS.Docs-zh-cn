@@ -3,10 +3,4 @@
   white-space: normal;
 } */
 
-@font-face {
-  font-family: "HarmonyOS_Sans_SC_Regular";
-  src: url("./font/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),
-    url("./font/HarmonyOS_Sans_SC_Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.min.css);
