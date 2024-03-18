@@ -204,7 +204,7 @@ O 11
    -Description  如果自动释放打开，倒缝释放时间由此参数设置。
 
 O 12
-___
+____
 
 .. dropdown:: 1针的限速 <...> 
    :animate: fade-in-slide-down
