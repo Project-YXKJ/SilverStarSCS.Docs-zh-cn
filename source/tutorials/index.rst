@@ -6,4 +6,4 @@
 .. toctree::
     :maxdepth: 1
 
-    how-to-use-docs
+    how-to-interact-docs

@@ -1,8 +1,7 @@
-
 .. |SS-SCS-Docs| replace:: 银星SCS文档
 
 ================
-为本项目做出贡献
+参与文档贡献
 ================
 
 本项目 |SS-SCS-Docs| 欢迎贡献！有许多方法可以帮助改进，包括:
@@ -13,11 +12,83 @@
 * 编写新内容
 * 翻译
 
-翻译
-====
+文档类型
+===================
 
-新增语言
---------
+该项目由四种不同的文档类型组成，每个文档类型具有特定的目的。
+该项目致力于遵循 `Diátaxis process`_ 用于创建高质量的文档。
+当新建文档时，请选择适当的文档类型。
+
+.. _Diátaxis process: https://diataxis.fr/
+
+教程
+---------
+
+教程的重点是通过完成一个目标来向读者传授新概念目标。它们是一步接一步的指南。
+它们不包括无关的警告或信息。
+
+指南
+------
+
+指南专注于完成特定任务，或者承担一定程度的前提知识教学。这些与教程类似，
+但是内容聚焦且明确重点，并可以提供大量注意事项和附加信息，如果这些是需要的。
+指南也还可以讨论完成任务的多种方法。
+
+说明
+------------
+
+说明专注于理解和提供信息，他们针对某一个特定话题讨论或者说明，无需事前预设一个阅读目标。
+
+规格
+--------------
+
+规范是参考文档，专注于全面记录产品的接口。
+
+翻译
+============
+
+*TODO*
+
+我们使用 `Weblate`_ 来管理本项目的多语种翻译。
+请访问Weblate上的项目地址来贡献 `packaging.python.org`_。
+
+.. tip::
+
+   项目的所有翻译必须遵循 `reStructuredText语法 <reStructuredText syntax_>`_.
+
+.. _Weblate: https://weblate.org/
+.. _packaging.python.org: https://hosted.weblate.org/projects/
+.. _reStructuredText syntax: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+增加语言
+-----------------
+
+If your language is not listed on `packaging.python.org`_, click the button
+:guilabel:`Start new translation` at the bottom of the language list and add
+the language you want to translate.
+
+遵循reStructuredText语法
+---------------------------------
+
+如果您不熟悉reStructuredText(RST)语法，请在翻译工作开始之前阅读 `this guide`_
+
+**不要直接翻译引用中的文字**
+
+  当翻译一个引用中的文本时，不要直接翻译。
+
+  | Wrong: Translate the following text directly:
+
+  .. code-block:: rst
+
+      `some ref`_ -> `TRANSLATED TEXT HERE`_
+
+  | Right: Translate the following text with your own language and add the original reference:
+
+  .. code-block:: rst
+
+      `some ref`_ -> `TRANSLATED TEXT HERE <some ref_>`_
+
+.. _this guide: https://docutils.sourceforge.io/docs/user/rst/quickref.html
 
 本地构建本项目
 ==============
@@ -29,7 +100,7 @@
 
    .. code-block:: bash
 
-      python -m pip install --user nox
+      python -m pip install nox
 
 2. Python 3.11. 我们的构建脚本通常仅使用Python 3.11进行测试，从这里下载 `Python 3.11`_ 
    并将其安装在您的操作系统上。
@@ -53,88 +124,67 @@
 
 可通过地址浏览 http://localhost:8000.
 
-Style guide
+风格指南
 ===========
 
-Voice and tone
+读者
+----
+
+本指南的读者是所有使用 SilverStar SCS 产品的人。
+
+特别要记住，并非所有使用 SilverStar SCS 的人都视自己为开发人员。
+本文档的受众包括操作人员、维护人员、以及专业人士。
+
+写作语气
 --------------
 
-When writing this guide, strive to write with a voice that's approachable and
-humble, even if you have all the answers.
+撰写本指南时，力求以平易近人且谦逊的语气进行写作谦虚，即使你知道所有的答案。
 
-Imagine you're working on a Python project with someone you know to be smart and
-skilled. You like working with them and they like working with you. That person
-has asked you a question and you know the answer. How do you respond? *That* is
-how you should write this guide.
+想象一下，您正在与一个您认识的聪明且技术精湛的人一起开展一个项目。
+你喜欢和他们一起工作，他们也喜欢和你一起工作。那个人问了你一个问题，
+而你知道答案。你如何回应？ *这* 就是您编写本指南的方式。
 
-Here's a quick check: try reading aloud to get a sense for your writing's voice
-and tone. Does it sound like something you would say or does it sound like
-you're acting out a part or giving a speech? Feel free to use contractions and
-don't worry about sticking to fussy grammar rules. You are hereby granted
-permission to end a sentence in a preposition, if that's what you want to end it
-with.
+撰写文档时，根据话题的严肃性和难度调整语气。如果你正在写一个介绍性教程，
+开个玩笑是可以的，但如果您要说明的是产品的敏感规格，您可能需要完全避免开玩笑。
 
-When writing the guide, adjust your tone for the seriousness and difficulty of
-the topic. If you're writing an introductory tutorial, it's OK to make a joke,
-but if you're covering a sensitive security recommendation, you might want to
-avoid jokes altogether.
-
-Conventions and mechanics
+惯例和机制
 -------------------------
 
-**Write to the reader**
-  When giving recommendations or steps to take, address the reader as *you*
-  or use the imperative mood.
+**写给读者**
+  在提供建议或采取的步骤时，请称呼读者为*您*或使用请求语气。
 
-  | Wrong: To install it, the user runs…
-  | Right: You can install it by running…
-  | Right: To install it, run…
+  | 错误：要安装它，用户运行...
+  | 正确：您可以通过运行...来安装它
+  | 正确：要安装它，请运行...
 
-**State assumptions**
-  Avoid making unstated assumptions. Reading on the web means that any page of
-  the book may be the first page of the book that the reader ever sees.
-  If you're going to make assumptions, then say what assumptions that you're
-  going to make.
+**陈述假设**
+  避免未说明的假设。在网络上阅读这个文档，意味着任何页面可能是读者读到的第一页。
+  如果您要做出假设，请说明您的假设是什么。
 
-**Cross-reference generously**
-  The first time you mention a tool or practice, link to the part of the
-  guide that covers it, or link to a relevant document elsewhere. Save the
-  reader a search.
+**慷慨地交叉引用**
+  第一次提到一个工具或概念时，请链接到该工具或概念在文档其他部分中的解释，或链接到其他相关文档。
+  节省读者的再次搜索。
 
-**Respect naming practices**
-  When naming tools, sites, people, and other proper nouns, use their preferred
-  capitalization.
+**尊重命名习惯**
+  在命名工具、站点、人员和其他专有名词时，使用他们管用的大写。
 
-  | Wrong: Pip uses…
-  | Right: pip uses…
+  | 错误: Pip使用…
+  | 正确: pip使用…
   |
-  | Wrong: …hosted on github.
-  | Right: …hosted on GitHub.
+  | 错误: …部署在github.
+  | 正确: …部署在GitHub.
 
-**Use a gender-neutral style**
-  Often, you'll address the reader directly with *you*, *your* and *yours*.
-  Otherwise, use gender-neutral pronouns *they*, *their*, and *theirs* or avoid
-  pronouns entirely.
+**标题**
+  使用读者正在搜索的单词编写标题。一个好方法是让问题本身成为你的标题。
+  例如，一个读者可能想知道*如何安装库文件*，那么*如何安装库文件*就是一个好标题。
 
-  | Wrong: A maintainer uploads the file. Then he…
-  | Right: A maintainer uploads the file. Then they…
-  | Right: A maintainer uploads the file. Then the maintainer…
+  在章节标题中，使用大小写。换句话说，像写句子一样写标题。
 
-**Headings**
-  Write headings that use words the reader is searching for. A good way to
-  do this is to have your heading complete an implied question. For example, a
-  reader might want to know *How do I install MyLibrary?* so a good heading
-  might be *Install MyLibrary*.
+  | 错误: Things You Should Know About Python
+  | 正确: Things you should know about Python
 
-  In section headings, use sentence case. In other words, write headings as you
-  would write a typical sentence.
-
-  | Wrong: Things You Should Know About Python
-  | Right: Things you should know about Python
-
-**Numbers**
-  In body text, write numbers one through nine as words. For other numbers or
-  numbers in tables, use numerals.
+**数字**
+  在正文中，使用小写中文数字。对于其他数字或表中的数字，请使用阿拉伯数字。
 
 .. _contributors:
 

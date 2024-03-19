@@ -7,7 +7,6 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 import os
-import sys
 import time
 
 yxkj_docs_dir = os.path.abspath(os.path.dirname(__file__))
