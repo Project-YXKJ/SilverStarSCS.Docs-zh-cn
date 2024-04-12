@@ -8,6 +8,7 @@
 
    overview
    tutorials/index
+   guides/index
    function/index
    troubleshooting/index
    specifications/index

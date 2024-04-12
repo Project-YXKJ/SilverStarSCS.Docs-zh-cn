@@ -4,49 +4,110 @@
 电机
 =====
 
-**电机保持力**
+电机保持力
+==========
 
-打开此功能，需要将 `A 54`_ 设置为1。
+打开此功能，需要将 :option:`A54` 设置为1。
 
 当启用保持里功能时，电机在停车时会维持一定的力度来“锁定”在当前位置，此处锁定非固定,
 这项功能对于改善停车时不希望的针杆下落有一定帮助，要感受锁定力度可以通过手动盘动手轮来感受。
 
-保持力维持调节的最大时间由参数 `A 66`_ 决定:
+保持力维持调节的最大时间由参数 :option:`A66` 决定：
 
-- 如果 `A 66`_ 设置为0，那么保持力在停车时可以一直维持。
-- 如果 `A 66`_ 设置不为0，那么保持力在停车时只是维持一定时间，之后释放电机，
-  此时 `A 66`_ 参数值表示维持时间。
+等于0
+   那么保持力在停车时可以一直维持。
+
+不等于0
+   那么保持力在停车时只是维持一定时间，之后释放电机，此时参数值表示维持时间。
+
+快速参考
+===============
+
+下表总结了电机功能所使用到的参数：
+
+==================================================== ========== ==============
+参数                                                 权限       参见
+==================================================== ========== ==============
+最高限速                                             技术员     :option:`S01`
+最低缝速                                             技术员     :option:`S02`
+上电自动上针位                                       技术员     :option:`A18`
+电机保持力                                           技术员     :option:`A54`
+锁定齿（CPC-h）                                      开发者     :option:`A55`
+偏移角度大于此值开始调节（CPC-h）                    开发者     :option:`A56`
+偏移角度小于此值调节结束（CPC-h）                    开发者     :option:`A57`
+电机保持力模式                                       技术员     :option:`A66`
+机头同步信号来源                                     技术员     :option:`O04`
+输入速度打折                                         技术员     :option:`O36`
+简易模式                                             技术员     :option:`O37`
+电机旋转方向                                         开发者     :option:`O67`
+加速度                                               技术员     :option:`I01`
+减速度                                               技术员     :option:`I02`
+电角度                                               开发者     :option:`I03`
+传动比                                               开发者     :option:`I04`
+Kp（CSC-t）                                          开发者     :option:`I05`
+Kp增益（CSC-t）                                      开发者     :option:`I06`
+Ki（CSC-t）                                          开发者     :option:`I07`
+Ki增益（CSC-t）                                      开发者     :option:`I08`
+Kp（CSC）                                            开发者     :option:`I09`
+Kp增益（CSC）                                        开发者     :option:`I10`
+Ki（CSC）                                            开发者     :option:`I11`
+Ki增益（CSC）                                        开发者     :option:`I12`
+输出上限（CSC）                                      开发者     :option:`I13`
+前馈（CSC）                                          开发者     :option:`I14`
+Kp（CCC-d）                                          开发者     :option:`I15`
+Kp增益（CCC-d）                                      开发者     :option:`I16`
+Ki（CCC-d）                                          开发者     :option:`I17`
+Ki增益（CCC-d）                                      开发者     :option:`I18`
+输出上限（CCC-d）                                    开发者     :option:`I19`
+输出下限（CCC-d）                                    开发者     :option:`I20`
+Kp（CCC-q）                                          开发者     :option:`I21`
+Kp增益（CCC-q）                                      开发者     :option:`I22`
+Ki（CCC-q）                                          开发者     :option:`I23`
+Ki增益（CCC-q）                                      开发者     :option:`I24`
+输出上限（CCC-q）                                    开发者     :option:`I25`
+输出下限（CCC-q）                                    开发者     :option:`I26`
+码盘分辨率                                           开发者     :option:`I27`
+停车流程限时                                         开发者     :option:`I28`
+停车模式                                             开发者     :option:`I30`
+机械零点偏移量                                       开发者     :option:`I33`
+刹车P-S阶段距离                                      开发者     :option:`I37`
+刹车P-S阶段初速度                                    开发者     :option:`I38`
+刹车P-S阶段末速度                                    开发者     :option:`I39`
+Kp（CPC-s）                                          开发者     :option:`I40`
+Kp增益（CPC-s）                                      开发者     :option:`I41`
+Kd（CPC-s）                                          开发者     :option:`I42`
+Kd增益（CPC-s）                                      开发者     :option:`I43`
+最大锁定电流                                         开发者     :option:`I46`
+弱磁                                                 开发者     :option:`I47`
+弱磁生效速度                                         开发者     :option:`I48`
+弱磁扩速电流                                         开发者     :option:`I49`
+输出上限（CPC-h）                                    开发者     :option:`I50`
+输出下限（CPC-h）                                    开发者     :option:`I51`
+Kp（CPC-h）                                          开发者     :option:`I52`
+Kp增益（CPC-h）                                      开发者     :option:`I53`
+Kd（CPC-h）                                          开发者     :option:`I54`
+Kd增益（CPC-h）                                      开发者     :option:`I55`
+==================================================== ========== ==============
 
 参数列表
 ========
 
-S 01
-----
+.. option:: S01
 
-.. dropdown:: 最高限速 <...>
-   :animate: fade-in-slide-down
-   
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  调速器踩至最深时的最大速度。
-     
-S 02
-----
-.. dropdown:: 最低缝速 <...>
-   :animate: fade-in-slide-down
-  
+
+.. option:: S02
+
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  调速器处于位置1即低速段时的缝制速度，也是补针速度。
 
-     
-A 18
-----
-.. dropdown:: 上电自动上针位 <...>
-   :animate: fade-in-slide-down
-  
+.. option:: A18
+
    -Max  4500
    -Min  100
    -Unit  spm
@@ -58,12 +119,8 @@ A 18
 .. danger:: 
    请谨慎设置A18参数，可能会导致人身危险。
 
-A 54
-----
+.. option:: A54
 
-.. dropdown:: 电机保持力 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0
    -Unit  --
@@ -72,45 +129,29 @@ A 54
      | 0 = 关闭；
      | 1 = 打开。
 
-A 55
-----
+.. option:: A55
 
-.. dropdown:: 锁定齿 <...>
-   :animate: fade-in-slide-down
-  
    -Max  720
    -Min  1
    -Unit  --
    -Description  锁定在此角度内。
 
-A 56
-----
+.. option:: A56
 
-.. dropdown:: 偏移角度大于此值开始调节 <...>
-   :animate: fade-in-slide-down
-  
    -Max  720
    -Min  1
    -Unit  --
    -Description  位置误差大于此值开始调节。
 
-A 57
-----
+.. option:: A57
 
-.. dropdown:: 偏移角度小于此值调节结束 <...>
-   :animate: fade-in-slide-down
-  
    -Max  720
    -Min  1
    -Unit  --
    -Description  位置误差小于此值结束调节。
 
-A 66
-----
+.. option:: A66
 
-.. dropdown:: 电机保持力模式 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0
    -Unit  --
@@ -118,12 +159,8 @@ A 66
      | 0 = 一直维持；
      | 不为0 = 此参数表示维持的时间，设置的时间过后保持力消失。
 
-O 04
-----
+.. option:: O04
 
-.. dropdown:: 机头同步信号来源  <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0
    -Unit  --
@@ -131,23 +168,15 @@ O 04
      | 0 = 外置针位检测器；
      | 1 = 电机自带。
 
-O 36
-----
+.. option:: O36
 
-.. dropdown:: 输入速度打折 <...>
-   :animate: fade-in-slide-down
-  
    -Max  5
    -Min  0
    -Unit  --
    -Description  对输入速度比例缩小使机器运行速度比设定低。
 
-O 37
-----
+.. option:: O37
 
-.. dropdown:: 简易模式 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0
    -Unit  --
@@ -156,12 +185,8 @@ O 37
      | 0 = 关闭；
      | 1 = 打开。
 
-O 67
-----
+.. option:: O67
 
-.. dropdown:: 电机旋转方向 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0
    -Unit  --
@@ -169,322 +194,206 @@ O 67
      | 0 = 逆时针；
      | 1 = 顺时针，视角为手轮方向看电机。  
 
-I 01
-----
+.. option:: I01
 
-.. dropdown:: 加速度 <...>
-   :animate: fade-in-slide-down
-  
    -Max  500
    -Min  150
    -Unit  毫秒
    -Description  0~4500rpm加速时间。
 
-I 02
-----
+.. option:: I02
 
-.. dropdown:: 减速度 <...>
-   :animate: fade-in-slide-down
-  
    -Max  500
    -Min  150
    -Unit  毫秒
    -Description  4500rpm~0减速时间。
 
-I 03
-----
+.. option:: I03
 
-.. dropdown:: 电角度 <...>
-   :animate: fade-in-slide-down
-  
    -Max  4096
    -Min  0
    -Unit  --
    -Description  电角度补偿值。
 
-I 04
-----
+.. option:: I04
 
-.. dropdown:: 传动比 <...>
-   :animate: fade-in-slide-down
-  
    -Max  4096
    -Min  1 
    -Unit  --
    -Description  主轴转动一周对应的电机编码信号数量。
 
-I 05
-----
+.. option:: I05
 
-.. dropdown:: Kp(CSC-t) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  剪线速度环Kp。
 
-I 06
-----
+.. option:: I06
 
-.. dropdown:: Kp增益(CSC-t) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  剪线速度环Kp增益系数。
 
-I 07
-----
+.. option:: I07
 
-.. dropdown:: Ki(CSC-t)  <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  剪线速度环Ki。
 
-I 08
-----
+.. option:: I08
 
-.. dropdown:: Ki增益(CSC-t) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  剪线速度环Ki增益。
 
-I 09
-----
+.. option:: I09
 
-.. dropdown:: Kp(CSC) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  速度环Kp。
 
-I 10
-----
+.. option:: I10
 
-.. dropdown:: Kp增益(CSC) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  速度环Kp增益。
 
-I 11
-----
+.. option:: I11
 
-.. dropdown:: Ki(CSC) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  速度环Ki。
 
-I 12
-----
+.. option:: I12
 
-.. dropdown:: Ki增益(CSC) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  速度环Ki增益。
 
 
-I 13
-----
+.. option:: I13
 
-.. dropdown:: 输出上限(CSC) <...>
-   :animate: fade-in-slide-down
-  
    -Max  20
    -Min  1
    -Unit  --
    -Description  速度环输出上限。
 
 
-I 14
-----
+.. option:: I14
 
-.. dropdown:: 前馈(CSC) <...>
-   :animate: fade-in-slide-down
-  
    -Max  500
    -Min  0
    -Unit  --
    -Description  速度环前馈系数。
 
-I 15
-----
+.. option:: I15
 
-.. dropdown:: Kp(CCC-d) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  电流环d轴Kp。
 
-I 16
-----
+.. option:: I16
 
-.. dropdown:: Kp增益(CCC-d) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  电流环d轴Kp增益。
 
-I 17
-----
+.. option:: I17
 
-.. dropdown:: Ki(CCC-d) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  电流环d轴Ki。
 
-I 18
-----
+.. option:: I18
 
-.. dropdown:: Ki增益(CCC-d) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  电流环d轴Ki增益。
 
-I 19
-----
+.. option:: I19
 
-.. dropdown:: 输出上限(CCC-d) <...>
-   :animate: fade-in-slide-down
-  
    -Max  3276
    -Min  0
    -Unit  --
    -Description  电流环Id输出上限。
 
-I 20
-----
+.. option:: I20
 
-.. dropdown:: 输出下限(CCC-d) <...>
-   :animate: fade-in-slide-down
-  
    -Max  3276
    -Min  0
    -Unit  --
    -Description  电流环Id输出下限。
 
-I 21
-----
+.. option:: I21
 
-.. dropdown:: Kp(CCC-q) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  电流环q轴Kp。
 
-I 22
-----
+.. option:: I22
 
-.. dropdown:: Kp增益(CCC-q) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  0
    -Unit  --
    -Description  电流环q轴Kp增益。
 
-I 23
-----
+.. option:: I23
 
-.. dropdown:: Ki(CCC-q) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  电流环q轴Ki。
 
-I 24
-----
+.. option:: I24
 
-.. dropdown:: Ki增益(CCC-q) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  电流环q轴Ki增益。
 
-I 25
-----
+.. option:: I25
 
-.. dropdown:: 输出上限(CCC-q) <...>
-   :animate: fade-in-slide-down
-  
    -Max  3276
    -Min  0
    -Unit  --
    -Description  电流环Iq输出上限。
 
-I 26
-----
+.. option:: I26
 
-.. dropdown:: 输出下限(CCC-q) <...>
-   :animate: fade-in-slide-down
-  
    -Max  3276
    -Min  0
    -Unit  --
    -Description  电流环Iq输出下限。
 
-I 27
-----
+.. option:: I27
 
-.. dropdown:: 码盘分辨率 <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  1
    -Unit  --
    -Description  电机编码器的每圈线数。
 
-I 28
-----
+.. option:: I28
 
-.. dropdown:: 停车流程限时 <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  毫秒
    -Description  停车流程中距离电机刹停的时间。
 
-I 30
-----
+.. option:: I30
 
-.. dropdown:: 停车模式 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0 
    -Unit  --
@@ -494,112 +403,72 @@ I 30
      | 1 = 位置模式。 
 
 
-I 33
-----
+.. option:: I33
 
-.. dropdown:: 机械零点偏移量 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0 
    -Unit  --
    -Description  机械零点距离电机同步点的偏移量。
 
-I 37
-----
+.. option:: I37
 
-.. dropdown:: 刹车P-S阶段距离 <...>
-   :animate: fade-in-slide-down
-  
    -Max  359
    -Min  0 
    -Unit  1°
    -Description  刹车角度与速度规划阶段的距离。
 
-I 38
-----
+.. option:: I38
 
-.. dropdown:: 刹车P-S阶段初速度 <...>
-   :animate: fade-in-slide-down
-  
    -Max  500
    -Min  100 
    -Unit  spm
    -Description  刹车角度与速度规划阶段的入口速度。
 
-I 39
-----
+.. option:: I39
 
-.. dropdown:: 刹车P-S阶段末速度 <...>
-   :animate: fade-in-slide-down
-  
    -Max  100
    -Min  20 
    -Unit  spm
    -Description  刹车角度与速度规划阶段的终点速度。
 
 
-I 40
-----
+.. option:: I40
 
-.. dropdown:: Kp(CPC-s) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0 
    -Unit  --
    -Description  停车位置环Kp。
 
-I 41
-----
+.. option:: I41
 
-.. dropdown:: Kp增益(CPC-s) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  1
    -Unit  --
    -Description  停车位置环Kp增益。
 
-I 42
-----
+.. option:: I42
 
-.. dropdown:: Kd(CPC-s) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  停车位置环Kd。
 
-I 43
-----
+.. option:: I43
 
-.. dropdown:: Kd增益(CPC-s) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  1
    -Unit  --
    -Description  停车位置环Kd增益。
 
-I 46
-----
+.. option:: I46
 
-.. dropdown:: 最大锁定电流 <...>
-   :animate: fade-in-slide-down
-  
    -Max  40
    -Min  1
    -Unit  0.1A
    -Description  锁定电流最大值。
 
-I 47
-----
+.. option:: I47
 
-.. dropdown:: 弱磁 <...>
-   :animate: fade-in-slide-down
-  
    -Max  1
    -Min  0
    -Unit  --
@@ -608,89 +477,57 @@ I 47
      | 0 = 关闭；
      | 1 = 打开。
 
-I 48
-----
+.. option:: I48
 
-.. dropdown:: 弱磁生效速度 <...>
-   :animate: fade-in-slide-down
-  
    -Max  3500
    -Min  2000
    -Unit  rpm  
    -Description  高于此速度，弱磁扩速生效。
 
-I 49
-----
+.. option:: I49
 
-.. dropdown:: 弱磁扩速电流 <...>
-   :animate: fade-in-slide-down
-  
    -Max  40
    -Min  1
    -Unit  0.1A
    -Description  弱磁扩速ID电流上限。
 
-I 50
-----
+.. option:: I50
 
-.. dropdown:: 输出上限(CPC-h) <...>
-   :animate: fade-in-slide-down
-  
    -Max  500
    -Min  0
    -Unit  --
    -Description  锁定位置环输出上限。
 
-I 51
-----
+.. option:: I51
 
-.. dropdown:: 输出下限(CPC-h) <...>
-   :animate: fade-in-slide-down
-  
    -Max  100
    -Min  0
    -Unit  --
    -Description  锁定位置环输出下限。
 
-I 52
-----
+.. option:: I52
 
-.. dropdown:: Kp(CPC-h) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  位置环Kp。
 
-I 53
-----
+.. option:: I53
 
-.. dropdown:: Kp增益(CPC-h) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  1
    -Unit  --
    -Description  锁定位置环Kp增益。
 
-I 54
-----
+.. option:: I54
 
-.. dropdown:: Kd(CPC-h) <...>
-   :animate: fade-in-slide-down
-  
    -Max  9999
    -Min  0
    -Unit  --
    -Description  锁定位置环Kd。
 
-I 55
-----
+.. option:: I55
 
-.. dropdown:: Kd增益(CPC-h) <...>
-   :animate: fade-in-slide-down
-  
    -Max  99
    -Min  1
    -Unit  --

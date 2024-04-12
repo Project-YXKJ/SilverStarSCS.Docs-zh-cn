@@ -4,25 +4,42 @@
 控制器, 其他
 ============
 
+快速参考
+===============
+
+下表总结了控制器, 其他功能所使用到的参数：
+
+==================================================== ========== ==============
+参数                                                 权限       参见
+==================================================== ========== ==============
+发送间隔                                             技术员     :option:`T14`
+物联网                                               技术员     :option:`A49`
+操作板锁定                                           技术员     :option:`A52`
+调试                                                 开发者     :option:`A58`
+重置统计信息区                                       技术员     :option:`A59` 
+密码使能                                             技术员     :option:`O15`
+清除错误记录                                         技术员     :option:`O17`
+用户密码                                             技术员     :option:`O27`
+重置参数区                                           技术员     :option:`O51`
+重置机械零点                                         技术员     :option:`O52`
+重置所有信息                                         技术员     :option:`O66`
+母线过压检测                                         技术员     :option:`O70`
+交流过压检测                                         技术员     :option:`O71`
+最大母线电压                                         技术员     :option:`I44`
+最大AC电压                                           技术员     :option:`I45`
+==================================================== ========== ==============
+
 参数列表
 ========
 
-T 14
-----
-
-.. dropdown:: 发送间隔 <...>
-   :animate: fade-in-slide-down
+.. option:: T14
    
    -Max  9999
    -Min  1
    -Unit  毫秒
    -Description  发送物联网数据的时间间隔
 
-A 49
-----
-
-.. dropdown:: 物联网 <...>
-   :animate: fade-in-slide-down
+.. option:: A49
    
    -Max  1
    -Min  0
@@ -32,11 +49,7 @@ A 49
      | 0 = 关闭；
      | 1 = 打开。
 
-A 52
-----
-
-.. dropdown:: 操作板锁定 <...>
-   :animate: fade-in-slide-down
+.. option:: A52
    
    -Max  1
    -Min  0
@@ -46,11 +59,7 @@ A 52
      | 0 = 不允许;
      | 1 = 允许操作.
 
-A 58
-----
-
-.. dropdown:: 调试 <...> 
-   :animate: fade-in-slide-down
+.. option:: A58
    
    -Max  1
    -Min  0
@@ -60,22 +69,14 @@ A 58
      | 0 = 关闭；
      | 1 = 打开。
 
-A 59
-----
-
-.. dropdown:: 重置统计信息区 <...> 
-   :animate: fade-in-slide-down
+.. option:: A59
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  设置为1,重新开机后统计信息将恢复为默认值.
 
-O 15
-----
-
-.. dropdown:: 密码使能 <...>
-   :animate: fade-in-slide-down
+.. option:: O15
    
    -Max  1
    -Min  0
@@ -85,55 +86,35 @@ O 15
      | 0 = 关闭；
      | 1 = 打开。
 
-O 17
-----
-
-.. dropdown:: 清除错误记录 <...>
-   :animate: fade-in-slide-down
+.. option:: O17
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  设置为1,重启后错误记录将被清除.
 
-O 27
-----
-
-.. dropdown:: 用户密码 <...>
-   :animate: fade-in-slide-down
+.. option:: O27
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  用户可自行设定的参数区密码.
 
-O 51
-----
-
-.. dropdown:: 重置参数区 <...>
-   :animate: fade-in-slide-down
+.. option:: O51
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  设置为1,重新开机后参数将恢复为默认值.
 
-O 52
-----
-
-.. dropdown:: 重置机械零点 <...>
-   :animate: fade-in-slide-down
+.. option:: O52
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  设置为1,重新开机后 :term:`机械零点` 将恢复为默认值.
 
-O 66
-----
-
-.. dropdown:: 重置所有信息 <...>
-   :animate: fade-in-slide-down
+.. option:: O66
    
    -Max  1
    -Min  0
@@ -141,11 +122,7 @@ O 66
    -Description  设置为1, 重启后参数恢复至出厂值, 清除错误记录以及统计信息,
                  :term:`机械零点` 恢复至默认值
 
-O 70
-----
-
-.. dropdown:: 母线过压检测 <...>
-   :animate: fade-in-slide-down
+.. option:: O70
    
    -Max  1
    -Min  0
@@ -155,11 +132,7 @@ O 70
      | 0 = 关闭；
      | 1 = 打开。
    
-O 71
-----
-
-.. dropdown:: 交流过压检测 <...>
-   :animate: fade-in-slide-down
+.. option:: O71
    
    -Max  1
    -Min  0
@@ -169,23 +142,14 @@ O 71
      | 0 = 关闭；
      | 1 = 打开。
 
-
-I 44
-----
-
-.. dropdown:: 最大母线电压 <...>
-   :animate: fade-in-slide-down
+.. option:: I44
    
    -Max  460
    -Min  400
    -Unit  --
    -Description  母线电压的最大值
 
-I 45
-----
-
-.. dropdown:: 最大AC电压 <...>
-   :animate: fade-in-slide-down
+.. option:: I45
    
    -Max  300
    -Min  260

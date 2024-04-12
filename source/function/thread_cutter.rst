@@ -4,31 +4,41 @@
 剪线
 ====
 
-**剪线执行流程**
+*剪线执行流程：*
 
-在达到 `D 03`_ 设置的位置后，剪线电磁铁接通，之后达到 `D 04`_ 的位置后，关断。
+在达到 :option:`D03` 设置的位置后，剪线电磁铁接通，之后达到 :option:`D04` 的位置后关断。
 
 如果在剪线过程发生机械堵转，那么剪线电磁铁会在500毫秒之后自动关断，以防止烧毁电磁铁。
+
+快速参考
+===============
+
+下表总结了剪线功能所使用到的参数：
+
+==================================================== ========== ==============
+参数                                                 权限       参见
+==================================================== ========== ==============
+剪线功能                                             操作员     :option:`A06`
+剪线速度                                             技术员     :option:`S07`
+短线头功能                                           技术员     :option:`A42`
+短线头针数                                           技术员     :option:`A67`
+剪线开始角度                                         技术员     :option:`D03`
+剪线结束角度                                         技术员     :option:`D04`
+动刀开始角度(STC)                                    技术员     :option:`D17`
+动刀结束角度(STC)                                    技术员     :option:`D18`
+倒缝开始角度(STC)                                    技术员     :option:`D19`
+倒缝结束角度(STC)                                    技术员     :option:`D20`
+零针距开始角度(STC)                                  技术员     :option:`D21`
+零针距结束角度(STC)                                  技术员     :option:`D22`
+剪线后检查调速器位置                                 技术员     :option:`O38`
+时间（t1）                                           开发者     :option:`O95`
+维持出力（t2）                                       开发者     :option:`O96`
+==================================================== ========== ==============
 
 参数列表
 ========
 
-S 07
-----
-
-.. dropdown:: 剪线速度 <...>
-   :animate: fade-in-slide-down
-   
-   -Max  300
-   -Min  150
-   -Unit  spm
-   -Description  剪线动作的速度。
-
-A 06
-----
-
-.. dropdown:: 剪线功能 <...>
-   :animate: fade-in-slide-down
+.. option:: A06
    
    -Max  1
    -Min  0
@@ -38,11 +48,14 @@ A 06
      | 0 = 关闭；
      | 1 = 打开。
 
-A 42
-----
+.. option:: S07
+   
+   -Max  300
+   -Min  150
+   -Unit  spm
+   -Description  剪线动作的速度。
 
-.. dropdown:: 短线头功能 <...>
-   :animate: fade-in-slide-down
+.. option:: A42
    
    -Max  1
    -Min  0
@@ -52,22 +65,14 @@ A 42
      | 0 = 关闭；
      | 1 = 打开。     
 
-A 67
-----
-
-.. dropdown:: 短线头针数 <...>
-   :animate: fade-in-slide-down
+.. option:: A67
    
    -Max  10
    -Min  0
    -Unit  针
    -Description  短线头功能打开时，剪线前的小针距针数。
 
-D 03
-----
-
-.. dropdown:: 剪线开始角度 <...>
-   :animate: fade-in-slide-down
+.. option:: D03
    
    -Max  359
    -Min  0
@@ -75,88 +80,56 @@ D 03
    -Description  剪线电磁铁动作角度。
 
 
-D 04
-----
-
-.. dropdown:: 剪线结束角度 <...>
-   :animate: fade-in-slide-down
+.. option:: D04
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  剪线电磁铁释放角度。
 
-D 17
-----
-
-.. dropdown:: Start Movable Knife Position(STC) <...>
-   :animate: fade-in-slide-down
+.. option:: D17
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  短线头机型剪线时动刀电磁铁动作角度。
 
-D 18
-----
-
-.. dropdown:: 动刀结束角度(STC) <...>
-   :animate: fade-in-slide-down
+.. option:: D18
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  短线头机型剪线时动刀电磁铁释放角度。
 
-D 19
-----
-
-.. dropdown:: 倒缝开始角度(STC) <...>
-   :animate: fade-in-slide-down
+.. option:: D19
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  短线头机型剪线时倒缝电磁体动作角度。
 
-D 20
-----
-
-.. dropdown:: 倒缝结束角度(STC) <...>
-   :animate: fade-in-slide-down
+.. option:: D20
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  短线头机型剪线时倒缝电磁体释放角度。
 
-D 21
-----
-
-.. dropdown:: 零针距开始角度(STC) <...>
-   :animate: fade-in-slide-down
+.. option:: D21
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  短线头机型剪线时零针距电磁体动作角度。
 
-D 22
-----
-
-.. dropdown:: 零针距结束角度(STC) <...>
-   :animate: fade-in-slide-down
+.. option:: D22
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  短线头机型剪线时零针距电磁体释放角度。
    
-O 38
-----
-
-.. dropdown:: 剪线后检查调速器位置 <...>
-   :animate: fade-in-slide-down
+.. option:: O38
    
    -Max  1
    -Min  0
@@ -166,22 +139,14 @@ O 38
      | 0 = 关闭；
      | 1 = 打开。
 
-O 95
-----
-
-.. dropdown:: 时间（t1） <...>
-   :animate: fade-in-slide-down
+.. option:: O95
    
    -Max  999
    -Min  1
    -Unit  毫秒
    -Description  短线头零针距：全力100%占空比出力的持续 :term:`时间t1` 。
 
-O 96
-----
-
-.. dropdown:: 维持出力（t2） <...>
-   :animate: fade-in-slide-down
+.. option:: O96
    
    -Max  100
    -Min  1

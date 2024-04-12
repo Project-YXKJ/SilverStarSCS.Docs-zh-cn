@@ -27,7 +27,6 @@ extensions = [
     "sphinx_inline_tabs",
     "sphinx_copybutton",
     "sphinx_toolbox.collapse",
-    "sphinx_design",
 ]
 
 templates_path = ["_templates"]
