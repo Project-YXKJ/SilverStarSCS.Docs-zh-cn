@@ -72,6 +72,7 @@ html_theme_options = {
     },
     "source_repository": "https://github.com/Project-YXKJ/SilverStarSCS.Docs-zh-cn",
     "source_branch": "main",
+    "source_directory": "source/",
 }
 
 # -- Options for LaTeX output ----------------------------------------------------------
