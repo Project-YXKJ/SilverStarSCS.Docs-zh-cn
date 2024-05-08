@@ -67,11 +67,7 @@
    -Unit  毫秒
    -Description  拖布轮：全力100%占空比出力的持续 :term:`时间t1` 。
 
-O 98
-----
-
-.. dropdown:: 维持出力（t2） <...>
-   :animate: fade-in-slide-down
+.. option:: O98
 
    -Max  100
    -Min  1
