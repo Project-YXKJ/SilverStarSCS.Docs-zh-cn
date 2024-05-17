@@ -4,7 +4,10 @@
 剪线
 ====
 
-*剪线执行流程：*
+如何运行？
+==========
+
+剪线执行流程：
 
 在达到 :option:`D03` 设置的位置后，剪线电磁铁接通，之后达到 :option:`D04` 的位置后关断。
 
@@ -50,8 +53,8 @@
 
 .. option:: S07
    
-   -Max  300
-   -Min  150
+   -Max  1000
+   -Min  50
    -Unit  spm
    -Description  剪线动作的速度。
 
@@ -78,7 +81,6 @@
    -Min  0
    -Unit  1°
    -Description  剪线电磁铁动作角度。
-
 
 .. option:: D04
    
@@ -143,7 +145,7 @@
    
    -Max  999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  短线头零针距：全力100%占空比出力的持续 :term:`时间t1` 。
 
 .. option:: O96

@@ -76,7 +76,7 @@
    
    -Max  1
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description  
      | 选择当底线计数值达到0时何时报警：
      | 0 = 剪线后；

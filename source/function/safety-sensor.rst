@@ -85,7 +85,7 @@
    
    -Max  1000
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  防止机头振动时倾倒开关误动作，倾倒开关信号必须持续有效一定时间才会被确认。
 
 .. option:: O31
@@ -150,9 +150,9 @@
      
 .. option:: T13
    
-   -Max  1
-   -Min  0
-   -Unit  --
+   -Max  1000
+   -Min  1
+   -Unit  ms
    -Description  面线检测报警确认时间，时间越短越灵敏, 合适的消抖可以防止误报警。
 
 .. option:: O92

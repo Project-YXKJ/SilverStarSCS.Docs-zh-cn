@@ -57,15 +57,15 @@
 
 .. option:: O03
    
-   -Max  2
-   -Min  1
+   -Max  9999
+   -Min  0
    -Unit  --
    -Description  :term:`机头识别码`
 
 .. option:: O08
 
-   -Max  2
-   -Min  1
+   -Max  1
+   -Min  0
    -Unit  --
    -Description
      | 使用原装调速器还是站立操作踏板：
@@ -74,8 +74,8 @@
 
 .. option:: O30
    
-   -Max  9999
-   -Min  0
+   -Max  2
+   -Min  1
    -Unit  --
    -Description  
      | 选择 :term:`机头识别码` 
@@ -134,7 +134,7 @@
 
 .. option:: O63
 
-   -Max  4095  
+   -Max  5  
    -Min  0
    -Unit  --
    -Description
@@ -148,10 +148,11 @@
 .. option:: O80
    
    -Max  3  
-   -Min  1
+   -Min  0
    -Unit  --
    -Description
-     | Type of the keypad:
+     | 热键盒类型:
+     | 0 = 无热键盒；
      | 1 = 6键型；
      | 2 = 7键型；
      | 3 = 12键型。

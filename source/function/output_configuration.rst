@@ -86,71 +86,70 @@
 
 .. option:: A71
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-01的模式。
 
 .. option:: A72
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-02的模式。
 
 .. option:: A73
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-03的模式。
 
 .. option:: A74
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-04的模式。
 
 .. option:: A75
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-05的模式。
-
 
 .. option:: A76
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-06的模式。
 
 .. option:: A77
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-07的模式。
 
 .. option:: A78
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-08的模式。
 
 .. option:: A79
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-09的模式。
 
 .. option:: A80
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  定义输出-10的模式。

@@ -38,7 +38,7 @@
 
 .. option:: S16
    
-   -Max  500
+   -Max  1000
    -Min  50
    -Unit  spm
    -Description  剪线后提针反拉速度。
@@ -47,7 +47,7 @@
    
    -Max  1000
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  剪线完成后经过此延时时间机针开始反转。
 
 .. option:: O35

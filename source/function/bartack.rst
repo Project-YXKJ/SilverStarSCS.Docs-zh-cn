@@ -74,14 +74,14 @@ SD模式拐点停顿时间                                   技术员     :opti
 .. option:: S03
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  前加固能达到的最大速度
 
 .. option:: S04
 
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  后加固能达到的最大速度
 
@@ -109,21 +109,21 @@ SD模式拐点停顿时间                                   技术员     :opti
    
    -Max  200
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  倒缝电磁铁从开始动作到吸合到位需要的时间。
 
 .. option:: T02
    
    -Max  200
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  倒缝电磁铁从开始动作到释放到位需要的时间。
 
 .. option:: T11
    
-   -Max  4500
-   -Min  100
-   -Unit  spm
+   -Max  1000
+   -Min  1
+   -Unit  ms
    -Description  SD加固模式下,加固缝缝纫方向转换点电机停下来等待倒缝电磁铁动作到位的时间
 
 .. option:: A34
@@ -170,21 +170,21 @@ SD模式拐点停顿时间                                   技术员     :opti
 .. option:: O12
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  前后加固,折返缝只有1针时限速
 
 .. option:: O13 
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  前后加固，折返缝只有2针时限速。
 
 .. option:: O14
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  前后加固，折返缝只有3针时限速。
 
@@ -195,16 +195,16 @@ SD模式拐点停顿时间                                   技术员     :opti
    -Unit  针
    -Description  前加固后保持当前速度的针数，之后速度才由调速器接管。
 
+.. option:: T08
+   
+   -Max  999
+   -Min  1
+   -Unit  ms
+   -Description  倒缝:全力100%占空比出力的持续 :term:`时间t1` 。
+
 .. option:: O09
    
    -Max  100
    -Min  1
    -Unit  %
    -Description  倒缝:维持出力 :term:`时间t2` 内的占空比。
-      
-.. option:: T08
-   
-   -Max  200
-   -Min  1
-   -Unit  毫秒
-   -Description  倒缝:全力100%占空比出力的持续 :term:`时间t1` 。

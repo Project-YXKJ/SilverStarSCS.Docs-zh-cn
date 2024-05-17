@@ -47,7 +47,7 @@
 .. option:: S18
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  超过此速度，机针冷却打开。
 
@@ -62,7 +62,7 @@
    
    -Max  999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  机针冷却：全力100%占空比出力的持续 :term:`时间t1` 。
 
 .. option:: O94

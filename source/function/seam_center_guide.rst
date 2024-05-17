@@ -81,7 +81,7 @@
    
    -Max  999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  缝线中心导向：全力100%占空比出力的持续 :term:`时间t1` 。
 
 .. option:: O90

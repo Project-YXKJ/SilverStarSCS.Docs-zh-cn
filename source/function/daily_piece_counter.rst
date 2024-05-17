@@ -42,12 +42,12 @@
    
    -Max  99
    -Min  1
-   -Unit  针
+   -Unit  --
    -Description  超过此剪线次数判定为计件有效。
 
 .. option:: O47
    
    -Max  9999
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description  当前计件计数器的值。

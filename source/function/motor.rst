@@ -95,22 +95,22 @@ Kd增益（CPC-h）                                      开发者     :option:`
 .. option:: S01
 
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  调速器踩至最深时的最大速度。
 
 .. option:: S02
 
-   -Max  4500
-   -Min  100
+   -Max  1000
+   -Min  50
    -Unit  spm
    -Description  调速器处于位置1即低速段时的缝制速度，也是补针速度。
 
 .. option:: A18
 
-   -Max  4500
-   -Min  100
-   -Unit  spm
+   -Max  1
+   -Min  0
+   -Unit  --
    -Description  
      | 上电后电机自动运行至上针位：
      | 0 = 关闭；
@@ -173,7 +173,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  5
    -Min  0
    -Unit  --
-   -Description  对输入速度比例缩小使机器运行速度比设定低。
+   -Description  对输入速度比例缩小使机器运行速度比设定低，参数值每增大1，减少十分之一。
 
 .. option:: O37
 
@@ -198,14 +198,14 @@ Kd增益（CPC-h）                                      开发者     :option:`
 
    -Max  500
    -Min  150
-   -Unit  毫秒
+   -Unit  ms
    -Description  0~4500rpm加速时间。
 
 .. option:: I02
 
    -Max  500
    -Min  150
-   -Unit  毫秒
+   -Unit  ms
    -Description  4500rpm~0减速时间。
 
 .. option:: I03
@@ -218,7 +218,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
 .. option:: I04
 
    -Max  4096
-   -Min  1 
+   -Min  1
    -Unit  --
    -Description  主轴转动一周对应的电机编码信号数量。
 
@@ -278,14 +278,12 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Unit  --
    -Description  速度环Ki增益。
 
-
 .. option:: I13
 
    -Max  20
    -Min  1
    -Unit  --
    -Description  速度环输出上限。
-
 
 .. option:: I14
 
@@ -389,7 +387,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
 
    -Max  9999
    -Min  0
-   -Unit  毫秒
+   -Unit  ms
    -Description  停车流程中距离电机刹停的时间。
 
 .. option:: I30
@@ -401,7 +399,6 @@ Kd增益（CPC-h）                                      开发者     :option:`
      | 选择到达目标位置的模式：
      | 0 = 速度模式；
      | 1 = 位置模式。 
-
 
 .. option:: I33
 
@@ -420,17 +417,16 @@ Kd增益（CPC-h）                                      开发者     :option:`
 .. option:: I38
 
    -Max  500
-   -Min  100 
+   -Min  1
    -Unit  spm
    -Description  刹车角度与速度规划阶段的入口速度。
 
 .. option:: I39
 
    -Max  100
-   -Min  20 
+   -Min  0 
    -Unit  spm
    -Description  刹车角度与速度规划阶段的终点速度。
-
 
 .. option:: I40
 
@@ -479,8 +475,8 @@ Kd增益（CPC-h）                                      开发者     :option:`
 
 .. option:: I48
 
-   -Max  3500
-   -Min  2000
+   -Max  4500
+   -Min  50
    -Unit  rpm  
    -Description  高于此速度，弱磁扩速生效。
 

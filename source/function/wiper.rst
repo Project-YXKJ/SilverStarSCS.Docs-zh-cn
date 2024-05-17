@@ -49,12 +49,12 @@
    
    -Max  200
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  剪线后延迟一定时间后扫线动作。
 
 .. option:: T04
    
    -Max  200
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  扫线电磁铁通电持续时间。

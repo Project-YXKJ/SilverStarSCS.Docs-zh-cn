@@ -36,7 +36,7 @@
    
    -Max  9999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  发送物联网数据的时间间隔
 
 .. option:: A49
@@ -146,7 +146,7 @@
    
    -Max  460
    -Min  400
-   -Unit  --
+   -Unit  V
    -Description  母线电压的最大值
 
 .. option:: I45

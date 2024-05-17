@@ -98,14 +98,14 @@
 .. option:: S05
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  折返缝模式下的最高速度。
 
 .. option:: S06
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  定针缝中间段自动缝制速度。
 

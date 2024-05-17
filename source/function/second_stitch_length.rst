@@ -49,7 +49,7 @@
 .. option:: S17
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  当使用大针距时的限速值。
 
@@ -84,7 +84,7 @@
    
    -Max  999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  第二针距：全力100%占空比出力的持续 :term:`时间t1` 。
 
 .. option:: O79

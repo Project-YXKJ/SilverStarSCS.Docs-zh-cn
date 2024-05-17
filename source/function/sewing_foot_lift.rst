@@ -76,21 +76,21 @@
    
    -Max  500
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  抬压脚等待时间，用于反踩剪线时避免抬压脚动作。
 
 .. option:: T06
    
    -Max  500
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  压脚下落需要的时间，缝制开始之前延迟一段时间，确保压脚已经压紧了缝料。
 
 .. option:: T10
    
-   -Max  200
+   -Max  500
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  自动压脚功能打开时，延迟抬压脚的时间。
 
 .. option:: A14
@@ -144,7 +144,7 @@
    
    -Max  999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  压脚：全力100%占空比出力的持续 :term:`时间t1` 。
 
 .. option:: O05

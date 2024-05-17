@@ -71,7 +71,7 @@
    
    -Max  1
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description
      | 交互量功能开关：
      | 0 = 关闭；
@@ -80,49 +80,49 @@
 .. option:: S09
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  限速轮盘类型开关式：压脚交互量第一档限速。
 
 .. option:: S10
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  限速轮盘类型电位器式：小交互量时的限速。
 
 .. option:: S11
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  限速轮盘类型开关式：压脚交互量第二档限速。
 
 .. option:: S12
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  限速轮盘类型开关式：压脚交互量第三档限速。
 
 .. option:: S13
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  限速轮盘类型开关式：压脚交互量第四档限速。
 
 .. option:: S14
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  限速轮盘类型电位器式：大交互量时的限速。
 
 .. option:: S15
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  交互量最大时限速。
 
@@ -146,7 +146,7 @@
    
    -Max  1
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description
      | 切换到大交互量时，速度将被自动限制至参数S15所设置的值：
      | 0 = 关闭；
@@ -156,21 +156,21 @@
    
    -Max  4095
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description  限速生效分界点位置的传感器值，依据此值，交互量继续增大时将进行限速。
 
 .. option:: O22
    
    -Max  4095
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description  最大交互量位置的传感器值。
 
 .. option:: 076
    
    -Max  999
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  交互量：全力100%占空比出力的持续 :term:`时间t1` 。
 
 .. option:: 077
@@ -184,7 +184,7 @@
    
    -Max  2
    -Min  0
-   -Unit  针
+   -Unit  --
    -Description
      | 0 = 无传感器；
      | 1 = 轻触开关；

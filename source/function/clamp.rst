@@ -56,9 +56,9 @@
 
 .. option:: T15 
    
-   -Max  2000
+   -Max  1000
    -Min  1
-   -Unit  毫秒
+   -Unit  ms
    -Description  当设置剪线反转提针或抬压脚动作夹线时，夹线器接通的时间。
 
 .. option:: A29
