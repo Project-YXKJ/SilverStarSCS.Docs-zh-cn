@@ -63,7 +63,7 @@ html_theme_options = {
         # 衔接以及左侧目录的颜色
         "color-brand-primary": "#c0d725",
         "color-brand-content": "#c0d725",
-        # "font-stack": "LXGW WenKai Screen, sans-serif",
+        # "font-stack": "Montserrat, LXGW WenKai, sans-serif",
         # "font-stack--monospace": "Courier, monospace",
     },
     "dark_css_variables": {
