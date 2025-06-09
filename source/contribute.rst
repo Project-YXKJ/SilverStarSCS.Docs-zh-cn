@@ -96,33 +96,23 @@ the language you want to translate.
 虽然并不强制贡献，但在本地构建这本书可能会很有用，比如以测试您的更改。为了在本地构建这本书，
 您将需要：
 
-1. :doc:`Nox <nox:index>`. 您可以通过 ``pip`` 安装和更新nox:
+1. `uv`_ is used for Python package and project manager.
+2. `Nox`_ is used for automating development tasks.
 
    .. code-block:: bash
 
-      python -m pip install nox
+      uv tool install nox
 
-2. Python 3.11. 我们的构建脚本通常仅使用Python 3.11进行测试，从这里下载 `Python 3.11`_ 
-   并将其安装在您的操作系统上。
+3. 要构建本书，请在项目的根文件夹中运行以下 ``nox`` 命令：
 
-.. _Python 3.11: https://www.python.org/downloads/
+   .. code-block:: bash
 
-要构建本书，请在项目的根文件夹中运行以下 shell 命令：
+      nox -rs docs
 
-.. code-block:: bash
+该过程完成后，您可以在 ``./build`` 找到HTML输出，之后您可以使用网络浏览器打开 ``index.html`` 浏览本书。
 
-   nox -s build
-
-该过程完成后，您可以在 ``./build/html``找到HTML输出，之后您可以使用网络浏览器打开 ``index.html`` 浏览本书，
-不过更建议部署在 HTTP 服务器。
-
-您可以使用以下命令构建这本书并部署在 HTTP 服务器：
-
-.. code-block:: bash
-
-   nox -s preview
-
-可通过地址浏览 http://localhost:8000.
+.. _uv: https://docs.astral.sh/uv/
+.. _Nox: https://nox.readthedocs.io/en/stable/
 
 风格指南
 ===========

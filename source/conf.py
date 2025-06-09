@@ -12,7 +12,7 @@ import time
 yxkj_docs_dir = os.path.abspath(os.path.dirname(__file__))
 
 project = "SilverStar SCS Documentation"
-copyright = f'2011-{time.strftime("%Y")}, SilverStar Technology'
+copyright = f"2011-{time.strftime('%Y')}, SilverStar Technology"
 author = "vayoger"
 
 # -- General configuration ---------------------------------------------------
@@ -120,9 +120,7 @@ texinfo_documents = [
 # -- Options for intersphinx ----------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#configuration
 
-intersphinx_mapping = {
-    "nox": ("https://nox.thea.codes/en/latest/", None),
-}
+intersphinx_mapping = {}
 
 # -- Options for todo extension --------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration

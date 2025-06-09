@@ -1,8 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
 build/
-.*~
-.nox
-*.pyc
-__pycache__
-.DS_Store
-/locales/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# vs code
 .vscode
+
+# nox
+.nox
