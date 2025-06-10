@@ -15,4 +15,4 @@ jobs:
           python-version: "3.11"
 
       - name: "Run pre-commit"
-        uses: pre-commit/action@v3
+        uses: pre-commit/action@v3.0.1
