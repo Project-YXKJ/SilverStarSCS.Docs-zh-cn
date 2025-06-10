@@ -98,16 +98,16 @@ the language you want to translate.
 
 1. `uv`_ is used for Python package and project manager.
 2. `Nox`_ is used for automating development tasks.
-
+   
    .. code-block:: bash
-
+      
       uv tool install nox
 
-3. 要构建本书，请在项目的根文件夹中运行以下 ``nox`` 命令：
+要构建本书，请在项目的根文件夹中运行以下 ``nox`` 命令：
 
-   .. code-block:: bash
-
-      nox -rs docs
+.. code-block:: bash
+   
+   nox -rs docs
 
 该过程完成后，您可以在 ``./build`` 找到HTML输出，之后您可以使用网络浏览器打开 ``index.html`` 浏览本书。
 
