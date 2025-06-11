@@ -1,4 +1,4 @@
-.. |SS-SCS-Docs| replace:: 银星SCS文档
+.. |SS-SCS-Docs| replace:: 银星 SCS 文档
 
 ================
 参与文档贡献
@@ -50,11 +50,11 @@
 *TODO*
 
 我们使用 `Weblate`_ 来管理本项目的多语种翻译。
-请访问Weblate上的项目地址来贡献 `packaging.python.org`_。
+请访问 Weblate 上的项目地址来贡献 `packaging.python.org`_ 。
 
 .. tip::
 
-   项目的所有翻译必须遵循 `reStructuredText语法 <reStructuredText syntax_>`_.
+   项目的所有翻译必须遵循 `reStructuredText语法 <reStructuredText syntax_>`_ 。
 
 .. _Weblate: https://weblate.org/
 .. _packaging.python.org: https://hosted.weblate.org/projects/
@@ -67,10 +67,10 @@ If your language is not listed on `packaging.python.org`_, click the button
 :guilabel:`Start new translation` at the bottom of the language list and add
 the language you want to translate.
 
-遵循reStructuredText语法
+遵循 reStructuredText 语法
 ---------------------------------
 
-如果您不熟悉reStructuredText(RST)语法，请在翻译工作开始之前阅读 `this guide`_
+如果您不熟悉 reStructuredText(RST) 语法，请在翻译工作开始之前阅读 `this guide`_
 
 **不要直接翻译引用中的文字**
 
@@ -109,7 +109,7 @@ the language you want to translate.
    
    nox -rs docs
 
-该过程完成后，您可以在 ``./build`` 找到HTML输出，之后您可以使用网络浏览器打开 ``index.html`` 浏览本书。
+该过程完成后，您可以在 ``./build`` 找到构建结果，之后您可以使用网络浏览器打开 ``index.html`` 浏览本书。
 
 .. _uv: https://docs.astral.sh/uv/
 .. _Nox: https://nox.readthedocs.io/en/stable/
@@ -158,11 +158,11 @@ the language you want to translate.
 **尊重命名习惯**
   在命名工具、站点、人员和其他专有名词时，使用他们管用的大写。
 
-  | 错误: Pip使用…
-  | 正确: pip使用…
+  | 错误：使用 Pip...
+  | 正确：使用 pip...
   |
-  | 错误: …部署在github.
-  | 正确: …部署在GitHub.
+  | 错误：… 部署在 github 上
+  | 正确：… 部署在 GitHub 上
 
 **标题**
   使用读者正在搜索的单词编写标题。一个好方法是让问题本身成为你的标题。
@@ -170,13 +170,18 @@ the language you want to translate.
 
   在章节标题中，使用大小写。换句话说，像写句子一样写标题。
 
-  | 错误: Things You Should Know About Python
-  | 正确: Things you should know about Python
+  | 错误：Things You Should Know About Python
+  | 正确：Things you should know about Python
 
 **数字**
   在正文中，使用小写中文数字。对于其他数字或表中的数字，请使用阿拉伯数字。
 
 .. _contributors:
+
+中英混合排版的规范
+==================
+
+可以参考 `这个仓库 <https://github.com/sparanoid/chinese-copywriting-guidelines>`_。
 
 致谢
 ====

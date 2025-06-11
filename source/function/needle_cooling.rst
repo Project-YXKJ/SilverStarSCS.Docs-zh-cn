@@ -63,11 +63,11 @@
    -Max  999
    -Min  1
    -Unit  ms
-   -Description  机针冷却：全力100%占空比出力的持续 :term:`时间t1` 。
+   -Description  机针冷却：全力 100% 占空比出力的持续 :term:`时间 t1` 。
 
 .. option:: O94
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  机针冷却：维持出力 :term:`时间t2` 内的占空比。
+   -Description  机针冷却：维持出力 :term:`时间 t2` 内的占空比。

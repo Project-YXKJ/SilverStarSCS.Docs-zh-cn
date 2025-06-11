@@ -27,12 +27,12 @@
 短线头针数                                           技术员     :option:`A67`
 剪线开始角度                                         技术员     :option:`D03`
 剪线结束角度                                         技术员     :option:`D04`
-动刀开始角度(STC)                                    技术员     :option:`D17`
-动刀结束角度(STC)                                    技术员     :option:`D18`
-倒缝开始角度(STC)                                    技术员     :option:`D19`
-倒缝结束角度(STC)                                    技术员     :option:`D20`
-零针距开始角度(STC)                                  技术员     :option:`D21`
-零针距结束角度(STC)                                  技术员     :option:`D22`
+动刀开始角度（STC）                                  技术员     :option:`D17`
+动刀结束角度（STC）                                  技术员     :option:`D18`
+倒缝开始角度（STC）                                  技术员     :option:`D19`
+倒缝结束角度（STC）                                  技术员     :option:`D20`
+零针距开始角度（STC）                                技术员     :option:`D21`
+零针距结束角度（STC）                                技术员     :option:`D22`
 剪线后检查调速器位置                                 技术员     :option:`O38`
 时间（t1）                                           开发者     :option:`O95`
 维持出力（t2）                                       开发者     :option:`O96`
@@ -146,11 +146,11 @@
    -Max  999
    -Min  1
    -Unit  ms
-   -Description  短线头零针距：全力100%占空比出力的持续 :term:`时间t1` 。
+   -Description  短线头零针距：全力 100% 占空比出力的持续 :term:`时间 t1` 。
 
 .. option:: O96
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  短线头零针距：维持出力 :term:`时间t2` 内的占空比。
+   -Description  短线头零针距：维持出力 :term:`时间 t2` 内的占空比。

@@ -52,7 +52,7 @@
    -Description
      | 电子抓线功能：
      | 0 = 关闭；
-     | 1 = On。
+     | 1 = 打开。
 
 .. option:: T15 
    
@@ -101,4 +101,4 @@
    -Max  100
    -Min  0
    -Unit  %
-   -Description  夹线：维持出力 :term:`时间t2` 内的占空比。
+   -Description  夹线：维持出力 :term:`时间 t2` 内的占空比。

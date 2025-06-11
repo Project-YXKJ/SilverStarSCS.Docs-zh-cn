@@ -7,9 +7,9 @@
 静止时的电机保持力
 ==================
 
-打开此功能，需要将 :option:`A54` 设置为1。
+打开此功能，需要将 :option:`A54` 设置为 1。
 
-此功能可防止机器停止时机针意外偏移。可通过转动手轮检查效果。
+此功能可防止机器停止时机针意外偏移，可通过转动手轮检查效果。
 
 此功能生效期间，电机会保持一定的力量来 *锁定* 在当前位置，但这里的 *锁定* 不代表 *静止*，
 如果参数设置不当，或者电机所处位置外力过大/过小，都可能导致针杆上下抖动。
@@ -113,7 +113,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  1000
    -Min  50
    -Unit  spm
-   -Description  调速器处于位置1即低速段时的缝制速度，也是补针速度。
+   -Description  调速器处于位置 1 即低速段时的缝制速度，也是补针速度。
 
 .. option:: A18
 
@@ -126,7 +126,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
      | 1 = 打开。
 
 .. danger:: 
-   请谨慎设置A18参数，可能会导致人身危险。
+   请谨慎设置 A18 参数，可能会导致人身危险。
 
 .. option:: A54
 
@@ -182,7 +182,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  5
    -Min  0
    -Unit  --
-   -Description  对输入速度比例缩小使机器运行速度比设定低，参数值每增大1，减少十分之一。
+   -Description  对输入速度比例缩小使机器运行速度比设定低，参数值每增大 1，减少十分之一。
 
 .. option:: O37
 
@@ -208,14 +208,14 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  500
    -Min  150
    -Unit  ms
-   -Description  0~4500rpm加速时间。
+   -Description  0 ~ 4500rpm 加速时间。
 
 .. option:: I02
 
    -Max  500
    -Min  150
    -Unit  ms
-   -Description  4500rpm~0减速时间。
+   -Description  4500rpm ~ 0 减速时间。
 
 .. option:: I03
 
@@ -236,56 +236,56 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  剪线速度环Kp。
+   -Description  剪线速度环 Kp。
 
 .. option:: I06
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  剪线速度环Kp增益系数。
+   -Description  剪线速度环 Kp 增益系数。
 
 .. option:: I07
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  剪线速度环Ki。
+   -Description  剪线速度环 Ki。
 
 .. option:: I08
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  剪线速度环Ki增益。
+   -Description  剪线速度环 Ki 增益。
 
 .. option:: I09
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  速度环Kp。
+   -Description  速度环 Kp。
 
 .. option:: I10
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  速度环Kp增益。
+   -Description  速度环 Kp增益。
 
 .. option:: I11
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  速度环Ki。
+   -Description  速度环 Ki。
 
 .. option:: I12
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  速度环Ki增益。
+   -Description  速度环 Ki增益。
 
 .. option:: I13
 
@@ -306,84 +306,84 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  电流环d轴Kp。
+   -Description  电流环 d 轴 Kp。
 
 .. option:: I16
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  电流环d轴Kp增益。
+   -Description  电流环 d 轴 Kp增益。
 
 .. option:: I17
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  电流环d轴Ki。
+   -Description  电流环 d 轴 Ki。
 
 .. option:: I18
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  电流环d轴Ki增益。
+   -Description  电流环 d 轴 Ki增益。
 
 .. option:: I19
 
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  电流环Id输出上限。
+   -Description  电流环 Id 输出上限。
 
 .. option:: I20
 
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  电流环Id输出下限。
+   -Description  电流环 Id 输出下限。
 
 .. option:: I21
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  电流环q轴Kp。
+   -Description  电流环 q 轴 Kp。
 
 .. option:: I22
 
    -Max  99
    -Min  0
    -Unit  --
-   -Description  电流环q轴Kp增益。
+   -Description  电流环 q 轴 Kp 增益。
 
 .. option:: I23
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  电流环q轴Ki。
+   -Description  电流环 q 轴 Ki。
 
 .. option:: I24
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  电流环q轴Ki增益。
+   -Description  电流环 q 轴 Ki增益。
 
 .. option:: I25
 
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  电流环Iq输出上限。
+   -Description  电流环 Iq 输出上限。
 
 .. option:: I26
 
    -Max  3276
    -Min  0
    -Unit  --
-   -Description  电流环Iq输出下限。
+   -Description  电流环 Iq 输出下限。
 
 .. option:: I27
 
@@ -442,28 +442,28 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  9999
    -Min  0 
    -Unit  --
-   -Description  停车位置环Kp。
+   -Description  停车位置环 Kp。
 
 .. option:: I41
 
    -Max  99
    -Min  1
    -Unit  --
-   -Description  停车位置环Kp增益。
+   -Description  停车位置环 Kp 增益。
 
 .. option:: I42
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  停车位置环Kd。
+   -Description  停车位置环 Kd。
 
 .. option:: I43
 
    -Max  99
    -Min  1
    -Unit  --
-   -Description  停车位置环Kd增益。
+   -Description  停车位置环 Kd 增益。
 
 .. option:: I46
 
@@ -494,7 +494,7 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  40
    -Min  1
    -Unit  0.1A
-   -Description  弱磁扩速ID电流上限。
+   -Description  弱磁扩速 ID 电流上限。
 
 .. option:: I50
 
@@ -515,25 +515,25 @@ Kd增益（CPC-h）                                      开发者     :option:`
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  位置环Kp。
+   -Description  位置环 Kp。
 
 .. option:: I53
 
    -Max  99
    -Min  1
    -Unit  --
-   -Description  锁定位置环Kp增益。
+   -Description  锁定位置环 Kp 增益。
 
 .. option:: I54
 
    -Max  9999
    -Min  0
    -Unit  --
-   -Description  锁定位置环Kd。
+   -Description  锁定位置环 Kd。
 
 .. option:: I55
 
    -Max  99
    -Min  1
    -Unit  --
-   -Description  锁定位置环Kd增益。
+   -Description  锁定位置环 Kd增益。

@@ -119,11 +119,11 @@
      | 0 = 完全手动；
      | 1 = 切换交互量时自动激活；
      | 2 = 缝制前加固时自动激活；
-     | 3 = 1和2；
+     | 3 = 1 和 2；
      | 4 = 缝制后加固时自动激活；
-     | 5 = 1和4；
-     | 6 = 2和4；
-     | 7 = 1和2和4。  
+     | 5 = 1 和 4；
+     | 6 = 2 和 4；
+     | 7 = 1 和 2 和 4。  
 
 .. option:: D13
    
@@ -144,14 +144,14 @@
    -Max  999
    -Min  1
    -Unit  ms
-   -Description  面线张力：全力100%占空比出力的持续 :term:`时间t1` 。
+   -Description  面线张力：全力 100% 占空比出力的持续 :term:`时间 t1` 。
 
 .. option:: O50
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  面线张力：维持出力 :term:`时间t2` 内的占空比。
+   -Description  面线张力：维持出力 :term:`时间 t2` 内的占空比。
 
 .. option:: O75
    
@@ -167,14 +167,14 @@
    -Max  999
    -Min  1
    -Unit  ms
-   -Description  第二面线张力：全力100%占空比出力的持续 :term:`时间t1`。
+   -Description  第二面线张力：全力 100% 占空比出力的持续 :term:`时间 t1`。
 
 .. option:: O87
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  第二面线张力：维持出力 :term:`时间t2` 内的占空比。
+   -Description  第二面线张力：维持出力 :term:`时间 t2` 内的占空比。
 
 .. option:: O88
    
