@@ -237,7 +237,7 @@ rendered as "The next paragraph is a code sample:".
 
 Tables
 ------
-For grid tables, you have to “paint” the cell grid yourself. They look like this::
+For grid tables, you have to "paint" the cell grid yourself. They look like this::
 
    +------------------------+------------+----------+----------+
    | Header row, column 1   | Header 2   | Header 3 | Header 4 |
@@ -525,7 +525,7 @@ body at the bottom of the document after a "Footnotes" rubric heading, like so:
 Citations
 ---------
 
-Standard reST citations are supported, with the additional feature that they are “global”,
+Standard reST citations are supported, with the additional feature that they are "global",
 i.e. all citations can be referenced from all files. Use them like so::
 
    Lorem ipsum [Ref]_ dolor sit amet.
