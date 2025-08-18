@@ -32,9 +32,9 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx.ext.viewcode",
     # External stuff
-    "sphinx_inline_tabs",
     "sphinx_copybutton",
-    "sphinx_toolbox.collapse",
+    "sphinx_design",
+    "sphinx_inline_tabs",
 ]
 
 # -- Options for Autodoc --------------------------------------------------------------
