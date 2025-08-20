@@ -31,21 +31,21 @@
     -Max  60
     -Min  1
     -Unit  s
-    -Description  拖车试验一个循环的运行时间。
+    -Description  拖车试验一个循环的运行时间
 
 .. option:: O24
 
     -Max  60
     -Min  1
     -Unit  s
-    -Description  拖车试验停止时间。
+    -Description  拖车试验停止时间
 
 .. option:: O25
 
     -Max  720
     -Min  1
     -Unit  h
-    -Description  拖车试验总时间。
+    -Description  拖车试验总时间
 
 .. option:: O26
 
@@ -55,4 +55,4 @@
     -Description
       | 耐久试验功能开关：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开

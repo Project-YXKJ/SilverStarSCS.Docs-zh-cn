@@ -6,7 +6,7 @@ https://silverstarscsdocs.readthedocs.io/zh-cn/latest/
 
 ## 关于
 
-"SilverStar SCS Docs"(SS-SCS-Docs)旨在成为有关如何理解和设置银星缝制电控系统功能的权威资源。
+"SilverStar SCS Docs"(SS-SCS-Docs) 旨在成为有关如何理解和设置银星缝制电控系统功能的权威资源。
 
 ## 许可协议
 

@@ -26,25 +26,25 @@
     -Description
       | 产量统计计数器功能开关：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开
 
 .. option:: O45
 
     -Max  999
     -Min  1
     -Unit  针
-    -Description  超过此针数判定为计件有效。
+    -Description  超过此针数判定为计件有效
 
 .. option:: O46
 
     -Max  99
     -Min  1
     -Unit  --
-    -Description  超过此剪线次数判定为计件有效。
+    -Description  超过此剪线次数判定为计件有效
 
 .. option:: O47
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  当前计件计数器的值。
+    -Description  当前计件计数器的值

@@ -34,7 +34,7 @@
     -Max  9999
     -Min  1
     -Unit  ms
-    -Description  发送物联网数据的时间间隔。
+    -Description  发送物联网数据的时间间隔
 
 .. option:: A49
 
@@ -44,7 +44,7 @@
     -Description
       | 物联网功能（可选功能）：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开
 
 .. option:: A52
 
@@ -54,7 +54,7 @@
     -Description
       | 决定压脚抬起时可否操作面板：
       | 0 = 不允许；
-      | 1 = 允许操作。
+      | 1 = 允许操作
 
 .. option:: A58
 
@@ -64,14 +64,14 @@
     -Description
       | 调试串口输出功能：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开
 
 .. option:: A59
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  设置为1，重新开机后统计信息将恢复为默认值。
+    -Description  设置为 1，重新开机后统计信息将恢复为默认值
 
 .. option:: O15
 
@@ -81,43 +81,42 @@
     -Description
       | 进入参数调整是否需要输入用户密码：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开
 
 .. option:: O17
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  设置为1，重启后错误记录将被清除。
+    -Description  设置为 1，重启后错误记录将被清除
 
 .. option:: O27
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  用户可自行设定的参数区密码。
+    -Description  用户可自行设定的参数区密码
 
 .. option:: O51
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  设置为1，重新开机后参数将恢复为默认值。
+    -Description  设置为 1，重新开机后参数将恢复为默认值
 
 .. option:: O52
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  设置为1，重新开机后 :term:`机械零点` 将恢复为默认值。
+    -Description  设置为 1，重新开机后 :term:`机械零点` 将恢复为默认值
 
 .. option:: O66
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  设置为1，重启后参数恢复至出厂值，清除错误记录以及统计信息，
-                  :term:`机械零点` 恢复至默认值。
+    -Description  设置为 1，重启后参数恢复至出厂值，清除错误记录以及统计信息，:term:`机械零点` 恢复至默认值
 
 .. option:: O70
 
@@ -127,7 +126,7 @@
     -Description
       | 检测母线电压过高时是否报错：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开
 
 .. option:: O71
 
@@ -137,7 +136,7 @@
     -Description
       | 检测到交流电压过高时是否报错：
       | 0 = 关闭；
-      | 1 = 打开。
+      | 1 = 打开
 
 .. option:: I44
 

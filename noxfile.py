@@ -42,12 +42,12 @@ def lint(session: nox.Session) -> None:
     """
     Not Support CJK!!!
     """
-    session.run_install(
-        "uv",
-        "sync",
-        "--frozen",
-        "--group",
-        "dev",
-        env={"UV_PROJECT_ENVIRONMENT": session.virtualenv.location},
-    )
-    session.run("docstrfmt", "source")
+    # session.run_install(
+    #     "uv",
+    #     "sync",
+    #     "--frozen",
+    #     "--group",
+    #     "dev",
+    #     env={"UV_PROJECT_ENVIRONMENT": session.virtualenv.location},
+    # )
+    # session.run("docstrfmt", "source")

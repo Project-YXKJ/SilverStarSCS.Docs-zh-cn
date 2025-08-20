@@ -41,20 +41,21 @@
 
 按照以下步骤：
 
-1. 确认你需要修改那一路端口，比如时 *输出 01* 还是 *输出 02*\ ，这部分需要参考具体产品的接线图。 之后参考本章节
-   :ref:`output_params_quick_reference` 部分，查找控制此端口功能的参数序号；
+1. 确认你需要修改那一路端口，比如时 *输出 01* 还是 *输出 02* ，这部分需要参考具体产品的
+   接线图。之后参考本章节 :ref:`output_params_quick_reference` 部分，查找控制此端口功能
+   的参数序号；
 2. 参考本章节开头 :ref:`output_mode_code_list` 部分，得到你需要的功能代码；
-3. 将步骤1得到的参数修改为步骤2得到的功能代码；
+3. 将步骤1得到的参数修改为步骤 2 得到的功能代码；
 4. 重启控制器以应用设定。
 
 举例说明：
 
-1. 想把输出 01 的模式修改为拖布滚轮；
-2. 查询 :ref:`output_params_quick_reference` 章节，可知 :option:`A71` 控制输出 01 的模式:
+1. 想把 *输出 01* 的模式修改为拖布滚轮；
+2. 查询 :ref:`output_params_quick_reference` 章节，可知 :option:`A71` 控制 *输出 01* 的模式:
 
        A71 = 输出 01 模式
 
-3. 查询 :ref:`output_mode_code_list` 章节，\ *15* 是送料滚轮的代码，那么将 :option:`A71` 修改为 15：
+3. 查询 :ref:`output_mode_code_list` 章节，*15* 是送料滚轮的代码，那么将 :option:`A71` 修改为 15：
 
        15 = 送料滚轮
 
@@ -90,67 +91,67 @@
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 01 的模式。
+    -Description  定义输出 01 的模式
 
 .. option:: A72
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 02 的模式。
+    -Description  定义输出 02 的模式
 
 .. option:: A73
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 03 的模式。
+    -Description  定义输出 03 的模式
 
 .. option:: A74
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 04 的模式。
+    -Description  定义输出 04 的模式
 
 .. option:: A75
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 05 的模式。
+    -Description  定义输出 05 的模式
 
 .. option:: A76
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 06 的模式。
+    -Description  定义输出 06 的模式
 
 .. option:: A77
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 07 的模式。
+    -Description  定义输出 07 的模式
 
 .. option:: A78
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 08 的模式。
+    -Description  定义输出 08 的模式
 
 .. option:: A79
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 09 的模式。
+    -Description  定义输出 09 的模式
 
 .. option:: A80
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  定义输出 10 的模式。
+    -Description  定义输出 10 的模式
