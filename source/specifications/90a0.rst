@@ -14,8 +14,8 @@ YSC-90A0
 后板接口
 ~~~~~~~~
 
-.. image:: ../_static/90a0/backcover.svg
-    :scale: 66
+.. image:: ../_static/90a0/backcover.excalidraw.svg
+    :scale: 100 %
     :alt: 控制器后板
     :align: center
 
@@ -25,8 +25,8 @@ YSC-90A0
 M1
 ++
 
-.. figure:: ../_static/90a0/M1.svg
-    :scale: 100 %
+.. figure:: ../_static/90a0/motor_power.excalidraw.svg
+    :scale: 50 %
 
     电机电源线。
 
@@ -42,8 +42,8 @@ M1
 M1.1
 ++++
 
-.. figure:: ../_static/90a0/M1-1.svg
-    :scale: 400 %
+.. figure:: ../_static/90a0/DB9-male.svg
+    :scale: 150 %
 
     电机码盘线。
 
@@ -64,8 +64,8 @@ M1.1
 PANEL
 +++++
 
-.. figure:: ../_static/90a0/PANEL.svg
-    :scale: 400 %
+.. figure:: ../_static/90a0/DB9-female.svg
+    :scale: 150 %
 
     操作盒。
 
@@ -86,8 +86,8 @@ PANEL
 PEDAL
 +++++
 
-.. figure:: ../_static/90a0/pedal.svg
-    :scale: 400 %
+.. figure:: ../_static/90a0/DB9-male.svg
+    :scale: 150 %
 
     调速器。
 
@@ -108,8 +108,8 @@ PEDAL
 X100
 ++++
 
-.. figure:: ../_static/90a0/X100.svg
-    :scale: 400 %
+.. figure:: ../_static/90a0/DB9-female.svg
+    :scale: 150 %
 
     扩展信号端口。
 
@@ -130,8 +130,8 @@ X100
 X101
 ++++
 
-.. figure:: ../_static/90a0/X101.svg
-    :scale: 400 %
+.. figure:: ../_static/90a0/DB26-male.svg
+    :scale: 150 %
 
     信号端口。
 
@@ -156,8 +156,8 @@ X101
 X200
 ++++
 
-.. figure:: ../_static/90a0/X200.svg
-    :scale: 400 %
+.. figure:: ../_static/90a0/DB26-female.svg
+    :scale: 150 %
 
     电磁铁（阀）输出端口。
 
@@ -185,8 +185,8 @@ X200
 集线器接口图示
 ~~~~~~~~~~~~~~
 
-.. image:: ../_static/90a0/hub8A/hub8A.png
-    :scale: 100%
+.. image:: ../_static/90a0/hub8A/hub8A.excalidraw.svg
+    :scale: 35 %
     :alt: 控制器后板
     :align: center
 

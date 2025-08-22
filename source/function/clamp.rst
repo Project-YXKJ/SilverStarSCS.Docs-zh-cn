@@ -33,8 +33,8 @@
 电子夹线器               操作员 :option:`A10`
 最长接通时间             技术员 :option:`T15`
 电子夹线器动作选项       技术员 :option:`A29`
-电子夹线器信号接通角度   技术员 :option:`D07`
-电子夹线器信号关断角度   技术员 :option:`D08`
+电子夹线器接通角度       技术员 :option:`D07`
+电子夹线器关断角度       技术员 :option:`D08`
 夹线器接通时压脚微抬     技术员 :option:`O42`
 维持出力阶段的占空比     开发者 :option:`O48`
 ======================== ====== =============
@@ -76,14 +76,14 @@
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  电子夹线器信号接通角度
+    -Description  电子夹线器接通角度
 
 .. option:: D08
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  电子夹线器信号关断角度
+    -Description  电子夹线器关断角度
 
 .. option:: O42
 

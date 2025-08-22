@@ -78,56 +78,56 @@
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  剪线信号接通角度
+    -Description  剪线接通角度
 
 .. option:: D04
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  剪线信号关断角度
+    -Description  剪线关断角度
 
 .. option:: D17
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  短线头动刀信号接通角度
+    -Description  短线头动刀接通角度
 
 .. option:: D18
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  短线头动刀信号关断角度
+    -Description  短线头动刀关断角度
 
 .. option:: D19
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  短线头倒缝信号接通角度
+    -Description  短线头倒缝接通角度
 
 .. option:: D20
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  短线头倒缝信号关断角度
+    -Description  短线头倒缝关断角度
 
 .. option:: D21
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  短线头零针信号体接通角度
+    -Description  短线头零针体接通角度
 
 .. option:: D22
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  短线头零针信号体关断角度
+    -Description  短线头零针体关断角度
 
 .. option:: O38
 
