@@ -1,3 +1,12 @@
+---
+hide-toc: true
+orphan: true
+---
+
+<!--
+  orphan: https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html#metadata
+-->
+
 # Changelog
 
 ## 2025-08-20 17:31:51
