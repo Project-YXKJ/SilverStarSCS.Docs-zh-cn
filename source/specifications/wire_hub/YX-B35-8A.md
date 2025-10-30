@@ -68,7 +68,7 @@
 | 9    | Elec Handwheel-CHA | 10   | Keypad-LOCK       |
 | 11   | GND                | 12   | Keypad-DATA       |
 
-## To peripherals
+## 连接至外设
 
 ### J1
 

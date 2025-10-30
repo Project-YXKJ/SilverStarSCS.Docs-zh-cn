@@ -67,7 +67,7 @@
 | 11   | -                 | 12   | GND               |
 | 13   | DC12v             | 14   | DC12v             |
 
-## To peripherals
+## 连接至外设
 
 ### X5
 
