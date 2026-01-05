@@ -80,28 +80,28 @@
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  调速器正踩 :term:`POSITION 2` 和正踩 :term:`POSITION 1` 的分界点的采样值，O56 < 值 < O58 。
+    -Description  调速器正踩 :term:`POSITION 2` 和正踩 :term:`POSITION 1` 的分界点的采样值，O58 < 值 < O56
 
 .. option:: O58
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  调速器正向 :term:`POSITION 1` 和 :term:`POSITION 0` 的分界点的采样值，O57 < 值 < O59
+    -Description  调速器正向 :term:`POSITION 1` 和 :term:`POSITION 0` 的分界点的采样值，O59 < 值 < O57
 
 .. option:: O59
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  调速器 :term:`POSITION 0` 和反踩 :term:`POSITION -1` 的分界点的采样值，O58 < 值 < O60
+    -Description  调速器 :term:`POSITION 0` 和反踩 :term:`POSITION -1` 的分界点的采样值，O60 < 值 < O58
 
 .. option:: O60
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  调速器 :term:`POSITION -1` 和反踩 :term:`POSITION -2` 的分界点的采样值，O59 < 值 < O61
+    -Description  调速器 :term:`POSITION -1` 和反踩 :term:`POSITION -2` 的分界点的采样值，O61 < 值 < O59
 
 .. option:: O61
 
