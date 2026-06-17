@@ -61,30 +61,32 @@
 
 报警信息的代码总是小于100.
 
-=============== ========== ===========================
-代码            可能的原因 补救措施
-=============== ========== ===========================
-:exc:`ExcCode1` 调速器     :meth:`ExcCode1.solution()`
-:exc:`ExcCode2` 倾倒开关   :meth:`ExcCode2.solution()`
-:exc:`ExcCode3` 热键       :meth:`ExcCode3.solution()`
-:exc:`ExcCode4` 热键       :meth:`ExcCode4.solution()`
-:exc:`ExcCode5` 底线检测   :meth:`ExcCode5.solution()`
-:exc:`ExcCode6` 面线检测   :meth:`ExcCode6.solution()`
-:exc:`ExcCode7` 保养计数器 :meth:`ExcCode7.solution()`
-:exc:`ExcCode8` 护眼板     :meth:`ExcCode8.solution()`
-:exc:`ExcCode9` 旋梭盖板   :meth:`ExcCode9.solution()`
-=============== ========== ===========================
+================= ========== =============================
+代码              可能的原因 补救措施
+================= ========== =============================
+:exc:`ExcCode001` 调速器     :meth:`ExcCode001.solution()`
+:exc:`ExcCode002` 倾倒开关   :meth:`ExcCode002.solution()`
+:exc:`ExcCode003` 热键       :meth:`ExcCode003.solution()`
+:exc:`ExcCode004` 热键       :meth:`ExcCode004.solution()`
+:exc:`ExcCode005` 底线检测   :meth:`ExcCode005.solution()`
+:exc:`ExcCode006` 面线检测   :meth:`ExcCode006.solution()`
+:exc:`ExcCode007` 保养计数器 :meth:`ExcCode007.solution()`
+:exc:`ExcCode008` 护眼板     :meth:`ExcCode008.solution()`
+:exc:`ExcCode009` 旋梭盖板   :meth:`ExcCode009.solution()`
+:exc:`ExcCode010` 梭芯余量   :meth:`ExcCode010.solution()`
+================= ========== =============================
 
 通知信息
 ~~~~~~~~
 
 通知信息的代码总是小于100.
 
-================ ============== ============================
-代码             可能的原因     补救措施
-================ ============== ============================
-:exc:`ExcCode50` 润滑油余量不足 :meth:`ExcCode50.solution()`
-================ ============== ============================
+================== ================ =============================
+代码               可能的原因       补救措施
+================== ================ =============================
+:exc:`ExcCode051`  润滑油余量不足   :meth:`ExcCode051.solution()`
+:exc:`ExcCode052`  底线不足         :meth:`ExcCode052.solution()`
+================== ================ =============================
 
 故障信息列表
 ------------
@@ -380,7 +382,7 @@
 警告信息列表
 ------------
 
-.. exception:: ExcCode1
+.. exception:: ExcCode001
 
     调速器报警
 
@@ -390,7 +392,7 @@
        如果使用的是站立式三踏板而非原装调速器，调速器类型要正确设置；
        调速器本身有问题，更换调速器.
 
-.. exception:: ExcCode2
+.. exception:: ExcCode002
 
     倾倒开关警告
 
@@ -399,7 +401,7 @@
        机头被翻起，等待机头被正常放置后，警告将自动解除；
        检查机头倾倒开关的信号是否异常。
 
-.. exception:: ExcCode3
+.. exception:: ExcCode003
 
     热键1触发警告
 
@@ -408,7 +410,7 @@
        开机时不允许按压热键；
        检查热键的信号是否异常。
 
-.. exception:: ExcCode4
+.. exception:: ExcCode004
 
     热键2触发警告
 
@@ -417,15 +419,15 @@
        开机时不允许按压热键；
        检查热键的信号是否异常。
 
-.. exception:: ExcCode5
+.. exception:: ExcCode005
 
-    底线余量警告
+    底线不足
 
     .. method:: solution()
 
-       底线计数器功能激活时，底线余量为0时出现的警告，更换新的锁芯后进行重置操作可以清除报警。
+       更换新的锁芯后进行重置
 
-.. exception:: ExcCode6
+.. exception:: ExcCode006
 
     面线短线警告
 
@@ -434,7 +436,7 @@
        面线检测功能激活时，面线发生断裂时报警，重新接好面线；
        检查热键的信号是否异常。
 
-.. exception:: ExcCode7
+.. exception:: ExcCode007
 
     保养提醒
 
@@ -442,7 +444,7 @@
 
     保养计数器功能激活时，待保养针数为0出现的警告，机器例行保养后进行重置操作可以清除报警。
 
-.. exception:: ExcCode8
+.. exception:: ExcCode008
 
     护眼板未归位
 
@@ -451,7 +453,7 @@
        护眼板应该被推至正确的位置；
        检查护眼板的信号是否异常。
 
-.. exception:: ExcCode9
+.. exception:: ExcCode009
 
     旋梭盖板被推开
 
@@ -460,10 +462,18 @@
        闭合旋梭盖板；
        检查旋梭盖板的信号是否异常。
 
+.. exception:: ExcCode010
+
+    底线不足
+
+    .. method:: solution()
+
+       锁芯余量不足
+
 通知信息列表
 ------------
 
-.. exception:: ExcCode50
+.. exception:: ExcCode051
 
     润滑油位过低
 
@@ -475,3 +485,12 @@
     .. versionchanged:: 90A0-v1.08.05
 
        曾经，这个异常信息的代码是 *10* ，并且归类为 *警告* 组。
+
+
+.. exception:: ExcCode052
+
+    底线不足
+
+    .. method:: solution()
+
+       更换新的锁芯后重置计数器
